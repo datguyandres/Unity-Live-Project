@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1698146706084879572}
   - component: {fileID: 4946982343370281249}
-  - component: {fileID: 4108066735235425766}
+  - component: {fileID: 7427095660803280280}
   m_Layer: 0
   m_Name: CreateSinWave
   m_TagString: Untagged
@@ -139,7 +139,7 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &4108066735235425766
+--- !u!114 &7427095660803280280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,12 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1412417568221480403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 060a5439ce9d27945ac818a36a99c674, type: 3}
+  m_Script: {fileID: 11500000, guid: af8753d7f1b12224fb19b81ef5a9c77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myLineRenderer: {fileID: 4946982343370281249}
-  points: 10
-  amplitude: 1
-  frequency: 1
-  MovementSpeed: 1
-  xLimits: {x: 9, y: 1}
+  minDistance: 0.1
