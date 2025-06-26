@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4931103337427661279}
   - component: {fileID: 1382876572364969561}
   - component: {fileID: 4807592700115222807}
+  - component: {fileID: 8440823204791856417}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,3 +109,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8440823204791856417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120601137140857826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb5a2eb0ceaddc448a32aaf8c66e0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

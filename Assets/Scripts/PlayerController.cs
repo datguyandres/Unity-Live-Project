@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public int CheckpointNum = 0;
     [Range(1.0f, 10f)]
     public float VerticalSpeed = 1.0f;
 
     [Range(0.5f, 10f)]
     public float HorizontalSpeed = 1.0f;
+
+    public GameObject CheckpointHandler;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,15 +37,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision Happened");
-        if (collision.gameObject.CompareTag("border"))
-        {
-            Debug.Log("Collision Happened");
-            HorizontalSpeed = 0.0f;
-            VerticalSpeed = 0.0f;
-        }
 
+        if (other.gameObject.tag == "CheckPoint")
+        {
+            Debug.Log("HIT");
+            CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
+        }
     }
 }

@@ -151,4 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8753d7f1b12224fb19b81ef5a9c77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 0}
   minDistance: 0.1
+  width: 0.1
