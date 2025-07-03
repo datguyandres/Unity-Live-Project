@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -34,6 +35,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.down * VerticalSpeed * Time.deltaTime);
         }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            SceneManager.LoadScene("TOPDOWNTEST");
+           
+        }
+
 
     }
 
