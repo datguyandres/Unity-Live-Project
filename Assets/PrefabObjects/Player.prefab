@@ -258,7 +258,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.18039216}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -327,5 +327,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsHighlighted: 0
+  NpcNumber: 0
   mat: {fileID: 0}
-  LevelTrigger: 0
+  LevelNum: 0
+  textComponent: {fileID: 0}
+  textSpeed: 0
+  InDialogue: 0

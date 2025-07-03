@@ -102,8 +102,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsHighlighted: 0
+  NpcNumber: 0
   mat: {fileID: 0}
-  LevelTrigger: 0
+  LevelNum: 0
+  textComponent: {fileID: 0}
+  textSpeed: 0.5
+  InDialogue: 0
 --- !u!61 &2103941379051364658
 BoxCollider2D:
   m_ObjectHideFlags: 0
