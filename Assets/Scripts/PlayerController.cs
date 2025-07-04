@@ -50,8 +50,14 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.tag == "CheckPoint")
         {
-            Debug.Log("HIT");
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
+            GameManager.Instance.PlayerScore += 10;
+        }
+
+        if (other.gameObject.tag == "Obstacle")
+        {
+            GameManager.Instance.PlayerScore -= 10;
+            Destroy(other.gameObject);
         }
     }
 }

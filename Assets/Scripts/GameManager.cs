@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class GameManager : MonoBehaviour
 
     public int PlayerScore;
 
-   // public string[] Npc1;
-   //public string[] Npc2;
+    public TextMeshProUGUI TimerText;
+    public TextMeshProUGUI ScoreText;
     
+    // public string[] Npc1;
+    //public string[] Npc2;
+
     public string[,] NpcLines = new string[2, 2] {  //multi-dimensional array containing all npc lines
             {"npc1 line1", "npc1 line2"},
             {"npc2 line1", "npc2 line2"}
@@ -47,9 +51,13 @@ public class GameManager : MonoBehaviour
     {
         Timer += Time.deltaTime;
 
-        TimeLeft = 300.0f - Mathf.FloorToInt(Timer); // how much time is left out of 5 minutes
+        TimeLeft = 300.0f - Mathf.FloorToInt(Timer);
+
+        TimerText.text = "Time Left: " + TimeLeft.ToString();
+
+        ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
         //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
-        
+
     }
 
 }
