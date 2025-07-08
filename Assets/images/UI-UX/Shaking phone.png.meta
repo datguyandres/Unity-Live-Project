@@ -1,0 +1,1671 @@
+fileFormatVersion: 2
+guid: 3ac6b5d3df014d14588fa8346a47e180
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shaking phone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32715fcad982b64bafef5404366f21c
+      internalID: 501601000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e39d98cd312134f9db304cc94a507c
+      internalID: 244847982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fdf7a68271a534e919ebbbd8a51c3a
+      internalID: -625448536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09d543f965c004694bd5bab221ee53
+      internalID: 1057700223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_4
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6444de5b3b1f0d94caaa34df91a6e1c0
+      internalID: 1113310504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda6ecb7f6b759d48bf48651ae6c6d1b
+      internalID: -425342386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ed8abe137679e49a5862777b88c478
+      internalID: -1542772000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_7
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a90656a4fefaf745954b5871905a77f
+      internalID: -1591843829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_8
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 7560
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816449cec24ddd242afca8d10e744f3e
+      internalID: -848308850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81410e7f0ade84942bdc3f7c62ce87bf
+      internalID: 1115362724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97a87a38caa3c34ea5748fd5e456a73
+      internalID: -470488023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_11
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131216b83a8b4df41adb338614f919f5
+      internalID: 211158266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6321e30f8d4314791bd9c0b080f991
+      internalID: -463914252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_13
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230e19fa4c0860c40bf352d0f0d7e463
+      internalID: -541675647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_14
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d284411195a15419a859e24753a518
+      internalID: 57823723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_15
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7001244fe2010c043ad5c4a0cc18e6ec
+      internalID: -928162074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_16
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5505440c98c6b4b8ea45855d4adbe1
+      internalID: -2048567812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_17
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 6480
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185ec287218e42d40b85a547e60c51f6
+      internalID: 904125865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff589fe0f045fc54996d51243bfd2f11
+      internalID: 1585971170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceceb6813737e3641b0651d640dfd255
+      internalID: -1546989874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a3916189228d94e97cc336f2082a8c
+      internalID: 510357261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_21
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f73cc1e67a87740b6d1026e6c87d42
+      internalID: 1139916747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_22
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4aaa79d7804324a90458761ee431f2
+      internalID: 1726789124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_23
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62b0e984817d864fa52d535c28b4369
+      internalID: 971002785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_24
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f11c38b82d5b2e4281584b0c888565b
+      internalID: -63139059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_25
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dd65157c662b849a344282fb60c998
+      internalID: -269233398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_26
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 5400
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bfb3b9252f3b2429a59d2e14756e7b
+      internalID: -1749165900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bc92219e0b7664991d1d5857ad0156
+      internalID: 1318051217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409aa3e27b594d34999b877268b029ad
+      internalID: -870746848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_29
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b60ca414b6566e43abd80c187329662
+      internalID: -1922819224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_30
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2abda043cedf08499402b9d884280c3
+      internalID: 1324418156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_31
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d54529600654b449385c4fc9e31852
+      internalID: 2053339722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_32
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaab41add813b94983a3c6194754879
+      internalID: 2026873475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_33
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e34e1a05f32f734d8f35a6203c1cbda
+      internalID: 1921551156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_34
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4342e4abe091e1c45a2736ce9a071cbd
+      internalID: -88030094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_35
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 4320
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e6ba64a337e9546a38d8bebedd6494
+      internalID: -611321093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9706ae542fe844680b1559fe454fb5
+      internalID: -1580373884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f635650343419014f8f4cb6161d7cdc9
+      internalID: -324838974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b105b7b405cce4296c56753eb2c414
+      internalID: 1765140730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1df3c1f82f47e941add8fd201480fdd
+      internalID: 963739111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025c3d8cd29ba5a4b869573a01a2d986
+      internalID: 893783466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_41
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ec9c8da2ca9884ab279f5fde73cb0b
+      internalID: -1738699596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_42
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6aafa1450557da4e8430ccbcb1b05ac
+      internalID: -1033083306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_43
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900d65f6a8172394f859128dea399620
+      internalID: -473955614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_44
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3240
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d843ccb9789ef645b4759bb9bf3f419
+      internalID: 1223394895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20d89e44d5681a498f370c054437d8e
+      internalID: -1601847051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51511a736ffab174cb7a98d0c75a192b
+      internalID: 32244135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_47
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b970be82aa9e5a142acb277d543678d1
+      internalID: 1981060850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_48
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ce988d8993f94781601254c0daf9c
+      internalID: -1822844027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_49
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d0616932c649e4f844bbb80d07e202
+      internalID: -946772024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_50
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c64a064b37df1a4295a04c20262012b
+      internalID: 202049789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_51
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1663cf7de8d374390568b2000db447
+      internalID: -1557906235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_52
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab42c2dfb64df24a8fe47e2a3a0311e
+      internalID: 2097922780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_53
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 2160
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5768324cb6332eb4abf4b91859887245
+      internalID: 1307236957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c5f7ce198f5c442a0a9e6586727631
+      internalID: 1209276800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc05cd9d479336b458286b15d312d111
+      internalID: -1947300213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_56
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ca31dca9a1f554d911fea59e977b8c
+      internalID: -115314197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_57
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9a7dcd6ba119c4992c4496176aac1d
+      internalID: -1937778350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_58
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd4920343f6cd34f935d7fa71380324
+      internalID: -1529476397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_59
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07082371c732af54ba13f48e18340f82
+      internalID: -1052662390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_60
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece385caa360ad54ea1714db998bebbb
+      internalID: 1591140691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_61
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e72d39bfb95ae46afb21b035071c72
+      internalID: 753311582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_62
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1080
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b11ea0bfde2af49afce4f9e7b284a7
+      internalID: 78336233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a34c4186e22cf14788a90fa83ef1c68
+      internalID: -708749747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4433a80ef125faa458a74a53e90e5d32
+      internalID: 1861170684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_65
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d927e31d1ed4bbd44aca3e62b81a6d21
+      internalID: 1372805095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shaking phone_66
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 800
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d8778c7b1661b4c983e7b18353442f
+      internalID: -167839472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e9a2c4e0450448143b6e27125ddaaaf4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shaking phone_0: 501601000
+      Shaking phone_1: 244847982
+      Shaking phone_10: -470488023
+      Shaking phone_11: 211158266
+      Shaking phone_12: -463914252
+      Shaking phone_13: -541675647
+      Shaking phone_14: 57823723
+      Shaking phone_15: -928162074
+      Shaking phone_16: -2048567812
+      Shaking phone_17: 904125865
+      Shaking phone_18: 1585971170
+      Shaking phone_19: -1546989874
+      Shaking phone_2: -625448536
+      Shaking phone_20: 510357261
+      Shaking phone_21: 1139916747
+      Shaking phone_22: 1726789124
+      Shaking phone_23: 971002785
+      Shaking phone_24: -63139059
+      Shaking phone_25: -269233398
+      Shaking phone_26: -1749165900
+      Shaking phone_27: 1318051217
+      Shaking phone_28: -870746848
+      Shaking phone_29: -1922819224
+      Shaking phone_3: 1057700223
+      Shaking phone_30: 1324418156
+      Shaking phone_31: 2053339722
+      Shaking phone_32: 2026873475
+      Shaking phone_33: 1921551156
+      Shaking phone_34: -88030094
+      Shaking phone_35: -611321093
+      Shaking phone_36: -1580373884
+      Shaking phone_37: -324838974
+      Shaking phone_38: 1765140730
+      Shaking phone_39: 963739111
+      Shaking phone_4: 1113310504
+      Shaking phone_40: 893783466
+      Shaking phone_41: -1738699596
+      Shaking phone_42: -1033083306
+      Shaking phone_43: -473955614
+      Shaking phone_44: 1223394895
+      Shaking phone_45: -1601847051
+      Shaking phone_46: 32244135
+      Shaking phone_47: 1981060850
+      Shaking phone_48: -1822844027
+      Shaking phone_49: -946772024
+      Shaking phone_5: -425342386
+      Shaking phone_50: 202049789
+      Shaking phone_51: -1557906235
+      Shaking phone_52: 2097922780
+      Shaking phone_53: 1307236957
+      Shaking phone_54: 1209276800
+      Shaking phone_55: -1947300213
+      Shaking phone_56: -115314197
+      Shaking phone_57: -1937778350
+      Shaking phone_58: -1529476397
+      Shaking phone_59: -1052662390
+      Shaking phone_6: -1542772000
+      Shaking phone_60: 1591140691
+      Shaking phone_61: 753311582
+      Shaking phone_62: 78336233
+      Shaking phone_63: -708749747
+      Shaking phone_64: 1861170684
+      Shaking phone_65: 1372805095
+      Shaking phone_66: -167839472
+      Shaking phone_7: -1591843829
+      Shaking phone_8: -848308850
+      Shaking phone_9: 1115362724
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
