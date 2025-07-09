@@ -54,10 +54,17 @@ public class PlayerController : MonoBehaviour
             GameManager.Instance.PlayerScore += 10;
         }
 
-        if (other.gameObject.tag == "Obstacle")
+        else if (other.gameObject.tag == "Obstacle")
         {
             GameManager.Instance.PlayerScore -= 10;
             Destroy(other.gameObject);
+        }
+
+        else if (other.gameObject.tag == "FinishLine")
+        {
+            GameManager.Instance.PlayerWon = true;
+            GameManager.Instance.DifficultyLevel++;
+            SceneManager.LoadScene("TOPDOWNTEST");
         }
     }
 }

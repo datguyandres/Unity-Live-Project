@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
-    public int DifficultyLevel;
+    public int DifficultyLevel = 1;
 
     public float Timer = 0.0f;
     public float TimeLeft;
@@ -16,7 +17,19 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI ScoreText;
-    
+
+    public Vector3 PlayerLastLocation;
+
+    public List<int> NpcBeaten = new List<int>();
+
+    public bool InLevel = false; // will be used to check if a playey just left a level to trigger certain dialogue
+
+    public bool PlayerCanMove = true;
+
+    public bool PlayerWon = false;
+
+    public bool PlayerLost = false;
+
     // public string[] Npc1;
     //public string[] Npc2;
 
@@ -28,6 +41,17 @@ public class GameManager : MonoBehaviour
             {"Player + npc1 line1", "player + npc1 line2"},
             {"player + npc2 line1", "player + npc2 line2"}
         };
+
+    public string[,] NpcWinLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
+            {"Player + npc1 win line", "YOU WON YIPPEE" },
+            {"player + npc2 win line", "YOU WON YIPPEE" }
+        };
+
+
+    public string[,] NpcLoseLines = new string[2, 1] { //multi-dimensional array containing all player dialogue
+            {"Player + npc1 Lose line" },
+            {"player + npc2 Lose line" }
+        };   
 
     private void Awake()
     {
