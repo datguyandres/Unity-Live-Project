@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: amica_forth_idle
+  m_Name: FORTH_IDLE
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 93941814, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
+      value: {fileID: 21300000, guid: 8bd90c2b3501e8a41873b9aa3a389a64, type: 2}
     - time: 0.083333336
-      value: {fileID: 1470856946, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
+      value: {fileID: 21300000, guid: ebfcc4d78380b1c4f917f86d26572b71, type: 2}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 93941814, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
-    - {fileID: 1470856946, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
+    - {fileID: 21300000, guid: 8bd90c2b3501e8a41873b9aa3a389a64, type: 2}
+    - {fileID: 21300000, guid: ebfcc4d78380b1c4f917f86d26572b71, type: 2}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
