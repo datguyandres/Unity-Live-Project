@@ -21,6 +21,12 @@ public class NpcTrigger : MonoBehaviour
 
     public bool InDialogue;
 
+    public GameObject player;
+
+    public bool WasBeaten;
+
+    public string CurrentText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,21 +37,21 @@ public class NpcTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && IsHighlighted)
+        if (Input.GetKeyDown(KeyCode.E) && IsHighlighted && !GameManager.Instance.InLevel)
         {
             NpcInteraction();
         }
 
-        if (Input.GetMouseButtonDown(0) && InDialogue )
+        if (Input.GetMouseButtonDown(0) && InDialogue)
         {
-            if (textComponent.text == GameManager.Instance.NpcLines[NpcNumber, index])
+            if (textComponent.text == CurrentText)
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = GameManager.Instance.NpcLines[NpcNumber, index];
+                textComponent.text = CurrentText;
             }
         }
     }
@@ -54,6 +60,7 @@ public class NpcTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "npcChecker")
         {
+            player = other.gameObject;
             Debug.Log("Interacted with the npcChecker");
             if (mat != null)
             {
@@ -61,7 +68,13 @@ public class NpcTrigger : MonoBehaviour
                 IsHighlighted = true;
             }
 
+            if (GameManager.Instance.InLevel)
+            {
+                NpcInteraction();
+            }
+
         }
+
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -83,12 +96,13 @@ public class NpcTrigger : MonoBehaviour
         //if (HasCompletedMyLevel  false) // some sort of trigger that prevents the player from replaying on the same npc
         // {
         Debug.Log("Activated event trigger");
+        GameManager.Instance.PlayerCanMove = false;
         IsHighlighted = false;
         index = 0;
         textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
-        Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
+        //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
         // }
@@ -103,11 +117,29 @@ public class NpcTrigger : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach (char c in GameManager.Instance.NpcLines[NpcNumber, index].ToCharArray())
+        if (GameManager.Instance.InLevel != true)
         {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
 
+            CurrentText = GameManager.Instance.NpcLines[NpcNumber, index];
+
+            foreach (char c in GameManager.Instance.NpcLines[NpcNumber, index].ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeed);
+
+            }
+        }
+        else if (GameManager.Instance.PlayerWon)
+        {
+
+            CurrentText = GameManager.Instance.NpcWinLines[NpcNumber, index];
+            foreach (char c in GameManager.Instance.NpcWinLines[NpcNumber, index].ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeed);
+
+            }
+            Debug.Log("testing dialogue after getting out of level");
         }
     }
 
@@ -124,10 +156,22 @@ public class NpcTrigger : MonoBehaviour
             InDialogue = false;
             textComponent.text = string.Empty;
             textComponent.gameObject.SetActive(false);
+            GameManager.Instance.PlayerLastLocation = player.transform.position;
+            GameManager.Instance.PlayerCanMove = true;
+            if (GameManager.Instance.InLevel == false)
+            {
+                GameManager.Instance.InLevel = true;
+                //SceneManager.LoadScene(4);
+                SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
+            }
+            else
+            {
+                GameManager.Instance.InLevel = false;
+            }
 
-            SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
         }
     }
+
     
 
 
