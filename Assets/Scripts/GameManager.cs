@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public Vector3 PlayerLastLocation;
 
-    public List<int> NpcBeaten = new List<int>();
+    public List<int> NpcsBeaten = new List<int>();
 
     public bool InLevel = false; // will be used to check if a playey just left a level to trigger certain dialogue
 
@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
         };
 
     public string[,] NpcWinLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
-            {"Player + npc1 win line", "YOU WON YIPPEE" },
-            {"player + npc2 win line", "YOU WON YIPPEE" }
+            {"npc1 win line", "YOU WON YIPPEE" },
+            {"npc2 win line", "YOU WON YIPPEE" }
         };
 
 

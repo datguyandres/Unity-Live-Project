@@ -68,6 +68,11 @@ public class NpcTrigger : MonoBehaviour
                 IsHighlighted = true;
             }
 
+            if (GameManager.Instance.PlayerWon)
+            {
+                GameManager.Instance.NpcsBeaten.Add(NpcNumber);
+            }
+
             if (GameManager.Instance.InLevel)
             {
                 NpcInteraction();
@@ -86,6 +91,8 @@ public class NpcTrigger : MonoBehaviour
                 mat.DisableKeyword("_EMISSION");
                 IsHighlighted = false;
             }
+
+            GameManager.Instance.PlayerWon = false;
         }
     }
 
@@ -117,29 +124,54 @@ public class NpcTrigger : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        if (GameManager.Instance.InLevel != true)
+        
+        if (GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) > -1 && GameManager.Instance.InLevel != true)
         {
-
-            CurrentText = GameManager.Instance.NpcLines[NpcNumber, index];
-
-            foreach (char c in GameManager.Instance.NpcLines[NpcNumber, index].ToCharArray())
+            CurrentText = "U ALREADY BEAT ME MANEEE";
+            foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
 
             }
         }
+
+
         else if (GameManager.Instance.PlayerWon)
         {
-
             CurrentText = GameManager.Instance.NpcWinLines[NpcNumber, index];
-            foreach (char c in GameManager.Instance.NpcWinLines[NpcNumber, index].ToCharArray())
+            foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
 
             }
             Debug.Log("testing dialogue after getting out of level");
+            
+        }
+        else if (GameManager.Instance.PlayerLost)
+        {
+            CurrentText = GameManager.Instance.NpcLoseLines[NpcNumber, index];
+            foreach (char c in CurrentText.ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeed);
+
+            }
+
+        }
+
+        else if (GameManager.Instance.InLevel != true)
+        {
+
+            CurrentText = GameManager.Instance.NpcLines[NpcNumber, index];
+
+            foreach (char c in CurrentText.ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeed);
+
+            }
         }
     }
 
@@ -158,7 +190,7 @@ public class NpcTrigger : MonoBehaviour
             textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
             GameManager.Instance.PlayerCanMove = true;
-            if (GameManager.Instance.InLevel == false)
+            if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
             {
                 GameManager.Instance.InLevel = true;
                 //SceneManager.LoadScene(4);
