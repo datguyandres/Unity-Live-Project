@@ -7,6 +7,8 @@ TagManager:
   - border
   - CheckPoint
   - npcChecker
+  - Obstacle
+  - FinishLine
   layers:
   - Default
   - TransparentFX
