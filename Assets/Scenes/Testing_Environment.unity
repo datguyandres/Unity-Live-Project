@@ -2589,24 +2589,60 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.textureMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3307d454c611b60478adeb575b3b3348, type: 2}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.numCapVertices
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.textureScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.textureScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.numCornerVertices
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 129
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.08116753
+      value: 0.08603289
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.08116753
+      value: 0.08603289
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.9559748
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.colorGradient.m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.generateLightingData
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.colorGradient.m_ColorSpace
