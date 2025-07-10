@@ -2336,7 +2336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CheckpointNum: 0
   VerticalSpeed: 2.01
-  HorizontalSpeed: 1
+  HorizontalSpeed: 0.75
   CheckpointHandler: {fileID: 784022731}
 --- !u!65 &1944563670
 BoxCollider:
