@@ -147,8 +147,8 @@ Transform:
   m_GameObject: {fileID: 214387924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.038228035, y: 0.84399176, z: 0}
-  m_LocalScale: {x: 2.74, y: 2.7400799, z: 0}
+  m_LocalPosition: {x: -0.073708236, y: 0.1760872, z: 0}
+  m_LocalScale: {x: 2.74, y: 3.740209, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2129090558}
@@ -950,7 +950,7 @@ MonoBehaviour:
   TimerText: {fileID: 1185498394}
   ScoreText: {fileID: 243346856}
   PlayerLastLocation: {x: 0, y: 0, z: 0}
-  NpcBeaten: 
+  NpcsBeaten: 
   InLevel: 0
   PlayerCanMove: 1
   PlayerWon: 0
@@ -1180,8 +1180,8 @@ Transform:
   m_GameObject: {fileID: 1332236922}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.038228035, y: 0.84399176, z: 0}
-  m_LocalScale: {x: 1.37, y: 1.3700399, z: 0.34250998}
+  m_LocalPosition: {x: -0.07751167, y: 0.13868475, z: 0}
+  m_LocalScale: {x: 0.58868897, y: 0.5700736, z: 0.34250998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2129090558}
@@ -1703,8 +1703,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 5.12, y: 7.5005436}
+  m_Offset: {x: 0, y: 0.16}
+  m_Size: {x: 2.91, y: 3.53}
   m_Direction: 0
 --- !u!50 &2129090555
 Rigidbody2D:
@@ -1812,8 +1812,8 @@ Transform:
   m_GameObject: {fileID: 2129090553}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.09699339, y: 0.059681416, z: 0}
+  m_LocalScale: {x: 0.8047, y: 0.8667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 214387925}
