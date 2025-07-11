@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float HorizontalSpeed = 1.0f;
 
     public GameObject CheckpointHandler;
+    public GameObject Camera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -57,6 +58,7 @@ public class PlayerController : MonoBehaviour
         else if (other.gameObject.tag == "Obstacle")
         {
             GameManager.Instance.PlayerScore -= 10;
+            Camera.GetComponent<CameraShake>().shake = 0.3f;
             Destroy(other.gameObject);
         }
 

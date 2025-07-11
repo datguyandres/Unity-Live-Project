@@ -2,22 +2,20 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public AnimationCurve curve;
+    //var camera = Camera; // set this via inspector// using this should work
+    public float shake  = 0.0f;
+    float shakeAmount = 0.7f;
+    float decreaseFactor = 1.0f;
 
-    float t = 0f;
-    void Update()
-    {
-        //...clever code
-        float shake = Shake(10f, 2f, shakeCurve);
-        //apply this shake to whatever you want, it's 1d right now but can be easily expanded to 2d
+    void Update() {
+        if (shake > 0) {
+            Vector3 shakeunit = Random.insideUnitSphere * shakeAmount;
+            this.transform.localPosition = new Vector3(shakeunit.x, shakeunit.y, -20);
+            shake -= Time.deltaTime * decreaseFactor;
+
+        } else {
+            shake = 0.0f;
+        }
     }
 
-    float Shake(float shakeDamper, float shakeTime, AnimationCurve curve)
-    {
-        t += Time.deltaTime;
-        return Mathf.PerlinNoise(t / shakeDamper, 0f) * curve.Eval(t);
-    }
-    
-    //NOT MY CODE FOR SHAKE I GOT IT ONLINE FROM UNITY FORUM 
 }
