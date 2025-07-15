@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
+        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime); //Player object shifting to the right
     }
 
     void Update()
