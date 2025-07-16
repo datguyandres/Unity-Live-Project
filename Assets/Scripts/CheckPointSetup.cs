@@ -39,14 +39,15 @@ public class CheckPointSetup : MonoBehaviour
         if (Player != null && CurrentCP != null)
         {
             float distance = Vector3.Distance(CurrentCP.transform.position, Player.transform.position); //distance of point from player
-            Debug.Log("Distance between " + CurrentCP.name + " and " + Player.name + ": " + distance);
+            //Debug.Log("Distance between " + CurrentCP.name + " and " + Player.name + ": " + distance);
 
             //if player half the distance to the next point delete the current one and spawn the next one without awarding points
+            float DistBtwnPnts = DistanceBetweenCheckPoints();
 
-            if (DistanceBetweenPlayerAndCheckpoint < DistanceBetweenCheckPoints / 2)
+            if (DistanceBetweenPlayerAndCheckpoint() < (DistanceBetweenCheckPoints()/1.5f))
             {
                 OnCheckpointHit();
-                debug.log("works here");
+                Debug.Log("works here");
             }
         }
 
@@ -75,9 +76,13 @@ public class CheckPointSetup : MonoBehaviour
         if ((LiveCheckpoint + 1) < TotalChildren)
         {
             float dist = Vector3.Distance(CurrentCP.transform.position, CheckPointArray[LiveCheckpoint + 1].transform.position);
+            Debug.Log("Distance checkpoint and next checkpoint: "+ dist);
             return dist;
         }
-        return null;
+        else
+        {
+            return -1;
+        }
     }
 
     public float DistanceBetweenPlayerAndCheckpoint()
@@ -85,8 +90,12 @@ public class CheckPointSetup : MonoBehaviour
         if ((LiveCheckpoint + 1) < TotalChildren)
         {
             float dist = Vector3.Distance(Player.transform.position, CheckPointArray[LiveCheckpoint + 1].transform.position);
+            Debug.Log("Distance between player and next checkpoint: "+ dist);
             return dist;
         }
-        return null;
+        else
+        {
+            return -1;
+        }
     }
 }

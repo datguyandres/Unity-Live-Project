@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     public string[,] NpcLoseLines = new string[2, 1] { //multi-dimensional array containing all player dialogue
             {"Player + npc1 Lose line" },
             {"player + npc2 Lose line" }
-        };   
+        };
 
     private void Awake()
     {
@@ -80,8 +80,18 @@ public class GameManager : MonoBehaviour
         TimerText.text = "Time Left: " + TimeLeft.ToString();
 
         ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
+
+        if (TimeLeft <= 0)
+        {
+            EndGame();
+        }
         //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
 
+    }
+
+    private void EndGame()
+    {
+        Application.Quit(); // for placeholder sake while we figure out how we want the timer ending to play out.
     }
 
 }
