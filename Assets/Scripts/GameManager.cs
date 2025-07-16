@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
         TimerText.text = "Time Left: " + TimeLeft.ToString();
 
-        ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
+        //ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
         //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
 
     }
