@@ -6,6 +6,9 @@ public class VerticalMovement : MonoBehaviour
     public int DistanceRange;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float Yvalue;
+
+    [Range(0.1f, 2.0f)]
+    public float speed = 1.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +18,8 @@ public class VerticalMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(this.transform.position.x, Yvalue + Mathf.PingPong(Time.time, DistanceRange), this.transform.position.z);
+        float SecondsForLoop = DistanceRange / speed;
+        this.transform.position = new Vector3(this.transform.position.x, Yvalue + Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), this.transform.position.z);
         
     }
 }
