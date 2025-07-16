@@ -11,6 +11,9 @@ public class Diagonal_Movement : MonoBehaviour
 
     public bool InvertHorizontally = false;
     public bool InvertVertically = false;
+
+    [Range(0.1f, 2.0f)]
+    public float speed = 1.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,21 +24,24 @@ public class Diagonal_Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        float SecondsForLoop = DistanceRange / speed;
+
         if (!InvertHorizontally && !InvertVertically)
         {
-            this.transform.position = new Vector3(Xvalue + Mathf.PingPong(Time.time, DistanceRange), Yvalue + Mathf.PingPong(Time.time, DistanceRange), this.transform.position.z);
+            this.transform.position = new Vector3(Xvalue + Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), Yvalue + Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), this.transform.position.z);
         }
         else if (InvertHorizontally && !InvertVertically)
         {
-            this.transform.position = new Vector3(Xvalue - Mathf.PingPong(Time.time, DistanceRange), Yvalue + Mathf.PingPong(Time.time, DistanceRange), this.transform.position.z);
+            this.transform.position = new Vector3(Xvalue - Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), Yvalue + Mathf.PingPong(Time.time * SecondsForLoop , DistanceRange), this.transform.position.z);
         }
         else if (!InvertHorizontally && InvertVertically)
         {
-            this.transform.position = new Vector3(Xvalue + Mathf.PingPong(Time.time, DistanceRange), Yvalue - Mathf.PingPong(Time.time, DistanceRange), this.transform.position.z);
+            this.transform.position = new Vector3(Xvalue + Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), Yvalue - Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), this.transform.position.z);
         }
         else if (InvertHorizontally && InvertVertically)
         {
-            this.transform.position = new Vector3(Xvalue - Mathf.PingPong(Time.time, DistanceRange), Yvalue - Mathf.PingPong(Time.time, DistanceRange), this.transform.position.z);
+            this.transform.position = new Vector3(Xvalue - Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), Yvalue - Mathf.PingPong(Time.time * SecondsForLoop, DistanceRange), this.transform.position.z);
         }
 
     }
