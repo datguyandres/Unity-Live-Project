@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         Timer += Time.deltaTime;
 
-        TimeLeft = 300.0f - Mathf.FloorToInt(Timer);
+        TimeLeft = startTime - Mathf.FloorToInt(Timer);
 
         TimerText.text = "Time Left: " + TimeLeft.ToString();
 
