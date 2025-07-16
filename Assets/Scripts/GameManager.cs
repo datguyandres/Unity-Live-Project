@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public int DifficultyLevel = 1;
 
+    [SerializeField] private float startTime = 100f;
     public float Timer = 0.0f;
     public float TimeLeft;
 
