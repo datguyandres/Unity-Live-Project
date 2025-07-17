@@ -14,7 +14,7 @@ public class LevelStart : MonoBehaviour
             Debug.Log("should play animation here");
             bool OpenBounce = animator.GetBool("DoBounceIN");
 
-            animator.SetBool("DoBounceIN", true);
+            //animator.SetBool("DoBounceIN", true);
             //animator.SetBool("DoBounceIN", false);
         }
         

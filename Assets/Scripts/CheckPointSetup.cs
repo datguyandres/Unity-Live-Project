@@ -57,7 +57,7 @@ public class CheckPointSetup : MonoBehaviour
     void SetCheckPointActive()//turn on a specific checkpoint
     {
 
-        if (LiveCheckpoint < TotalChildren)
+        if (LiveCheckpoint + 1 < TotalChildren)
         {
             CheckPointArray[LiveCheckpoint].gameObject.SetActive(true);
             CurrentCP = CheckPointArray[LiveCheckpoint].gameObject;
