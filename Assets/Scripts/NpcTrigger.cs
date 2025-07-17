@@ -6,6 +6,12 @@ using System.Collections;
 public class NpcTrigger : MonoBehaviour
 {
 
+    private KeyCode interactKey = KeyCode.Space;
+
+    [SerializeField] private string name;
+
+    public string Name {get => name; private set => name = value;}
+
     public bool IsHighlighted;
 
     public int NpcNumber; // ASSIGN THIS ON EDITOR SO EACH NPC IS A DIFFERENT NUMBER, start with 0 please
@@ -37,12 +43,12 @@ public class NpcTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && IsHighlighted && !GameManager.Instance.InLevel)
+        if ((Input.GetKeyDown(interactKey) || Input.GetMouseButtonDown(0)) && IsHighlighted && !GameManager.Instance.InLevel)
         {
             NpcInteraction();
         }
 
-        if (Input.GetMouseButtonDown(0) && InDialogue)
+        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(interactKey) ) && InDialogue)
         {
             if (textComponent.text == CurrentText)
             {

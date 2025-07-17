@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public int DifficultyLevel = 1;
 
+    [SerializeField] private float startTime = 100f;
     public float Timer = 0.0f;
     public float TimeLeft;
 
@@ -75,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         Timer += Time.deltaTime;
 
-        TimeLeft = 300.0f - Mathf.FloorToInt(Timer);
+        TimeLeft = startTime - Mathf.FloorToInt(Timer);
 
         TimerText.text = "Time Left: " + TimeLeft.ToString();
 
