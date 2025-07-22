@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    /// <summary>
+    /// The current level
+    /// </summary>
     public int DifficultyLevel = 1;
 
     [SerializeField] private float startTime = 100f;
@@ -18,6 +22,12 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI ScoreText;
+
+    public bool Paused { get; private set; }
+    private KeyCode pauseKey = KeyCode.Escape;
+
+
+    //below variables aren't actually used in this script, im guessing they're here for convenience?
 
     public Vector3 PlayerLastLocation;
 
@@ -30,6 +40,8 @@ public class GameManager : MonoBehaviour
     public bool PlayerWon = false;
 
     public bool PlayerLost = false;
+
+    [SerializeField] private string endScreen = "EndScreen";
 
     // public string[] Npc1;
     //public string[] Npc2;
@@ -57,7 +69,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
 
-
         //NpcLines = new string[2, 2] {
 
 
@@ -69,30 +80,47 @@ public class GameManager : MonoBehaviour
         Instance = this; // makes it so that our class can be called anywhere without a reference
         DontDestroyOnLoad(gameObject); // prevents it from being destroyed on scene change
 
-
     }
+
 
     private void FixedUpdate()
     {
-        Timer += Time.deltaTime;
-
-        TimeLeft = startTime - Mathf.FloorToInt(Timer);
-
-        TimerText.text = "Time Left: " + TimeLeft.ToString();
-
-        ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
-
-        if (TimeLeft <= 0)
+        if(Input.GetKeyDown(pauseKey))
         {
-            EndGame();
+            //TODO: Make the pausing work for more than just the timer. have it show pause screen, have it stop player movement.
+            Paused = !Paused;
         }
-        //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
+
+        if (!Paused)
+        {
+            Timer += Time.deltaTime;
+
+            TimeLeft = startTime - Mathf.FloorToInt(Timer);
+
+
+        TimerText.text = TimeLeft.ToString();
+
+            ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
+
+            if (TimeLeft <= 0)
+            {
+                EndGame();
+            }
+            //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
+        } else
+        {
+
+        }
 
     }
 
+    /// <summary>
+    /// Go to the end screen (endScreen is a field)
+    /// </summary>
     private void EndGame()
     {
-        Application.Quit(); // for placeholder sake while we figure out how we want the timer ending to play out.
+        SceneManager.LoadScene(endScreen);
+        Destroy(this.gameObject);
     }
 
 }
