@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     public bool PlayerWon = false;
 
     public bool PlayerLost = false;
+
+    [SerializeField] private string endScreen = "EndScreen";
 
     // public string[] Npc1;
     //public string[] Npc2;
@@ -92,7 +95,7 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
-        Application.Quit(); // for placeholder sake while we figure out how we want the timer ending to play out.
+        SceneManager.LoadScene(endScreen);
     }
 
 }
