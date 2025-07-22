@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float HorizontalSpeed = 1.0f;
 
     public GameObject CheckpointHandler;
+    public GameObject Camera;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
+        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime); //Player object shifting to the right
     }
 
     void Update()
@@ -50,8 +51,22 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.tag == "CheckPoint")
         {
-            Debug.Log("HIT");
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
+            GameManager.Instance.PlayerScore += 10;
+        }
+
+        else if (other.gameObject.tag == "Obstacle")
+        {
+            GameManager.Instance.PlayerScore -= 10;
+            Camera.GetComponent<CameraShake>().shake = 0.3f;
+            Destroy(other.gameObject);
+        }
+
+        else if (other.gameObject.tag == "FinishLine")
+        {
+            GameManager.Instance.PlayerWon = true;
+            GameManager.Instance.DifficultyLevel++;
+            SceneManager.LoadScene("TOPDOWNTEST");
         }
     }
 }

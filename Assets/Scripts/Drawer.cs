@@ -21,7 +21,7 @@ public class Drawer : MonoBehaviour
         previousPosition = transform.position;
         line.startWidth = line.endWidth = width;
     }
-    void Update()
+    void Update() //making points for our line renderer
     {
 
         //if (Input.GetMouseButton(0))
