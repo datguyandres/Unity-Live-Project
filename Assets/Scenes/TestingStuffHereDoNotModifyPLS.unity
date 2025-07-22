@@ -194,7 +194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1928929326364710497, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.245388
+      value: -6.245388
       objectReference: {fileID: 0}
     - target: {fileID: 1928929326364710497, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
       propertyPath: m_LocalPosition.y
@@ -538,6 +538,83 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866ec10259993544180b9ba1dbb40f12, type: 3}
+--- !u!1001 &1111105634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4249360475098084320, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_Name
+      value: Static Phone Obstacle w UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4249360475098084320, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37506878
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.37960157
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.424975
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6969836
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365549908566794992, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486469168928212239, guid: b3b98139115a0074bae160030c725507, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7486469168928212239, guid: b3b98139115a0074bae160030c725507, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4249360475098084320, guid: b3b98139115a0074bae160030c725507, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1916690525}
+  m_SourcePrefab: {fileID: 100100000, guid: b3b98139115a0074bae160030c725507, type: 3}
 --- !u!1 &1138603347
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +844,32 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1916690520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4249360475098084320, guid: b3b98139115a0074bae160030c725507, type: 3}
+  m_PrefabInstance: {fileID: 1111105634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1916690525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916690520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 7.06, z: 1.94}
+  m_Center: {x: -0.14, y: 0, z: 0}
 --- !u!1001 &3033224546392143152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -837,3 +940,4 @@ SceneRoots:
   - {fileID: 161206104}
   - {fileID: 3033224546392143152}
   - {fileID: 35323193}
+  - {fileID: 1111105634}

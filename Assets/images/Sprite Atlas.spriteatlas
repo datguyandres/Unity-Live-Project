@@ -56,7 +56,9 @@ SpriteAtlas:
     - 67aa0dd08365a9e439fd04a918fcfcc5: -1249106833
     - 67aa0dd08365a9e439fd04a918fcfcc5: -742907575
     - 67aa0dd08365a9e439fd04a918fcfcc5: -909292053
+    - ccee60c222910d64ba0ece00af3fab3d: 21300000
     - 39be6313ca0cdb249a8280d4d941c412: 21300000
+    - 613f5223a3f2f4f4ea3bf5dd24d12de1: 21300000
     - 3ac6b5d3df014d14588fa8346a47e180: -63139059
     - 3ac6b5d3df014d14588fa8346a47e180: 971002785
     - 3ac6b5d3df014d14588fa8346a47e180: 1726789124
@@ -192,6 +194,7 @@ SpriteAtlas:
     - cfcda1d6f90a49f4883951822a59ebe9: 1874512959
     - cfcda1d6f90a49f4883951822a59ebe9: -583412519
     - cfcda1d6f90a49f4883951822a59ebe9: 1708444256
+    - b981e61a09f57c64fbb3632896b875c6: 21300000
     - 416ac23a95b22f742b569230a4c86e83: 427213850
     - 416ac23a95b22f742b569230a4c86e83: -829316967
     - 416ac23a95b22f742b569230a4c86e83: -1577998456
@@ -277,6 +280,7 @@ SpriteAtlas:
     - 858eb87fc5fea8b479ab3b33ed37ba54: 1463488532
     - 858eb87fc5fea8b479ab3b33ed37ba54: 1421910454
     - 8777b9cffdf9c3743966fc14215ebd62: 21300000
+    - 003c5def09b089343ac391d843cb2d91: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: -236706358, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
@@ -298,7 +302,9 @@ SpriteAtlas:
   - {fileID: -1249106833, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
   - {fileID: -742907575, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
   - {fileID: -909292053, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
+  - {fileID: 21300000, guid: ccee60c222910d64ba0ece00af3fab3d, type: 3}
   - {fileID: 21300000, guid: 39be6313ca0cdb249a8280d4d941c412, type: 3}
+  - {fileID: 21300000, guid: 613f5223a3f2f4f4ea3bf5dd24d12de1, type: 3}
   - {fileID: -63139059, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 971002785, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1726789124, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
@@ -434,6 +440,7 @@ SpriteAtlas:
   - {fileID: 1874512959, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
   - {fileID: -583412519, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
   - {fileID: 1708444256, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
+  - {fileID: 21300000, guid: b981e61a09f57c64fbb3632896b875c6, type: 3}
   - {fileID: 427213850, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: -829316967, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: -1577998456, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
@@ -519,6 +526,7 @@ SpriteAtlas:
   - {fileID: 1463488532, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
   - {fileID: 1421910454, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
   - {fileID: 21300000, guid: 8777b9cffdf9c3743966fc14215ebd62, type: 3}
+  - {fileID: 21300000, guid: 003c5def09b089343ac391d843cb2d91, type: 3}
   m_PackedSpriteNamesToIndex:
   - Lineless_Tilechopped_9
   - Lineless_Tilechopped_8
@@ -539,7 +547,9 @@ SpriteAtlas:
   - Lineless_Tilechopped_15
   - Lineless_Tilechopped_16
   - Lineless_Tilechopped_17
+  - credits button
   - IMG_0511.png
+  - timer thing no text
   - Shaking phone_24
   - Shaking phone_23
   - Shaking phone_22
@@ -675,6 +685,7 @@ SpriteAtlas:
   - Static phone_30
   - Static phone_33
   - Static phone_32
+  - quit button
   - Green_Hallway_6
   - Green_Hallway_7
   - Green_Hallway_4
@@ -760,6 +771,7 @@ SpriteAtlas:
   - Lineless_Tilemap_2
   - Lineless_Tilemap_3
   - le hand
+  - start button
   m_RenderDataMap: {}
   m_Tag: Sprite Atlas
   m_IsVariant: 0

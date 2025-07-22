@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5392101925659198876}
   m_Layer: 0
   m_Name: Diagonal Movement
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceRange: 1
+  Xvalue: 0
+  Yvalue: 0
+  InvertHorizontally: 0
+  InvertVertically: 0
+  speed: 1

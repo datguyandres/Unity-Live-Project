@@ -97,7 +97,8 @@ public class GameManager : MonoBehaviour
 
             TimeLeft = startTime - Mathf.FloorToInt(Timer);
 
-            TimerText.text = "Time Left: " + TimeLeft.ToString();
+
+        TimerText.text = TimeLeft.ToString();
 
             ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
 
