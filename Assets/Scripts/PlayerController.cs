@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject CheckpointHandler;
     public GameObject Camera;
+
+    public GameObject LevelHandler;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -66,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;
+            LevelHandler.GetComponent<CloseOut>().EndLevel();
             SceneManager.LoadScene("TOPDOWNTEST");
         }
     }
