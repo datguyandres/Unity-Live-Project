@@ -9,6 +9,7 @@ TagManager:
   - npcChecker
   - Obstacle
   - FinishLine
+  - GameManager
   layers:
   - Default
   - TransparentFX
