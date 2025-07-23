@@ -2382,6 +2382,7 @@ MonoBehaviour:
   PlayerCanMove: 1
   PlayerWon: 0
   PlayerLost: 0
+  endScreen: EndScreen
 --- !u!1 &1185498392
 GameObject:
   m_ObjectHideFlags: 0
