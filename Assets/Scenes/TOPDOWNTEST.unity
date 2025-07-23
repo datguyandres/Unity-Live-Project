@@ -4191,7 +4191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VerticalSpeed: 1
   HorizontalSpeed: 1
-  speed: 1
+  speed: 2
 --- !u!212 &2129090557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4358,6 +4358,10 @@ PrefabInstance:
     - target: {fileID: 335460028771642961, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
+      propertyPath: name
+      value: Maelle
       objectReference: {fileID: 0}
     - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: textSpeed
