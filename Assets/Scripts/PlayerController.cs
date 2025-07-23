@@ -59,8 +59,11 @@ public class PlayerController : MonoBehaviour
 
         else if (other.gameObject.tag == "Obstacle")
         {
-            
-            
+
+            //considering this mechanic if we want the game to be harder - rafa
+            //LevelHandler.GetComponent<InLevelManager>().checkpointsHit -= 1;
+
+
             Camera.GetComponent<CameraShake>().shake = 0.3f;
             Destroy(other.gameObject);
         }

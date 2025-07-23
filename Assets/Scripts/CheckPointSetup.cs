@@ -45,19 +45,19 @@ public class CheckPointSetup : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         if (Player != null && CurrentCP != null)
         {
             float distance = DistanceBetweenPlayerAndCheckpoint(); //distance of point from player
-            //Debug.Log("Distance between " + CurrentCP.name + " and " + Player.name + ": " + distance);
+            Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
 
             //if player half the distance to the next point delete the current one and spawn the next one without awarding points
             float DistBtwnPnts = DistanceBetweenCheckPoints();
+            Debug.Log("Distance between " + CurrentCP.name + " and " + CheckPointArray[LiveCheckpoint + 1].name + ": " + DistBtwnPnts);
 
-
-            if (distance < DistBtwnPnts/2);
+            if (distance < DistBtwnPnts/2)
             {
                 //inLevelManager.LevelScore -= 1;
                 SetNextCheckpoint();
@@ -91,7 +91,7 @@ public class CheckPointSetup : MonoBehaviour
     /// </summary>
     public void OnCheckpointHit() 
     {
-        inLevelManager.LevelScore += 1;
+        inLevelManager.checkpointsHit += 1;
         SetNextCheckpoint();
     }
 
@@ -123,10 +123,10 @@ public class CheckPointSetup : MonoBehaviour
     {
         if ((LiveCheckpoint + 1) < TotalChildren)
         {
-            float dist = Math.Abs(Player.transform.position.x - CheckPointArray[LiveCheckpoint + 1].transform.position.x);
+            float dist = -CheckPointArray[LiveCheckpoint + 1].transform.position.x -  Player.transform.position.x;
 
 
-            Debug.Log("Distance between player and next checkpoint: "+ dist);
+            //Debug.Log("Distance between player and next checkpoint: "+ dist);
             return dist;
         }
         else

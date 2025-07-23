@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 public class InLevelManager : MonoBehaviour
 {
 
-    public int LevelScore { get; set; }
+    /// <summary>
+    /// the current number of checkpoints the player has hit
+    /// </summary>
+    public int checkpointsHit;
 
-    public int ReqScore { get; set; }
+    /// <summary>
+    /// the number of checkpoints the player needs to win the level
+    /// </summary>
+    public int checkpointsRequired;
 
     private void Start()
     {
@@ -25,7 +31,7 @@ public class InLevelManager : MonoBehaviour
     /// </summary>
     public void EndLevel()
     {
-        if (LevelScore > ReqScore)
+        if (checkpointsHit >= checkpointsRequired)
         {
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;

@@ -71,7 +71,6 @@ GameObject:
   - component: {fileID: 6277017722287641793}
   - component: {fileID: 7004167365712452370}
   - component: {fileID: 3465105715133330134}
-  - component: {fileID: 294664243133981706}
   m_Layer: 0
   m_Name: LevelHandler
   m_TagString: Untagged
@@ -120,18 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fca85d9b31ee6f4eaa045a2eda408ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &294664243133981706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7584391040035905672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e467c59d3b0845841a9ffe09b5530d9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  checkpointsHit: 0
+  checkpointsRequired: 5
 --- !u!1001 &300127590772217258
 PrefabInstance:
   m_ObjectHideFlags: 0
