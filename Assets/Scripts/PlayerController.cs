@@ -54,12 +54,16 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "CheckPoint")
         {
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
-            GameManager.Instance.PlayerScore += 10;
+            //GameManager.Instance.PlayerScore += 10;
         }
 
         else if (other.gameObject.tag == "Obstacle")
         {
-            GameManager.Instance.PlayerScore -= 10;
+
+            //considering this mechanic if we want the game to be harder - rafa
+            //LevelHandler.GetComponent<InLevelManager>().checkpointsHit -= 1;
+
+
             Camera.GetComponent<CameraShake>().shake = 0.3f;
             Destroy(other.gameObject);
         }
@@ -68,8 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;
-            LevelHandler.GetComponent<CloseOut>().EndLevel();
-            SceneManager.LoadScene("TOPDOWNTEST");
+            LevelHandler.GetComponent<InLevelManager>().EndLevel();
         }
     }
 }
