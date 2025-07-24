@@ -123,7 +123,7 @@ public class CheckPointSetup : MonoBehaviour
     {
         if ((LiveCheckpoint + 1) < TotalChildren)
         {
-            float dist = -CheckPointArray[LiveCheckpoint + 1].transform.position.x -  Player.transform.position.x;
+            float dist = CheckPointArray[LiveCheckpoint + 1].transform.position.x -  Player.transform.position.x;
 
 
             //Debug.Log("Distance between player and next checkpoint: "+ dist);
