@@ -789,6 +789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7004167365712452370, guid: 94056f72e8dcc6246a88cd0b6e5a783f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7584391040035905672, guid: 94056f72e8dcc6246a88cd0b6e5a783f, type: 3}
       propertyPath: m_Name
       value: LevelHandler

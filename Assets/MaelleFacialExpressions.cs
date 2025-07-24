@@ -18,11 +18,11 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameManager.Instance.PlayerScore < 0)
-        {
+       // if (GameManager.Instance.PlayerScore < 0)
+        //{
             Transform GetCurrentChild = transform.GetChild(4);
             CurrentMaelle = GetCurrentChild.gameObject;
-        }
+       // }
     }
 
     void BadScore()
