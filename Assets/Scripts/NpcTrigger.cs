@@ -183,7 +183,7 @@ public class NpcTrigger : MonoBehaviour
 
     void NextLine()
     {
-        if (index < 1)
+        if (index < GameManager.Instance.NpcLines.GetLength(1)-1)
         {
             index++;
             textComponent.text = string.Empty;
