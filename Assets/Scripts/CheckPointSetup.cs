@@ -16,7 +16,7 @@ public class CheckPointSetup : MonoBehaviour
 
     public int TotalChildren;
 
-    [SerializeField] private InLevelManager inLevelManager;
+    [SerializeField] public InLevelManager inLevelManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //List<GameObject> CheckPointList;
@@ -92,6 +92,7 @@ public class CheckPointSetup : MonoBehaviour
     public void OnCheckpointHit() 
     {
         inLevelManager.checkpointsHit += 1;
+        Debug.Log("checkpoints hit: " + inLevelManager.checkpointsHit);
         SetNextCheckpoint();
     }
 

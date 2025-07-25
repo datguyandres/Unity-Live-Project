@@ -31,6 +31,7 @@ public class InLevelManager : MonoBehaviour
     /// </summary>
     public void EndLevel()
     {
+        Debug.Log("checkpoints hit" + checkpointsHit);
         if (checkpointsHit >= checkpointsRequired)
         {
             GameManager.Instance.PlayerWon = true;

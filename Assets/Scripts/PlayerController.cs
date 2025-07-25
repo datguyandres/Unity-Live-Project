@@ -70,8 +70,8 @@ public class PlayerController : MonoBehaviour
 
         else if (other.gameObject.tag == "FinishLine")
         {
-            GameManager.Instance.PlayerWon = true;
-            GameManager.Instance.DifficultyLevel++;
+            //GameManager.Instance.PlayerWon = true;
+            //GameManager.Instance.DifficultyLevel++;
             LevelHandler.GetComponent<InLevelManager>().EndLevel();
         }
     }
