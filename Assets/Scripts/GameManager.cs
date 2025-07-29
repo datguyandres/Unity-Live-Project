@@ -44,12 +44,12 @@ public class GameManager : MonoBehaviour
     // public string[] Npc1;
     //public string[] Npc2;
 
-    public string[,] NpcLines = new string[2, 2] {  //multi-dimensional array containing all npc lines
-            {"npc1 line1", "npc1 line2"},
-            {"npc2 line1", "npc2 line2"}
+    public string[,] NpcLines = new string[2, 4] {  //multi-dimensional array containing all npc lines
+            {"Amica, aren’t you excited for this lab?", "Oh, don’t worry, I'll help you through it!", "Follow my lead, and I'm sure you'll have fun!", "ur momma"},
+            {"npc2 line1", "npc2 line2", "npc2 line3", "npc2 line4"}
         };
     public string[,] PlayerLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
-            {"Player + npc1 line1", "player + npc1 line2"},
+            {"Uh, I actually didn’t hear all of the instructions ’cause I was late.", "player + npc1 line2"},
             {"player + npc2 line1", "player + npc2 line2"}
         };
 
