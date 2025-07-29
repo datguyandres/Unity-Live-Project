@@ -143,6 +143,7 @@ SpriteAtlas:
     - 33f541542bf6a1b4f948067ad7754bff: 1395191516
     - 33f541542bf6a1b4f948067ad7754bff: -978121579
     - 33f541542bf6a1b4f948067ad7754bff: 1158873070
+    - 489ef186a573c794f8b7190b5f207c69: 1674952499
     - 97e733c62dc5366488e0c578480d6ac9: 21300000
     - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
     - 33f541542bf6a1b4f948067ad7754bff: 320598789
@@ -219,6 +220,7 @@ SpriteAtlas:
     - cfcda1d6f90a49f4883951822a59ebe9: 1708444256
     - ebfcc4d78380b1c4f917f86d26572b71: 21300000
     - b981e61a09f57c64fbb3632896b875c6: 21300000
+    - 416ac23a95b22f742b569230a4c86e83: 1580833051
     - 416ac23a95b22f742b569230a4c86e83: 427213850
     - 416ac23a95b22f742b569230a4c86e83: -829316967
     - 416ac23a95b22f742b569230a4c86e83: -1577998456
@@ -237,6 +239,7 @@ SpriteAtlas:
     - 416ac23a95b22f742b569230a4c86e83: 1265723872
     - 416ac23a95b22f742b569230a4c86e83: 752938936
     - 416ac23a95b22f742b569230a4c86e83: 1582069333
+    - 416ac23a95b22f742b569230a4c86e83: -855140624
     - 416ac23a95b22f742b569230a4c86e83: 1347813400
     - 577ed63a21ee30e49aba2020d3eb8011: -1385215369
     - 577ed63a21ee30e49aba2020d3eb8011: 624594822
@@ -413,6 +416,7 @@ SpriteAtlas:
   - {fileID: 1395191516, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: -978121579, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 1158873070, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
+  - {fileID: 1674952499, guid: 489ef186a573c794f8b7190b5f207c69, type: 3}
   - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
   - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
   - {fileID: 320598789, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
@@ -489,6 +493,7 @@ SpriteAtlas:
   - {fileID: 1708444256, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
   - {fileID: 21300000, guid: ebfcc4d78380b1c4f917f86d26572b71, type: 2}
   - {fileID: 21300000, guid: b981e61a09f57c64fbb3632896b875c6, type: 3}
+  - {fileID: 1580833051, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 427213850, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: -829316967, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: -1577998456, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
@@ -507,6 +512,7 @@ SpriteAtlas:
   - {fileID: 1265723872, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 752938936, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 1582069333, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
+  - {fileID: -855140624, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 1347813400, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: -1385215369, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
   - {fileID: 624594822, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
@@ -682,6 +688,7 @@ SpriteAtlas:
   - amica_spritesheet_6
   - amica_spritesheet_7
   - amica_spritesheet_4
+  - noah_sprite_sheet_0
   - timer no text
   - amica_spritesheet_5
   - amica_spritesheet_5
@@ -758,6 +765,7 @@ SpriteAtlas:
   - Static phone_32
   - amica_spritesheet_1 1
   - quit button
+  - Green_Hallway_21
   - Green_Hallway_6
   - Green_Hallway_7
   - Green_Hallway_4
@@ -776,6 +784,7 @@ SpriteAtlas:
   - Green_Hallway_10
   - Green_Hallway_13
   - Green_Hallway_12
+  - Green_Hallway_19
   - Green_Hallway_18
   - Green_Classroom_10
   - Green_Classroom_11
