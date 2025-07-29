@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene("TOPDOWNTEST");
-           
+
         }
 
 
@@ -73,6 +73,14 @@ public class PlayerController : MonoBehaviour
             //GameManager.Instance.PlayerWon = true;
             //GameManager.Instance.DifficultyLevel++;
             LevelHandler.GetComponent<InLevelManager>().EndLevel();
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("Hit Phone");
         }
     }
 }
