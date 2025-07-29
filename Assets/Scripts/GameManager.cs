@@ -46,23 +46,23 @@ public class GameManager : MonoBehaviour
     // public string[] Npc1;
     //public string[] Npc2;
 
-    public string[,] NpcLines = new string[2, 4] {  //multi-dimensional array containing all npc lines
-            {"Amica, aren’t you excited for this lab?", "Oh, don’t worry, I'll help you through it!", "Follow my lead, and I'm sure you'll have fun!", "ur momma"},
-            {"npc2 line1", "npc2 line2", "npc2 line3", "npc2 line4"}
+    public string[,] NpcLines = new string[2, 5] {  //multi-dimensional array containing all npc lines
+            {"Amica, aren’t you excited for this lab?", "Uh, I actually didn’t hear all of the instructions ’cause I was late.", "Oh, don’t worry, I'll help you through it!", "Follow my lead, and I'm sure you'll have fun!", "ur momma"},
+            {"npc2 line1", "npc2 line2", "npc2 line3", "npc2 line4", "npc2 line 5"}
         };
     public string[,] PlayerLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
-            {"Uh, I actually didn’t hear all of the instructions ’cause I was late.", "player + npc1 line2"},
-            {"player + npc2 line1", "player + npc2 line2"}
+            {"*sigh*, A week into school and I still haven’t gotten used to how loud it is.", "Well, just gotta get to bio, should just be the near door to the right."},
+            {"Looks like there's only one open seat, in the back of the class.", "I do wonder who that is sitting there though, didn’t see him here last week."}
         };
 
-    public string[,] NpcWinLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
-            {"npc1 win line", "YOU WON YIPPEE" },
-            {"npc2 win line", "YOU WON YIPPEE" }
+    public string[,] NpcWinLines = new string[2, 5] { //multi-dimensional array containing all player dialogue
+            {"Hmmm, it looks like plants A and D have spikier leaves compared to B and C’s rounder ones.", "Plants C and D are the same oliveish color though, maybe that makes them a pair?", "Oh, I think those two were just left in the sun too long,they were probably originally green like the others.", "Ok, so we’re sticking with A&D as a pair and B&C as a pair, right?", "Yeah, I’ll go turn in the submission paper then, we’ll get our results tomorrow!" },
+            {"z", "YOU WON YIPPEE", "a", "b", "c"}
         };
 
 
     public string[,] NpcLoseLines = new string[2, 1] { //multi-dimensional array containing all player dialogue
-            {"Player + npc1 Lose line" },
+            {"Oh, that one didn't work, maybe give it another try." },
             {"player + npc2 Lose line" }
         };
 
