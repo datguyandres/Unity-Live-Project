@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
             {"player + npc2 Lose line" }
         };
 
+
+
     private void Awake()
     {
 
