@@ -62,50 +62,22 @@ SpriteAtlas:
     - ccee60c222910d64ba0ece00af3fab3d: 21300000
     - 39be6313ca0cdb249a8280d4d941c412: 21300000
     - 613f5223a3f2f4f4ea3bf5dd24d12de1: 21300000
-    - 3ac6b5d3df014d14588fa8346a47e180: -63139059
-    - 3ac6b5d3df014d14588fa8346a47e180: 971002785
-    - 3ac6b5d3df014d14588fa8346a47e180: 1726789124
-    - 3ac6b5d3df014d14588fa8346a47e180: 1585971170
-    - 3ac6b5d3df014d14588fa8346a47e180: 1139916747
-    - 3ac6b5d3df014d14588fa8346a47e180: -1546989874
-    - 3ac6b5d3df014d14588fa8346a47e180: 510357261
-    - 3ac6b5d3df014d14588fa8346a47e180: -463914252
     - 3ac6b5d3df014d14588fa8346a47e180: -708749747
-    - 3ac6b5d3df014d14588fa8346a47e180: -541675647
     - 3ac6b5d3df014d14588fa8346a47e180: 78336233
-    - 3ac6b5d3df014d14588fa8346a47e180: -470488023
     - 3ac6b5d3df014d14588fa8346a47e180: 753311582
-    - 3ac6b5d3df014d14588fa8346a47e180: -1922819224
-    - 3ac6b5d3df014d14588fa8346a47e180: 211158266
     - 3ac6b5d3df014d14588fa8346a47e180: 1591140691
-    - 3ac6b5d3df014d14588fa8346a47e180: -870746848
-    - 3ac6b5d3df014d14588fa8346a47e180: -2048567812
-    - 3ac6b5d3df014d14588fa8346a47e180: 904125865
     - 3ac6b5d3df014d14588fa8346a47e180: -167839472
-    - 3ac6b5d3df014d14588fa8346a47e180: 57823723
     - 3ac6b5d3df014d14588fa8346a47e180: 1372805095
-    - 3ac6b5d3df014d14588fa8346a47e180: -928162074
     - 3ac6b5d3df014d14588fa8346a47e180: 1861170684
     - 3ac6b5d3df014d14588fa8346a47e180: -1738699596
-    - 3ac6b5d3df014d14588fa8346a47e180: 893783466
     - 3ac6b5d3df014d14588fa8346a47e180: -473955614
     - 3ac6b5d3df014d14588fa8346a47e180: -1033083306
-    - 3ac6b5d3df014d14588fa8346a47e180: -88030094
     - 3ac6b5d3df014d14588fa8346a47e180: -1601847051
-    - 3ac6b5d3df014d14588fa8346a47e180: -611321093
     - 3ac6b5d3df014d14588fa8346a47e180: 1223394895
-    - 3ac6b5d3df014d14588fa8346a47e180: -1580373884
     - 3ac6b5d3df014d14588fa8346a47e180: 1981060850
-    - 3ac6b5d3df014d14588fa8346a47e180: -324838974
     - 3ac6b5d3df014d14588fa8346a47e180: 32244135
-    - 3ac6b5d3df014d14588fa8346a47e180: 1324418156
     - 3ac6b5d3df014d14588fa8346a47e180: -946772024
-    - 3ac6b5d3df014d14588fa8346a47e180: 2053339722
     - 3ac6b5d3df014d14588fa8346a47e180: -1822844027
-    - 3ac6b5d3df014d14588fa8346a47e180: 2026873475
-    - 3ac6b5d3df014d14588fa8346a47e180: 1921551156
-    - 3ac6b5d3df014d14588fa8346a47e180: 1765140730
-    - 3ac6b5d3df014d14588fa8346a47e180: 963739111
     - 3ac6b5d3df014d14588fa8346a47e180: -1529476397
     - 3ac6b5d3df014d14588fa8346a47e180: -1052662390
     - 3ac6b5d3df014d14588fa8346a47e180: -115314197
@@ -116,19 +88,6 @@ SpriteAtlas:
     - 3ac6b5d3df014d14588fa8346a47e180: 1307236957
     - 3ac6b5d3df014d14588fa8346a47e180: 202049789
     - 3ac6b5d3df014d14588fa8346a47e180: -1557906235
-    - 3ac6b5d3df014d14588fa8346a47e180: 1115362724
-    - 3ac6b5d3df014d14588fa8346a47e180: -848308850
-    - 3ac6b5d3df014d14588fa8346a47e180: -1591843829
-    - 3ac6b5d3df014d14588fa8346a47e180: -1542772000
-    - 3ac6b5d3df014d14588fa8346a47e180: -425342386
-    - 3ac6b5d3df014d14588fa8346a47e180: 1113310504
-    - 3ac6b5d3df014d14588fa8346a47e180: 1057700223
-    - 3ac6b5d3df014d14588fa8346a47e180: -625448536
-    - 3ac6b5d3df014d14588fa8346a47e180: 244847982
-    - 3ac6b5d3df014d14588fa8346a47e180: 501601000
-    - 3ac6b5d3df014d14588fa8346a47e180: 1318051217
-    - 3ac6b5d3df014d14588fa8346a47e180: -1749165900
-    - 3ac6b5d3df014d14588fa8346a47e180: -269233398
     - 33f541542bf6a1b4f948067ad7754bff: 615666972
     - 33f541542bf6a1b4f948067ad7754bff: -1916093902
     - 33f541542bf6a1b4f948067ad7754bff: -646654802
@@ -143,12 +102,54 @@ SpriteAtlas:
     - 33f541542bf6a1b4f948067ad7754bff: 1395191516
     - 33f541542bf6a1b4f948067ad7754bff: -978121579
     - 33f541542bf6a1b4f948067ad7754bff: 1158873070
-    - 97e733c62dc5366488e0c578480d6ac9: 21300000
-    - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
     - 33f541542bf6a1b4f948067ad7754bff: 320598789
     - 33f541542bf6a1b4f948067ad7754bff: 1008463557
     - 33f541542bf6a1b4f948067ad7754bff: 993204323
     - eed9b2233f1f60c4f8f824943fde68ae: 21300000
+    - 3ac6b5d3df014d14588fa8346a47e180: -63139059
+    - 3ac6b5d3df014d14588fa8346a47e180: 971002785
+    - 3ac6b5d3df014d14588fa8346a47e180: 1726789124
+    - 3ac6b5d3df014d14588fa8346a47e180: 1585971170
+    - 3ac6b5d3df014d14588fa8346a47e180: 1139916747
+    - 3ac6b5d3df014d14588fa8346a47e180: -1546989874
+    - 3ac6b5d3df014d14588fa8346a47e180: 510357261
+    - 3ac6b5d3df014d14588fa8346a47e180: -463914252
+    - 3ac6b5d3df014d14588fa8346a47e180: -541675647
+    - 3ac6b5d3df014d14588fa8346a47e180: -470488023
+    - 3ac6b5d3df014d14588fa8346a47e180: -1922819224
+    - 3ac6b5d3df014d14588fa8346a47e180: 211158266
+    - 3ac6b5d3df014d14588fa8346a47e180: -870746848
+    - 3ac6b5d3df014d14588fa8346a47e180: -2048567812
+    - 3ac6b5d3df014d14588fa8346a47e180: 904125865
+    - 3ac6b5d3df014d14588fa8346a47e180: 57823723
+    - 3ac6b5d3df014d14588fa8346a47e180: -928162074
+    - 3ac6b5d3df014d14588fa8346a47e180: 893783466
+    - 3ac6b5d3df014d14588fa8346a47e180: -88030094
+    - 3ac6b5d3df014d14588fa8346a47e180: -611321093
+    - 3ac6b5d3df014d14588fa8346a47e180: -1580373884
+    - 3ac6b5d3df014d14588fa8346a47e180: -324838974
+    - 3ac6b5d3df014d14588fa8346a47e180: 1324418156
+    - 3ac6b5d3df014d14588fa8346a47e180: 2053339722
+    - 3ac6b5d3df014d14588fa8346a47e180: 2026873475
+    - 3ac6b5d3df014d14588fa8346a47e180: 1921551156
+    - 3ac6b5d3df014d14588fa8346a47e180: 1765140730
+    - 3ac6b5d3df014d14588fa8346a47e180: 963739111
+    - 3ac6b5d3df014d14588fa8346a47e180: 1115362724
+    - 3ac6b5d3df014d14588fa8346a47e180: -848308850
+    - 3ac6b5d3df014d14588fa8346a47e180: -1591843829
+    - 3ac6b5d3df014d14588fa8346a47e180: -1542772000
+    - 3ac6b5d3df014d14588fa8346a47e180: -425342386
+    - 3ac6b5d3df014d14588fa8346a47e180: 1113310504
+    - 3ac6b5d3df014d14588fa8346a47e180: 1057700223
+    - 3ac6b5d3df014d14588fa8346a47e180: -625448536
+    - 3ac6b5d3df014d14588fa8346a47e180: 244847982
+    - 3ac6b5d3df014d14588fa8346a47e180: 501601000
+    - 3ac6b5d3df014d14588fa8346a47e180: 1318051217
+    - 3ac6b5d3df014d14588fa8346a47e180: -1749165900
+    - 3ac6b5d3df014d14588fa8346a47e180: -269233398
+    - 23162bf5e42056644b00c273d16464be: 21300000
+    - 97e733c62dc5366488e0c578480d6ac9: 21300000
+    - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
     - 1bc6033674519c24aa803713f63793cd: 21300000
     - cfcda1d6f90a49f4883951822a59ebe9: 933093863
     - cfcda1d6f90a49f4883951822a59ebe9: -1369651462
@@ -284,6 +285,12 @@ SpriteAtlas:
     - 577ed63a21ee30e49aba2020d3eb8011: -156563674
     - 577ed63a21ee30e49aba2020d3eb8011: -381753816
     - 577ed63a21ee30e49aba2020d3eb8011: 1257006003
+    - fdf103cc92884124d8589bbcddb0d8e8: 21300000
+    - c27e02ec063a6284bb8226a0450b36e0: 21300000
+    - 65657a4d6db047546868fa6faa203d38: 21300000
+    - dbc9e63e5c1c2b34596d135c393157d8: 21300000
+    - 97ff6f7e9db0637478a517d3ab1fc51c: 21300000
+    - bf8caa9ebd6cd124aa123a11f08e4b28: 21300000
     - d38add2f1f029fd4ea2000c91ec798be: 21300000
     - 858eb87fc5fea8b479ab3b33ed37ba54: -916222422
     - 858eb87fc5fea8b479ab3b33ed37ba54: 1332487751
@@ -332,50 +339,22 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ccee60c222910d64ba0ece00af3fab3d, type: 3}
   - {fileID: 21300000, guid: 39be6313ca0cdb249a8280d4d941c412, type: 3}
   - {fileID: 21300000, guid: 613f5223a3f2f4f4ea3bf5dd24d12de1, type: 3}
-  - {fileID: -63139059, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 971002785, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1726789124, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1585971170, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1139916747, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1546989874, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 510357261, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -463914252, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -708749747, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -541675647, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 78336233, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -470488023, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 753311582, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1922819224, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 211158266, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1591140691, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -870746848, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -2048567812, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 904125865, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -167839472, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 57823723, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1372805095, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -928162074, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1861170684, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1738699596, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 893783466, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -473955614, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1033083306, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -88030094, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1601847051, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -611321093, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1223394895, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1580373884, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 1981060850, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -324838974, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 32244135, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1324418156, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -946772024, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 2053339722, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1822844027, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 2026873475, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1921551156, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1765140730, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 963739111, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1529476397, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1052662390, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -115314197, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
@@ -386,19 +365,6 @@ SpriteAtlas:
   - {fileID: 1307236957, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 202049789, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -1557906235, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1115362724, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -848308850, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1591843829, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1542772000, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -425342386, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1113310504, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1057700223, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -625448536, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 244847982, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 501601000, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: 1318051217, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -1749165900, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
-  - {fileID: -269233398, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 615666972, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: -1916093902, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: -646654802, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
@@ -413,12 +379,54 @@ SpriteAtlas:
   - {fileID: 1395191516, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: -978121579, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 1158873070, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
-  - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
-  - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
   - {fileID: 320598789, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 1008463557, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 993204323, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 21300000, guid: eed9b2233f1f60c4f8f824943fde68ae, type: 2}
+  - {fileID: -63139059, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 971002785, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1726789124, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1585971170, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1139916747, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1546989874, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 510357261, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -463914252, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -541675647, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -470488023, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1922819224, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 211158266, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -870746848, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -2048567812, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 904125865, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 57823723, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -928162074, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 893783466, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -88030094, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -611321093, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1580373884, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -324838974, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1324418156, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 2053339722, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 2026873475, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1921551156, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1765140730, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 963739111, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1115362724, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -848308850, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1591843829, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1542772000, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -425342386, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1113310504, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1057700223, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -625448536, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 244847982, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 501601000, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 1318051217, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -1749165900, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: -269233398, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
+  - {fileID: 21300000, guid: 23162bf5e42056644b00c273d16464be, type: 3}
+  - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
+  - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
   - {fileID: 21300000, guid: 1bc6033674519c24aa803713f63793cd, type: 2}
   - {fileID: 933093863, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
   - {fileID: -1369651462, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
@@ -554,6 +562,12 @@ SpriteAtlas:
   - {fileID: -156563674, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
   - {fileID: -381753816, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
   - {fileID: 1257006003, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
+  - {fileID: 21300000, guid: fdf103cc92884124d8589bbcddb0d8e8, type: 3}
+  - {fileID: 21300000, guid: c27e02ec063a6284bb8226a0450b36e0, type: 3}
+  - {fileID: 21300000, guid: 65657a4d6db047546868fa6faa203d38, type: 3}
+  - {fileID: 21300000, guid: dbc9e63e5c1c2b34596d135c393157d8, type: 3}
+  - {fileID: 21300000, guid: 97ff6f7e9db0637478a517d3ab1fc51c, type: 3}
+  - {fileID: 21300000, guid: bf8caa9ebd6cd124aa123a11f08e4b28, type: 3}
   - {fileID: 21300000, guid: d38add2f1f029fd4ea2000c91ec798be, type: 3}
   - {fileID: -916222422, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
   - {fileID: 1332487751, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
@@ -600,51 +614,23 @@ SpriteAtlas:
   - maelle_sprite_sheet_1
   - credits button
   - IMG_0511.png
-  - timer thing no text
-  - Shaking phone_24
-  - Shaking phone_23
-  - Shaking phone_22
-  - Shaking phone_18
-  - Shaking phone_21
-  - Shaking phone_19
-  - Shaking phone_20
-  - Shaking phone_12
+  - old timer
   - Shaking phone_63
-  - Shaking phone_13
   - Shaking phone_62
-  - Shaking phone_10
   - Shaking phone_61
-  - Shaking phone_29
-  - Shaking phone_11
   - Shaking phone_60
-  - Shaking phone_28
-  - Shaking phone_16
-  - Shaking phone_17
   - Shaking phone_66
-  - Shaking phone_14
   - Shaking phone_65
-  - Shaking phone_15
   - Shaking phone_64
   - Shaking phone_41
-  - Shaking phone_40
   - Shaking phone_43
   - Shaking phone_42
-  - Shaking phone_34
   - Shaking phone_45
-  - Shaking phone_35
   - Shaking phone_44
-  - Shaking phone_36
   - Shaking phone_47
-  - Shaking phone_37
   - Shaking phone_46
-  - Shaking phone_30
   - Shaking phone_49
-  - Shaking phone_31
   - Shaking phone_48
-  - Shaking phone_32
-  - Shaking phone_33
-  - Shaking phone_38
-  - Shaking phone_39
   - Shaking phone_58
   - Shaking phone_59
   - Shaking phone_56
@@ -655,19 +641,6 @@ SpriteAtlas:
   - Shaking phone_53
   - Shaking phone_50
   - Shaking phone_51
-  - Shaking phone_9
-  - Shaking phone_8
-  - Shaking phone_7
-  - Shaking phone_6
-  - Shaking phone_5
-  - Shaking phone_4
-  - Shaking phone_3
-  - Shaking phone_2
-  - Shaking phone_1
-  - Shaking phone_0
-  - Shaking phone_27
-  - Shaking phone_26
-  - Shaking phone_25
   - amica_spritesheet_11
   - amica_spritesheet_10
   - amica_spritesheet_13
@@ -682,12 +655,54 @@ SpriteAtlas:
   - amica_spritesheet_6
   - amica_spritesheet_7
   - amica_spritesheet_4
-  - timer no text
-  - amica_spritesheet_5
   - amica_spritesheet_5
   - amica_spritesheet_8
   - amica_spritesheet_9
   - amica_spritesheet_5 1
+  - Shaking phone_24
+  - Shaking phone_23
+  - Shaking phone_22
+  - Shaking phone_18
+  - Shaking phone_21
+  - Shaking phone_19
+  - Shaking phone_20
+  - Shaking phone_12
+  - Shaking phone_13
+  - Shaking phone_10
+  - Shaking phone_29
+  - Shaking phone_11
+  - Shaking phone_28
+  - Shaking phone_16
+  - Shaking phone_17
+  - Shaking phone_14
+  - Shaking phone_15
+  - Shaking phone_40
+  - Shaking phone_34
+  - Shaking phone_35
+  - Shaking phone_36
+  - Shaking phone_37
+  - Shaking phone_30
+  - Shaking phone_31
+  - Shaking phone_32
+  - Shaking phone_33
+  - Shaking phone_38
+  - Shaking phone_39
+  - Shaking phone_9
+  - Shaking phone_8
+  - Shaking phone_7
+  - Shaking phone_6
+  - Shaking phone_5
+  - Shaking phone_4
+  - Shaking phone_3
+  - Shaking phone_2
+  - Shaking phone_1
+  - Shaking phone_0
+  - Shaking phone_27
+  - Shaking phone_26
+  - Shaking phone_25
+  - revised friend counter
+  - timer no text
+  - amica_spritesheet_5
   - amica_spritesheet_9 1
   - Static phone_8
   - Static phone_9
@@ -823,6 +838,12 @@ SpriteAtlas:
   - Green_Classroom_42
   - Green_Classroom_41
   - Green_Classroom_40
+  - start screen buttonless
+  - maelle dialogue
+  - timer no text
+  - amica dialogue
+  - maelle pawn update
+  - diego pawn update
   - score no text
   - Lineless_Tilemap_17
   - Lineless_Tilemap_16
