@@ -143,6 +143,7 @@ SpriteAtlas:
     - 33f541542bf6a1b4f948067ad7754bff: 1395191516
     - 33f541542bf6a1b4f948067ad7754bff: -978121579
     - 33f541542bf6a1b4f948067ad7754bff: 1158873070
+    - 489ef186a573c794f8b7190b5f207c69: 1674952499
     - 97e733c62dc5366488e0c578480d6ac9: 21300000
     - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
     - 33f541542bf6a1b4f948067ad7754bff: 320598789
@@ -415,6 +416,7 @@ SpriteAtlas:
   - {fileID: 1395191516, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: -978121579, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
   - {fileID: 1158873070, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
+  - {fileID: 1674952499, guid: 489ef186a573c794f8b7190b5f207c69, type: 3}
   - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
   - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
   - {fileID: 320598789, guid: 33f541542bf6a1b4f948067ad7754bff, type: 3}
@@ -686,6 +688,7 @@ SpriteAtlas:
   - amica_spritesheet_6
   - amica_spritesheet_7
   - amica_spritesheet_4
+  - noah_sprite_sheet_0
   - timer no text
   - amica_spritesheet_5
   - amica_spritesheet_5
