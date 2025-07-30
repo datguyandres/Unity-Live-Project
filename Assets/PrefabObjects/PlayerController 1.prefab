@@ -264,6 +264,8 @@ MonoBehaviour:
   VerticalSpeed: 2.01
   HorizontalSpeed: 0.75
   CheckpointHandler: {fileID: 0}
+  Camera: {fileID: 0}
+  LevelHandler: {fileID: 0}
 --- !u!54 &3550477038206030859
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,7 +319,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.2453885, y: -0.24385285, z: 0}
-  m_LocalScale: {x: 0.10833, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3499895651525203616}
