@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class MaelleFacialExpressions : MonoBehaviour
+
+// i know the naming is not very helpful but this is works on any npc just add this file to their parent in the canvas
 {
 
     public GameObject CurrentMaelle;
@@ -76,13 +78,19 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     public void ObstacleHit()
     {
-        GameObject PriorExpression = GetCurrentChild.gameObject;
+        PriorExpression = GetCurrentChild.gameObject;
         GetCurrentChild = transform.GetChild(1);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
         BadScoreBool = false;
+        Invoke("ResetAfterShake", 1f);
 
 
     }
+
+    private void ResetAfterShake()
+    {
+        PriorExpression.SetActive(true);
+    } 
 }

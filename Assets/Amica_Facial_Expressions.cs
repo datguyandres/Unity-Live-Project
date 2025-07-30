@@ -7,10 +7,14 @@ public class Amica_Facial_Expressions : MonoBehaviour
     public bool Distracted;
 
     public bool Lockedin;
+
+    GameObject PriorExpression;
+
+    Transform GetCurrentChild;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Transform GetCurrentChild = transform.GetChild(1);
+        GetCurrentChild = transform.GetChild(1);
         CurrentAmica = GetCurrentChild.gameObject;
         CurrentAmica.SetActive(true);
 
@@ -51,4 +55,21 @@ public class Amica_Facial_Expressions : MonoBehaviour
         Lockedin = false;
 
     }
+
+    void ObstacleHit()
+    {
+        PriorExpression = GetCurrentChild.gameObject;
+        GetCurrentChild = transform.GetChild(0);
+        CurrentAmica.SetActive(false);
+        CurrentAmica = GetCurrentChild.gameObject;
+        CurrentAmica.SetActive(true);
+        Distracted = false;
+        Invoke("ResetAfterShake", 1f);
+
+    }
+
+    private void ResetAfterShake()
+    {
+        PriorExpression.SetActive(true);
+    } 
 }
