@@ -81,9 +81,12 @@ public class CheckPointSetup : MonoBehaviour
 
     private void SetNextCheckpoint()
     {
-        CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
-        LiveCheckpoint++;
-        SetCheckPointActive();
+        if (LiveCheckpoint < CheckPointArray.Length)
+        {
+            CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
+            LiveCheckpoint++;
+            SetCheckPointActive();
+        }
     }
 
     /// <summary>
