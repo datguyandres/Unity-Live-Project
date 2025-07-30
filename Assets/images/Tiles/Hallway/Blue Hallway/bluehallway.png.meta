@@ -122,9 +122,9 @@ TextureImporter:
       name: bluehallway_1
       rect:
         serializedVersion: 2
-        x: 175
+        x: 176
         y: 334
-        width: 197
+        width: 194
         height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -144,10 +144,10 @@ TextureImporter:
       name: bluehallway_2
       rect:
         serializedVersion: 2
-        x: 376
-        y: 504
-        width: 219
-        height: 142
+        x: 378
+        y: 506
+        width: 216
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: bluehallway_3
       rect:
         serializedVersion: 2
-        x: 599
-        y: 504
-        width: 79
-        height: 142
+        x: 601
+        y: 506
+        width: 75
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,7 +455,7 @@ TextureImporter:
         x: 178
         y: 17
         width: 97
-        height: 311
+        height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -519,11 +519,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 335
+        y: 334
         width: 97
-        height: 311
+        height: 310
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
