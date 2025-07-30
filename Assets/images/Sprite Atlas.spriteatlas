@@ -148,6 +148,7 @@ SpriteAtlas:
     - 3ac6b5d3df014d14588fa8346a47e180: -1749165900
     - 3ac6b5d3df014d14588fa8346a47e180: -269233398
     - 0b20281562dae5c4183e313bb9a5349d: 21300000
+    - 23162bf5e42056644b00c273d16464be: 21300000
     - 489ef186a573c794f8b7190b5f207c69: 1674952499
     - 97e733c62dc5366488e0c578480d6ac9: 21300000
     - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
@@ -310,7 +311,13 @@ SpriteAtlas:
     - 577ed63a21ee30e49aba2020d3eb8011: -381753816
     - 577ed63a21ee30e49aba2020d3eb8011: 1257006003
     - 8bd90c2b3501e8a41873b9aa3a389a64: 21300000
+    - fdf103cc92884124d8589bbcddb0d8e8: 21300000
+    - c27e02ec063a6284bb8226a0450b36e0: 21300000
+    - 65657a4d6db047546868fa6faa203d38: 21300000
     - 5765ef9d2281c354285683de7500d31a: 21300000
+    - dbc9e63e5c1c2b34596d135c393157d8: 21300000
+    - 97ff6f7e9db0637478a517d3ab1fc51c: 21300000
+    - bf8caa9ebd6cd124aa123a11f08e4b28: 21300000
     - d38add2f1f029fd4ea2000c91ec798be: 21300000
     - 858eb87fc5fea8b479ab3b33ed37ba54: -916222422
     - 858eb87fc5fea8b479ab3b33ed37ba54: 1332487751
@@ -445,6 +452,7 @@ SpriteAtlas:
   - {fileID: -1749165900, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: -269233398, guid: 3ac6b5d3df014d14588fa8346a47e180, type: 3}
   - {fileID: 21300000, guid: 0b20281562dae5c4183e313bb9a5349d, type: 3}
+  - {fileID: 21300000, guid: 23162bf5e42056644b00c273d16464be, type: 3}
   - {fileID: 1674952499, guid: 489ef186a573c794f8b7190b5f207c69, type: 3}
   - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
   - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
@@ -607,7 +615,13 @@ SpriteAtlas:
   - {fileID: -381753816, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
   - {fileID: 1257006003, guid: 577ed63a21ee30e49aba2020d3eb8011, type: 3}
   - {fileID: 21300000, guid: 8bd90c2b3501e8a41873b9aa3a389a64, type: 2}
+  - {fileID: 21300000, guid: fdf103cc92884124d8589bbcddb0d8e8, type: 3}
+  - {fileID: 21300000, guid: c27e02ec063a6284bb8226a0450b36e0, type: 3}
+  - {fileID: 21300000, guid: 65657a4d6db047546868fa6faa203d38, type: 3}
   - {fileID: 21300000, guid: 5765ef9d2281c354285683de7500d31a, type: 3}
+  - {fileID: 21300000, guid: dbc9e63e5c1c2b34596d135c393157d8, type: 3}
+  - {fileID: 21300000, guid: 97ff6f7e9db0637478a517d3ab1fc51c, type: 3}
+  - {fileID: 21300000, guid: bf8caa9ebd6cd124aa123a11f08e4b28, type: 3}
   - {fileID: 21300000, guid: d38add2f1f029fd4ea2000c91ec798be, type: 3}
   - {fileID: -916222422, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
   - {fileID: 1332487751, guid: 858eb87fc5fea8b479ab3b33ed37ba54, type: 3}
@@ -654,7 +668,7 @@ SpriteAtlas:
   - maelle_sprite_sheet_1
   - credits button
   - IMG_0511.png
-  - timer thing no text
+  - old timer
   - amica_spritesheet_11
   - amica_spritesheet_10
   - amica_spritesheet_13
@@ -741,6 +755,7 @@ SpriteAtlas:
   - Shaking phone_26
   - Shaking phone_25
   - Green Classroom
+  - revised friend counter
   - noah_sprite_sheet_0
   - timer no text
   - amica_spritesheet_5
@@ -903,7 +918,13 @@ SpriteAtlas:
   - Green_Classroom_41
   - Green_Classroom_40
   - amica_spritesheet_1
+  - start screen buttonless
+  - maelle dialogue
+  - timer no text
   - Hallway_Yay
+  - amica dialogue
+  - maelle pawn update
+  - diego pawn update
   - score no text
   - Lineless_Tilemap_17
   - Lineless_Tilemap_16
