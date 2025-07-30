@@ -40,6 +40,6 @@ public class InLevelManager : MonoBehaviour
         {
             GameManager.Instance.PlayerLost = true;
         }
-            SceneManager.LoadScene("TOPDOWNTEST");
+            SceneManager.LoadScene(GameManager.Instance.playerLastScene);
     }
 }

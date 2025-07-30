@@ -195,6 +195,7 @@ public class NpcTrigger : MonoBehaviour
             textComponent.text = string.Empty;
             textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
+            GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
             GameManager.Instance.PlayerCanMove = true;
             if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
             {
