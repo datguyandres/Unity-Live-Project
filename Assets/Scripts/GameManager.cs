@@ -18,8 +18,6 @@ public class GameManager : MonoBehaviour
     public float Timer = 0.0f;
     public float TimeLeft;
 
-    public int PlayerScore;
-
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI ScoreText;
 
@@ -66,6 +64,8 @@ public class GameManager : MonoBehaviour
             {"player + npc2 Lose line" }
         };
 
+
+
     private void Awake()
     {
 
@@ -99,8 +99,6 @@ public class GameManager : MonoBehaviour
 
 
         TimerText.text = TimeLeft.ToString();
-
-            ScoreText.text = "Score: " + PlayerScore.ToString();// how much time is left out of 5 minutes
 
             if (TimeLeft <= 0)
             {
