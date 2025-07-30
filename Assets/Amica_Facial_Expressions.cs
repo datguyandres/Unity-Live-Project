@@ -56,9 +56,9 @@ public class Amica_Facial_Expressions : MonoBehaviour
 
     }
 
-    void ObstacleHit()
+    public void ObstacleHit()
     {
-        PriorExpression = GetCurrentChild.gameObject;
+        PriorExpression = CurrentAmica;
         GetCurrentChild = transform.GetChild(0);
         CurrentAmica.SetActive(false);
         CurrentAmica = GetCurrentChild.gameObject;
@@ -70,6 +70,9 @@ public class Amica_Facial_Expressions : MonoBehaviour
 
     private void ResetAfterShake()
     {
-        PriorExpression.SetActive(true);
-    } 
+        CurrentAmica.SetActive(false);
+        CurrentAmica = PriorExpression;
+        CurrentAmica.SetActive(true);
+    }
+
 }

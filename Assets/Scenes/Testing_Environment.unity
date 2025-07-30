@@ -702,6 +702,7 @@ MonoBehaviour:
   BadScoreBool: 0
   GoodScoreBool: 0
   OkayScoreBool: 0
+  inLevelManager: {fileID: 2683466945095914256}
 --- !u!1001 &653037268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1116,6 +1117,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1944563667}
+    - target: {fileID: 9190712282821726213, guid: 94056f72e8dcc6246a88cd0b6e5a783f, type: 3}
+      propertyPath: NpcOnScreen
+      value: 
+      objectReference: {fileID: 618596228}
     - target: {fileID: 9190712282821726213, guid: 94056f72e8dcc6246a88cd0b6e5a783f, type: 3}
       propertyPath: inLevelManager
       value: 

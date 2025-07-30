@@ -14,6 +14,8 @@ public class MaelleFacialExpressions : MonoBehaviour
     GameObject PriorExpression;
 
     Transform GetCurrentChild;
+
+    [SerializeField] public InLevelManager inLevelManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,7 +50,7 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     void BadScore()
     {
-        Transform GetCurrentChild = transform.GetChild(1);
+        GetCurrentChild = transform.GetChild(1);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
@@ -59,7 +61,7 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     void GoodScore()
     {
-        Transform GetCurrentChild = transform.GetChild(0);
+        GetCurrentChild = transform.GetChild(0);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
@@ -69,7 +71,7 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     void OkayScore()
     {
-        Transform GetCurrentChild = transform.GetChild(2);
+        GetCurrentChild = transform.GetChild(2);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
@@ -78,12 +80,13 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     public void ObstacleHit()
     {
-        PriorExpression = GetCurrentChild.gameObject;
+        PriorExpression = CurrentMaelle;
         GetCurrentChild = transform.GetChild(1);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
         BadScoreBool = false;
+        this.GetComponent<CameraShake>().shake = 1;
         Invoke("ResetAfterShake", 1f);
 
 
@@ -91,6 +94,26 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     private void ResetAfterShake()
     {
-        PriorExpression.SetActive(true);
+        CurrentMaelle.SetActive(false);
+        CurrentMaelle = PriorExpression;
+        CurrentMaelle.SetActive(true);
     } 
+
+
+    public void CheckScoreUpdate()//checks current score and updates expression if needed
+    {
+        if (inLevelManager.ExpressionScore <= -20)
+        {
+           BadScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=40)
+        {
+            GoodScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=10)
+        {
+            OkayScoreBool = true;
+        }
+
+    }
 }

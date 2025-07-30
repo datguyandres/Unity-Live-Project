@@ -16,6 +16,8 @@ public class CheckPointSetup : MonoBehaviour
 
     public int TotalChildren;
 
+    public GameObject NpcOnScreen;
+
     [SerializeField] public InLevelManager inLevelManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +44,8 @@ public class CheckPointSetup : MonoBehaviour
         CurrentCP = CheckPointArray[LiveCheckpoint].gameObject;// grab current checkpoint
         Invoke("SetCheckPointActive", 1.2f);
 
+
+
     }
 
     // Update is called once per frame
@@ -51,15 +55,17 @@ public class CheckPointSetup : MonoBehaviour
         if (Player != null && CurrentCP != null)
         {
             float distance = DistanceBetweenPlayerAndCheckpoint(); //distance of point from player
-           // Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
+                                                                   // Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
 
             //if player half the distance to the next point delete the current one and spawn the next one without awarding points
             float DistBtwnPnts = DistanceBetweenCheckPoints();
             //Debug.Log("Distance between " + CurrentCP.name + " and " + CheckPointArray[LiveCheckpoint + 1].name + ": " + DistBtwnPnts);
 
-            if (distance < DistBtwnPnts/2)
+            if (distance < DistBtwnPnts / 2)
             {
-                //inLevelManager.LevelScore -= 1;
+                inLevelManager.ExpressionScore -= 10;
+                NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
+                Debug.Log("expression score =" + inLevelManager.ExpressionScore);
                 SetNextCheckpoint();
                 //Debug.Log("works here");
             }
@@ -92,7 +98,10 @@ public class CheckPointSetup : MonoBehaviour
     public void OnCheckpointHit() 
     {
         inLevelManager.checkpointsHit += 1;
-        Debug.Log("checkpoints hit: " + inLevelManager.checkpointsHit);
+        inLevelManager.ExpressionScore += 10;
+        Debug.Log("expression score =" + inLevelManager.ExpressionScore);
+        NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
+        //Debug.Log("checkpoints hit: " + inLevelManager.checkpointsHit);
         SetNextCheckpoint();
     }
 
