@@ -51,11 +51,11 @@ public class CheckPointSetup : MonoBehaviour
         if (Player != null && CurrentCP != null)
         {
             float distance = DistanceBetweenPlayerAndCheckpoint(); //distance of point from player
-            Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
+           // Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
 
             //if player half the distance to the next point delete the current one and spawn the next one without awarding points
             float DistBtwnPnts = DistanceBetweenCheckPoints();
-            Debug.Log("Distance between " + CurrentCP.name + " and " + CheckPointArray[LiveCheckpoint + 1].name + ": " + DistBtwnPnts);
+            //Debug.Log("Distance between " + CurrentCP.name + " and " + CheckPointArray[LiveCheckpoint + 1].name + ": " + DistBtwnPnts);
 
             if (distance < DistBtwnPnts/2)
             {

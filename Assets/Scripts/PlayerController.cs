@@ -14,10 +14,14 @@ public class PlayerController : MonoBehaviour
     public GameObject Camera;
 
     public GameObject LevelHandler;
+
+    public GameObject NpcOnScreen;
+
+    public GameObject Level;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        NpcOnScreen = Level.transform.GetChild(2).gameObject;
 
     }
     // Update is called once per frame
@@ -62,9 +66,9 @@ public class PlayerController : MonoBehaviour
 
             //considering this mechanic if we want the game to be harder - rafa
             //LevelHandler.GetComponent<InLevelManager>().checkpointsHit -= 1;
-
-
-            Camera.GetComponent<CameraShake>().shake = 0.3f;
+            Debug.Log("collided with phone");
+            NpcOnScreen.GetComponent<CameraShake>().shake = 1;
+            NpcOnScreen.GetComponent<MaelleFacialExpressions>().ObstacleHit();
             Destroy(other.gameObject);
         }
 
@@ -76,11 +80,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "Obstacle")
-        {
-            Debug.Log("Hit Phone");
-        }
-    }
 }

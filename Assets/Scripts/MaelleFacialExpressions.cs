@@ -8,10 +8,14 @@ public class MaelleFacialExpressions : MonoBehaviour
     public bool BadScoreBool;
     public bool GoodScoreBool;
     public bool OkayScoreBool;
+
+    GameObject PriorExpression;
+
+    Transform GetCurrentChild;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Transform GetCurrentChild = transform.GetChild(2);
+        GetCurrentChild = transform.GetChild(2);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
 
@@ -68,5 +72,17 @@ public class MaelleFacialExpressions : MonoBehaviour
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
         OkayScoreBool = false;
+    }
+
+    public void ObstacleHit()
+    {
+        GameObject PriorExpression = GetCurrentChild.gameObject;
+        GetCurrentChild = transform.GetChild(1);
+        CurrentMaelle.SetActive(false);
+        CurrentMaelle = GetCurrentChild.gameObject;
+        CurrentMaelle.SetActive(true);
+        BadScoreBool = false;
+
+
     }
 }
