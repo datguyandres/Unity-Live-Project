@@ -11,6 +11,7 @@ TagManager:
   - FinishLine
   - GameManager
   - InLevelManager
+  - DialogueBox
   layers:
   - Default
   - TransparentFX

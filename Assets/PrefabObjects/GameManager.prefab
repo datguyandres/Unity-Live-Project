@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 1099875318951215761}
   m_Layer: 5
   m_Name: DialogueBox (Basic ahh)
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,12 +757,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DifficultyLevel: 1
-  startTime: 100
+  startTime: 10
   Timer: 0
   TimeLeft: 0
   TimerText: {fileID: 2090229410314841689}
   ScoreText: {fileID: 503202706713427590}
   PlayerLastLocation: {x: 0, y: 0, z: 0}
+  playerLastScene: 
   NpcsBeaten: 
   InLevel: 0
   PlayerCanMove: 1
