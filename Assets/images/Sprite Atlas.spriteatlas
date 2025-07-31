@@ -154,7 +154,6 @@ SpriteAtlas:
     - d89408e5c7dd72f4895c78f4926482f9: 21300000
     - 23162bf5e42056644b00c273d16464be: 21300000
     - 489ef186a573c794f8b7190b5f207c69: 1674952499
-    - 97e733c62dc5366488e0c578480d6ac9: 21300000
     - 11b730d6e293d364c9a03dcc7659ee7a: 21300000
     - 1bc6033674519c24aa803713f63793cd: 21300000
     - cfcda1d6f90a49f4883951822a59ebe9: 933093863
@@ -464,7 +463,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d89408e5c7dd72f4895c78f4926482f9, type: 3}
   - {fileID: 21300000, guid: 23162bf5e42056644b00c273d16464be, type: 3}
   - {fileID: 1674952499, guid: 489ef186a573c794f8b7190b5f207c69, type: 3}
-  - {fileID: 21300000, guid: 97e733c62dc5366488e0c578480d6ac9, type: 3}
   - {fileID: 21300000, guid: 11b730d6e293d364c9a03dcc7659ee7a, type: 2}
   - {fileID: 21300000, guid: 1bc6033674519c24aa803713f63793cd, type: 2}
   - {fileID: 933093863, guid: cfcda1d6f90a49f4883951822a59ebe9, type: 3}
@@ -773,7 +771,6 @@ SpriteAtlas:
   - amica_full_distracted
   - revised friend counter
   - noah_sprite_sheet_0
-  - timer no text
   - amica_spritesheet_5
   - amica_spritesheet_9 1
   - Static phone_8
