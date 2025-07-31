@@ -1,0 +1,1143 @@
+fileFormatVersion: 2
+guid: dc63533f29b9c2249b5e9f345dc7bf56
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 801
+        width: 97
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5bd1d87e23164a8a6e1390393ee6d
+      internalID: -2143399897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1093
+        width: 287
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d63836fd828a654e94d1a81d24057e1
+      internalID: -949449322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_2
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1059
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2914b7484847546b3af06b4eaa2533
+      internalID: 324665033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_3
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1060
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90f447a9e7bc94c906870834db6c74
+      internalID: -1559303420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_4
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1059
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96c80e1770fc974fa2d01b0085e76d5
+      internalID: -2114185861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1059
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a526c66c94dfc4ab6e34be236342a4
+      internalID: -666906626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 799
+        width: 97
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0218171f5d4f85498b006dc2bff665d
+      internalID: -483758428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_7
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 987
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a502362b7c6f164d82124e837edb7ed
+      internalID: -687595068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 986
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1795514a44827a640b209a7de78c4682
+      internalID: 1645201903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_9
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 777
+        width: 149
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed37b6d7e156a642ac5ba42f0e66966
+      internalID: 1431980324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_10
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 914
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46a777d550f178468ec97377f97b854
+      internalID: -780054214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_11
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 914
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b13785af625c7f419d98839794d8e85
+      internalID: -1386704286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 948
+        width: 255
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8c3f9ad4afcbc428b524554d865368
+      internalID: -1032094601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_13
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 779
+        width: 256
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dddbaa6eab38b740a2fd40549c537e8
+      internalID: -1095820210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 266
+        width: 73
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d133ab845cf0720438300a8740d5c59a
+      internalID: 1465029319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 410
+        width: 98
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc0d14492c8bae419c905774b445095
+      internalID: 767702287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 754
+        width: 292
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713f070a752d2d2478b35e663dc87cca
+      internalID: 1322953116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_17
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 608
+        width: 147
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d69a639b8a89447bcc0a83ea61fcc9
+      internalID: -717253219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_18
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 609
+        width: 94
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e6a2a41922e2944bded189706bd56a
+      internalID: -1013465632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_19
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 591
+        width: 99
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073167107fcde2e4d8d063d6e030121e
+      internalID: 193721488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_20
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 608
+        width: 95
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81c3aff51b05ae48bf124d3910166a4
+      internalID: 1208420987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_21
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 769
+        width: 127
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c5976376cecc843948ee031f40cb66
+      internalID: -594531895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_22
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 770
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4937ad253b58ea84f971d12ac7e8245d
+      internalID: -1476616264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_24
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 558
+        width: 292
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47cbacb6dc35514c8df8c459c6fc93b
+      internalID: 1700309628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_25
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 628
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d957da97b73101342b441d669820c22d
+      internalID: -1542437887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_26
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 625
+        width: 126
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc39f3f2ad863c44b8dd9fc6a543e18
+      internalID: 1506618282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_27
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 288
+        width: 291
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58c9d6ec080e8941bdbfd3e08f32935
+      internalID: -266571957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_28
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 391
+        width: 239
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a440430b8419040a41335e0c9f4416
+      internalID: 1000378230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_29
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 438
+        width: 102
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d48e5faf5cb3ae418479f557999f500
+      internalID: -1252872740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_30
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 539
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec8ba6dcf6cebc4fa1d9a86e9f043c3
+      internalID: -1648185097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_31
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 485
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c27053fafbed544bd380630cbd7463
+      internalID: 848385999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_32
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 485
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3c044623196cd4aba2f1278d09e03f
+      internalID: -1638496556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_33
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 452
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfccaa53b5a6a54ab51522df69fcd99
+      internalID: -148701353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_34
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 16
+        width: 73
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e91c0c00d532794f85e003499b251dc
+      internalID: 1793905165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_35
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 15
+        width: 98
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd137f1f0cccdff4186c43b117a315f9
+      internalID: -19847153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_36
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 13
+        width: 236
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e911c65bbe5bf043ab642a53ca5c26a
+      internalID: -1550141308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_37
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 337
+        width: 39
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702078200f68442468701cf13c3e69dd
+      internalID: -615768746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_38
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 341
+        width: 13
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af05db5a2a00ba4f831c6c3dde3fef3
+      internalID: 796499308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_39
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 343
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3204357e876626841bcfa0b506ac1d11
+      internalID: 1282221690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_40
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 336
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cc6dd15a49f734a98cab00eca32d48
+      internalID: 268974706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_41
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 353
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea71d4613e0788469e9e47aaf1c79cd
+      internalID: -795728513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_42
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 16
+        width: 165
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4405f5d6f51958c4d94f6070d14a4340
+      internalID: -386754665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 17
+        width: 290
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09c3c9cfe03a224cac63dca7b0f1ffb
+      internalID: 1839668715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark_Blue_Classroom_44
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 16
+        width: 237
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38258aed76d1024a97bb8582fd0d124
+      internalID: 1223385202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6aea91c004fb93548ac40db60224c26c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dark_Blue_Classroom_0: -2143399897
+      Dark_Blue_Classroom_1: -949449322
+      Dark_Blue_Classroom_10: -780054214
+      Dark_Blue_Classroom_11: -1386704286
+      Dark_Blue_Classroom_12: -1032094601
+      Dark_Blue_Classroom_13: -1095820210
+      Dark_Blue_Classroom_14: 1465029319
+      Dark_Blue_Classroom_15: 767702287
+      Dark_Blue_Classroom_16: 1322953116
+      Dark_Blue_Classroom_17: -717253219
+      Dark_Blue_Classroom_18: -1013465632
+      Dark_Blue_Classroom_19: 193721488
+      Dark_Blue_Classroom_2: 324665033
+      Dark_Blue_Classroom_20: 1208420987
+      Dark_Blue_Classroom_21: -594531895
+      Dark_Blue_Classroom_22: -1476616264
+      Dark_Blue_Classroom_23: 2055481318
+      Dark_Blue_Classroom_24: 1700309628
+      Dark_Blue_Classroom_25: -1542437887
+      Dark_Blue_Classroom_26: 1506618282
+      Dark_Blue_Classroom_27: -266571957
+      Dark_Blue_Classroom_28: 1000378230
+      Dark_Blue_Classroom_29: -1252872740
+      Dark_Blue_Classroom_3: -1559303420
+      Dark_Blue_Classroom_30: -1648185097
+      Dark_Blue_Classroom_31: 848385999
+      Dark_Blue_Classroom_32: -1638496556
+      Dark_Blue_Classroom_33: -148701353
+      Dark_Blue_Classroom_34: 1793905165
+      Dark_Blue_Classroom_35: -19847153
+      Dark_Blue_Classroom_36: -1550141308
+      Dark_Blue_Classroom_37: -615768746
+      Dark_Blue_Classroom_38: 796499308
+      Dark_Blue_Classroom_39: 1282221690
+      Dark_Blue_Classroom_4: -2114185861
+      Dark_Blue_Classroom_40: 268974706
+      Dark_Blue_Classroom_41: -795728513
+      Dark_Blue_Classroom_42: -386754665
+      Dark_Blue_Classroom_43: 1839668715
+      Dark_Blue_Classroom_44: 1223385202
+      Dark_Blue_Classroom_5: -666906626
+      Dark_Blue_Classroom_6: -483758428
+      Dark_Blue_Classroom_7: -687595068
+      Dark_Blue_Classroom_8: 1645201903
+      Dark_Blue_Classroom_9: 1431980324
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
