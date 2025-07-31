@@ -375,7 +375,7 @@ Transform:
   m_GameObject: {fileID: 113599973}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -3.91, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -839,6 +839,8 @@ MonoBehaviour:
   BadScoreBool: 0
   GoodScoreBool: 0
   OkayScoreBool: 0
+  InHitShake: 0
+  StateAfterShake: 0
   inLevelManager: {fileID: 2683466945095914256}
 --- !u!1001 &653037268
 PrefabInstance:
@@ -2303,7 +2305,7 @@ PrefabInstance:
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 6aa3c27424f2c4d49a0fe92d3a08930b, type: 2}
+      objectReference: {fileID: 2100000, guid: 3307d454c611b60478adeb575b3b3348, type: 2}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.numCapVertices
       value: 90

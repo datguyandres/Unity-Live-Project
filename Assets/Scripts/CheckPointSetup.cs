@@ -18,6 +18,8 @@ public class CheckPointSetup : MonoBehaviour
 
     [SerializeField] public InLevelManager inLevelManager;
 
+    public GameObject NpcExpressions;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //List<GameObject> CheckPointList;
     void Start()

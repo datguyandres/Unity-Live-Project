@@ -33,19 +33,17 @@ public class InLevelManager : MonoBehaviour
     /// <summary>
     /// end level and check score
     /// </summary>
-    public bool EndLevel()
+    public void EndLevel()
     {
         Debug.Log("checkpoints hit" + checkpointsHit);
         if (checkpointsHit >= checkpointsRequired)
         {
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;
-            return true;
         }
         else
         {
             GameManager.Instance.PlayerLost = true;
-            return false;
         }
             SceneManager.LoadScene(GameManager.Instance.playerLastScene);
     }

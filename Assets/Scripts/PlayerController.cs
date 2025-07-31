@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "CheckPoint")
         {
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
+            LevelHandler.GetComponent<InLevelManager>().ExpressionScore += 10;
+            NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             //GameManager.Instance.PlayerScore += 10;
         }
 
@@ -72,6 +74,8 @@ public class PlayerController : MonoBehaviour
             //NpcOnScreen.GetComponent<CameraShake>().shake = 1;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().ObstacleHit();
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
+             LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
+            NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
 
             Destroy(other.gameObject);
         }
@@ -80,7 +84,7 @@ public class PlayerController : MonoBehaviour
         {
             //GameManager.Instance.PlayerWon = true;
             //GameManager.Instance.DifficultyLevel++;
-            if(LevelHandler.GetComponent<InLevelManager>().EndLevel());
+            LevelHandler.GetComponent<InLevelManager>().EndLevel();
         }
     }
 
