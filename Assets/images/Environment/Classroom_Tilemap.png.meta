@@ -1,0 +1,1166 @@
+fileFormatVersion: 2
+guid: 73e665ab53d4cd04790992ab5367c96d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Classroom_Tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 800
+        width: 98
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a73ab77f5db824aa8cc21bf9103332
+      internalID: -52318412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1093
+        width: 287
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7eb6c37845f9c449b81802fe4925e3
+      internalID: 22664802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 1059
+        width: 124
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb57e9e52820ce40b9335026bd0544d
+      internalID: -467561307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 1060
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7bf5fff36bc38498e6bb479c31d9e4
+      internalID: -294122566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1060
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1232730487d54ba4c851c179d6b591c1
+      internalID: -1498373036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1060
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3d88cd7f13b724f9c9ff76999bb5e4
+      internalID: -1569277564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 799
+        width: 97
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622621b9a59fc5f42b5eebfa3da2ad20
+      internalID: -2076630195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 987
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4683e1d7c9ed18499123cf3d5e006ec
+      internalID: -268546850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 987
+        width: 93
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe680d4e921aef43ba929c33effea99
+      internalID: 1197827680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 777
+        width: 146
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2318f091b750b45803e1ff33e63499
+      internalID: 1371581918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 915
+        width: 125
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea2e94515e238c4b957bcd3ec37a2e7
+      internalID: -1619144092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 915
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7534603ababbbb84982ccc6ad7c4a0cb
+      internalID: -1296362808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 948
+        width: 254
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db6955968344644e9e9dfd9fc504fd0
+      internalID: -1216258872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 777
+        width: 252
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914c13c0e115d664981bb1970e1a8d62
+      internalID: 1714108670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 265
+        width: 74
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a304f836cfe6134387cc71aecd62dee
+      internalID: -1939920662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 411
+        width: 98
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f7b00e45482444298d7f3b64cac137
+      internalID: -1805794878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 756
+        width: 290
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b71306f87889594484cb74e99c5eb71
+      internalID: -574169374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 606
+        width: 149
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d525e9bcf24d9b14087ec3da366d9a64
+      internalID: -1421894043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 607
+        width: 96
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99d5519f4d39854a9985b6ef6ccc2bc
+      internalID: -250171311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 591
+        width: 102
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eccd0a9428f0f48b0f5bd489621d1f
+      internalID: 1883217563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 608
+        width: 96
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1690dd47c05d348b029d349b90e4cb
+      internalID: 1009384910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 770
+        width: 126
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add6a03973ed1224d944f78c1697bdd4
+      internalID: -1047341651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 770
+        width: 123
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a83629a539ae542a29e216398c23f6
+      internalID: -637069534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 729
+        width: 4
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d368b746ec86af499ccc46acd02dc54
+      internalID: -832536165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 559
+        width: 290
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d688529318e9646809b6ba5479079a
+      internalID: 92432777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 629
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a9ef471de553b49a6c164a9b503fbf
+      internalID: 1920998075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 625
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065c1d5d08215f34593791a8b0190b50
+      internalID: -537874310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 291
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed0047d7decca4409bdea280ef17817
+      internalID: -213314826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 391
+        width: 239
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea8060a38f9444e9b35ce393798e88
+      internalID: 1881189803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 438
+        width: 102
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a155406bb242249a7d915c95a4e838
+      internalID: 1048348190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_30
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 539
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95fda8ed3f6b7143b02d5be4f1b8928
+      internalID: -75080619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_31
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 485
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594e417859880d041bfd27b52b78e62e
+      internalID: -1657809805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 485
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455e122ff7f1f0d46a18c41686024dcb
+      internalID: 461725421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_33
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 452
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d3327979013a543afac243fce5b461
+      internalID: 1604880060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_34
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 16
+        width: 73
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454dc1aafbe7935449bac84416a39672
+      internalID: -1719681714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_35
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 14
+        width: 98
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d705961d8146d944b86d53bb5adcc1f
+      internalID: 1405510140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_36
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 13
+        width: 236
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e13b22bef981a04c94744c4c7617e47
+      internalID: -1100222075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_37
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 337
+        width: 39
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134cee74446b5b645821dd7c0cb86588
+      internalID: -78435808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_38
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 341
+        width: 13
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f92f226ed2aaa5459aaaebf3302f4b2
+      internalID: -1719940665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_39
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 343
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de11b395fd2d24a944be77e26bc616
+      internalID: 2043376242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_40
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 336
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2f0df49d0421d46b47395fdb073abb
+      internalID: -1307601984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_41
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 353
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507abee22b9e156428441e9ed91e4a79
+      internalID: -154531124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_42
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 16
+        width: 166
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b117f013523034a9faefd086a14b7f
+      internalID: 731333627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_43
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 16
+        width: 290
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2487b627b287f4f86b448e85c81109
+      internalID: 193231897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Classroom_Tilemap_44
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 16
+        width: 237
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7778372666b56f044aac35fc21a66635
+      internalID: 845649115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7ec40649b6efbc24793af6912e6a7cfb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Classroom_Tilemap_0: -52318412
+      Classroom_Tilemap_1: 22664802
+      Classroom_Tilemap_10: -1619144092
+      Classroom_Tilemap_11: -1296362808
+      Classroom_Tilemap_12: -1216258872
+      Classroom_Tilemap_13: 1714108670
+      Classroom_Tilemap_14: -1939920662
+      Classroom_Tilemap_15: -1805794878
+      Classroom_Tilemap_16: -574169374
+      Classroom_Tilemap_17: -1421894043
+      Classroom_Tilemap_18: -250171311
+      Classroom_Tilemap_19: 1883217563
+      Classroom_Tilemap_2: -467561307
+      Classroom_Tilemap_20: 1009384910
+      Classroom_Tilemap_21: -1047341651
+      Classroom_Tilemap_22: -637069534
+      Classroom_Tilemap_23: -832536165
+      Classroom_Tilemap_24: 92432777
+      Classroom_Tilemap_25: 1920998075
+      Classroom_Tilemap_26: -537874310
+      Classroom_Tilemap_27: -213314826
+      Classroom_Tilemap_28: 1881189803
+      Classroom_Tilemap_29: 1048348190
+      Classroom_Tilemap_3: -294122566
+      Classroom_Tilemap_30: -75080619
+      Classroom_Tilemap_31: -1657809805
+      Classroom_Tilemap_32: 461725421
+      Classroom_Tilemap_33: 1604880060
+      Classroom_Tilemap_34: -1719681714
+      Classroom_Tilemap_35: 1405510140
+      Classroom_Tilemap_36: -1100222075
+      Classroom_Tilemap_37: -78435808
+      Classroom_Tilemap_38: -1719940665
+      Classroom_Tilemap_39: 2043376242
+      Classroom_Tilemap_4: -1498373036
+      Classroom_Tilemap_40: -1307601984
+      Classroom_Tilemap_41: -154531124
+      Classroom_Tilemap_42: 731333627
+      Classroom_Tilemap_43: 193231897
+      Classroom_Tilemap_44: 845649115
+      Classroom_Tilemap_45: 684107657
+      Classroom_Tilemap_5: -1569277564
+      Classroom_Tilemap_6: -2076630195
+      Classroom_Tilemap_7: -268546850
+      Classroom_Tilemap_8: 1197827680
+      Classroom_Tilemap_9: 1371581918
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
