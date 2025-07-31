@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
     void OnTriggerEnter(Collider other)
     {
 

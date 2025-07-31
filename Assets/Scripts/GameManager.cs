@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
 
     public Vector3 PlayerLastLocation;
 
+    public string playerLastScene;
+
     public List<int> NpcsBeaten = new List<int>();
 
     public bool InLevel = false; // will be used to check if a playey just left a level to trigger certain dialogue
