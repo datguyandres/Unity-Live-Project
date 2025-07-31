@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         {
             //GameManager.Instance.PlayerWon = true;
             //GameManager.Instance.DifficultyLevel++;
-            LevelHandler.GetComponent<InLevelManager>().EndLevel();
+            if(LevelHandler.GetComponent<InLevelManager>().EndLevel());
         }
     }
 

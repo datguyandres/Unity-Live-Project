@@ -77,6 +77,7 @@ public class NpcTrigger : MonoBehaviour
             if (GameManager.Instance.PlayerWon)
             {
                 GameManager.Instance.NpcsBeaten.Add(NpcNumber);
+                GameManager.Instance.AddToFriendCounter(NpcNumber);
             }
 
             if (GameManager.Instance.InLevel)

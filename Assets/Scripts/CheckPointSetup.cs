@@ -51,6 +51,7 @@ public class CheckPointSetup : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Debug.Log("Current index is" + LiveCheckpoint);
 
         if (Player != null && CurrentCP != null)
         {
@@ -63,7 +64,10 @@ public class CheckPointSetup : MonoBehaviour
 
             if (distance < DistBtwnPnts / 2)
             {
-                inLevelManager.ExpressionScore -= 10;
+                if (LiveCheckpoint < TotalChildren)
+                {
+                    inLevelManager.ExpressionScore -= 10;
+                }
                 NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
                 Debug.Log("expression score =" + inLevelManager.ExpressionScore);
                 SetNextCheckpoint();
@@ -87,9 +91,12 @@ public class CheckPointSetup : MonoBehaviour
 
     private void SetNextCheckpoint()
     {
-        CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
-        LiveCheckpoint++;
-        SetCheckPointActive();
+        if (LiveCheckpoint < TotalChildren)
+        {
+            CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
+            LiveCheckpoint++;
+            SetCheckPointActive();
+        }
     }
 
     /// <summary>
