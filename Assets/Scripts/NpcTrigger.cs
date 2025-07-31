@@ -43,7 +43,9 @@ public class NpcTrigger : MonoBehaviour
     {
         mat = GetComponent<Renderer>().material;
 
-        textComponent = GameObject.FindWithTag("DialogueBox").GetComponent<TextMeshProUGUI>();
+        //if we dont have the dialogue box, go find it
+        if(textComponent == null)
+            textComponent = GameObject.FindWithTag("DialogueBox").GetComponent<TextMeshProUGUI>();
 
         textComponent.text = string.Empty;
     }
