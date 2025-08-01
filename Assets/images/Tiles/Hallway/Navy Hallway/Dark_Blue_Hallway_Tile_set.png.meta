@@ -113,10 +113,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 4
         y: 297
-        width: 170
-        height: 367
+        width: 176
+        height: 369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,10 +135,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_1
       rect:
         serializedVersion: 2
-        x: 182
-        y: 345
-        width: 201
-        height: 319
+        x: 179
+        y: 344
+        width: 205
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_2
       rect:
         serializedVersion: 2
-        x: 390
-        y: 524
-        width: 223
-        height: 141
+        x: 388
+        y: 521
+        width: 225
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,9 +180,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 619
-        y: 523
-        width: 77
-        height: 142
+        y: 521
+        width: 79
+        height: 145
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_4
       rect:
         serializedVersion: 2
-        x: 705
+        x: 703
         y: 611
-        width: 39
-        height: 55
+        width: 42
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_8
       rect:
         serializedVersion: 2
-        x: 490
-        y: 404
-        width: 101
-        height: 114
+        x: 487
+        y: 401
+        width: 106
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_9
       rect:
         serializedVersion: 2
-        x: 603
-        y: 456
-        width: 37
-        height: 52
+        x: 602
+        y: 455
+        width: 39
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,10 +333,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_10
       rect:
         serializedVersion: 2
-        x: 659
-        y: 382
-        width: 122
-        height: 123
+        x: 654
+        y: 376
+        width: 133
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +421,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_14
       rect:
         serializedVersion: 2
-        x: 518
-        y: 244
-        width: 121
-        height: 122
+        x: 510
+        y: 237
+        width: 135
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,10 +443,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_15
       rect:
         serializedVersion: 2
-        x: 660
-        y: 243
-        width: 121
-        height: 122
+        x: 654
+        y: 235
+        width: 133
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,10 +465,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_16
       rect:
         serializedVersion: 2
-        x: 183
-        y: 18
-        width: 100
-        height: 320
+        x: 166
+        y: 17
+        width: 119
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -487,10 +487,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_17
       rect:
         serializedVersion: 2
-        x: 294
-        y: 43
-        width: 183
-        height: 292
+        x: 291
+        y: 42
+        width: 189
+        height: 295
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: Dark_Blue_Hallway_Tile_set_18
       rect:
         serializedVersion: 2
-        x: 490
-        y: 170
-        width: 102
-        height: 60
+        x: 489
+        y: 168
+        width: 104
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
