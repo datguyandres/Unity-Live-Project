@@ -7894,7 +7894,6 @@ MonoBehaviour:
   TimerText: {fileID: 1185498394}
   ScoreText: {fileID: 243346856}
   PlayerLastLocation: {x: 0, y: 0, z: 0}
-  playerLastScene: 
   NpcsBeaten: 
   InLevel: 0
   PlayerCanMove: 1
@@ -12068,7 +12067,7 @@ SpriteRenderer:
   m_Size: {x: 5.12, y: 7.5005436}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2117491497
