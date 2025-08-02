@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f42047a2d9292148a23026b10c2a633
-      internalID: 174043089
+      spriteID: de2a86d71d6986c41a21e2d4b8da8d09
+      internalID: 2078820366
       vertices: []
       indices: 
       edges: []
@@ -147,30 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645012a887a716042b6592c6c99bf4a5
-      internalID: -1395795008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: maelle_sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 750
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e67f39044e79f984ba1c98c974ff7def
-      internalID: -446219734
+      spriteID: 17150ae89b1fd66429eaa1fa1144f4dc
+      internalID: 913165823
       vertices: []
       indices: 
       edges: []
@@ -179,7 +170,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1f12d2db656fb424ea0ca604cf77ad94
+    spriteID: 060cf408a11a1284895cd71e44dda48e
     internalID: 0
     vertices: []
     indices: 
@@ -189,9 +180,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      maelle_sprite_sheet_0: 174043089
-      maelle_sprite_sheet_1: -1395795008
-      maelle_sprite_sheet_2: -446219734
+      maelle_sprite_sheet_0: 2078820366
+      maelle_sprite_sheet_1: 913165823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
