@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NpcTrigger : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class NpcTrigger : MonoBehaviour
     public int LevelNum; //each npc will have a designated scene/level that they will lead to 
 
     public TextMeshProUGUI textComponent;
+
+    public GameObject DialogueBox;
 
     public float textSpeed;
 
@@ -139,6 +142,7 @@ public class NpcTrigger : MonoBehaviour
         StartCoroutine(TypeLine());
         InDialogue = true;
         GameManager.Instance.Paused = true;
+        DialogueBox.SetActive(true);
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -193,6 +197,7 @@ public class NpcTrigger : MonoBehaviour
         {
             InDialogue = false;
             GameManager.Instance.Paused = false;
+            DialogueBox.SetActive(false);
             textComponent.text = string.Empty;
             //textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
