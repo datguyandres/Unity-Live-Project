@@ -16,18 +16,19 @@ public class PlayerController : MonoBehaviour
     public GameObject LevelHandler;
 
     public GameObject NpcOnScreen;
+    public GameObject Amica;
 
     public GameObject Level;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         NpcOnScreen = Level.transform.GetChild(2).gameObject;
-
+        Amica = Level.transform.GetChild(1).gameObject;
     }
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime); //Player object shifting to the right
+        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
     }
 
     void Update()
@@ -52,12 +53,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
     void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag == "CheckPoint")
         {
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
+            LevelHandler.GetComponent<InLevelManager>().ExpressionScore += 10;
+            NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             //GameManager.Instance.PlayerScore += 10;
         }
 
@@ -67,8 +71,12 @@ public class PlayerController : MonoBehaviour
             //considering this mechanic if we want the game to be harder - rafa
             //LevelHandler.GetComponent<InLevelManager>().checkpointsHit -= 1;
             Debug.Log("collided with phone");
-            NpcOnScreen.GetComponent<CameraShake>().shake = 1;
+            //NpcOnScreen.GetComponent<CameraShake>().shake = 1;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().ObstacleHit();
+            Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
+             LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
+            NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
+            this.GetComponent<AudioSource>().Play();
             Destroy(other.gameObject);
         }
 

@@ -11,9 +11,15 @@ public class MaelleFacialExpressions : MonoBehaviour
     public bool GoodScoreBool;
     public bool OkayScoreBool;
 
+    public bool InHitShake;
+
+    public int StateAfterShake;
+
     GameObject PriorExpression;
 
     Transform GetCurrentChild;
+
+    [SerializeField] public InLevelManager inLevelManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,42 +54,53 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     void BadScore()
     {
-        Transform GetCurrentChild = transform.GetChild(1);
-        CurrentMaelle.SetActive(false);
-        CurrentMaelle = GetCurrentChild.gameObject;
-        CurrentMaelle.SetActive(true);
-        BadScoreBool = false;
+        if (InHitShake == false)
+        {
+            GetCurrentChild = transform.GetChild(1);
+            CurrentMaelle.SetActive(false);
+            CurrentMaelle = GetCurrentChild.gameObject;
+            CurrentMaelle.SetActive(true);
+            BadScoreBool = false;
+        }
 
     }
 
 
     void GoodScore()
     {
-        Transform GetCurrentChild = transform.GetChild(0);
-        CurrentMaelle.SetActive(false);
-        CurrentMaelle = GetCurrentChild.gameObject;
-        CurrentMaelle.SetActive(true);
-        GoodScoreBool = false;
+        if (InHitShake == false)
+        {
+            GetCurrentChild = transform.GetChild(0);
+            CurrentMaelle.SetActive(false);
+            CurrentMaelle = GetCurrentChild.gameObject;
+            CurrentMaelle.SetActive(true);
+            GoodScoreBool = false;  
+        }
 
     }
 
     void OkayScore()
     {
-        Transform GetCurrentChild = transform.GetChild(2);
-        CurrentMaelle.SetActive(false);
-        CurrentMaelle = GetCurrentChild.gameObject;
-        CurrentMaelle.SetActive(true);
-        OkayScoreBool = false;
+        if (InHitShake == false)
+        {
+            GetCurrentChild = transform.GetChild(2);
+            CurrentMaelle.SetActive(false);
+            CurrentMaelle = GetCurrentChild.gameObject;
+            CurrentMaelle.SetActive(true);
+            OkayScoreBool = false;
+        }
     }
 
     public void ObstacleHit()
     {
-        PriorExpression = GetCurrentChild.gameObject;
+        InHitShake = true;
+        PriorExpression = CurrentMaelle;
         GetCurrentChild = transform.GetChild(1);
         CurrentMaelle.SetActive(false);
         CurrentMaelle = GetCurrentChild.gameObject;
         CurrentMaelle.SetActive(true);
         BadScoreBool = false;
+        this.GetComponent<CameraShake>().shake = 1;
         Invoke("ResetAfterShake", 1f);
 
 
@@ -91,6 +108,38 @@ public class MaelleFacialExpressions : MonoBehaviour
 
     private void ResetAfterShake()
     {
-        PriorExpression.SetActive(true);
+
+        if (inLevelManager.ExpressionScore <= -20)
+        {
+           BadScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=40)
+        {
+            GoodScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=10)
+        {
+            OkayScoreBool = true;
+        }
+
+        InHitShake = false;
     } 
+
+
+    public void CheckScoreUpdate()//checks current score and updates expression if needed
+    {
+        if (inLevelManager.ExpressionScore <= -20)
+        {
+           BadScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=40)
+        {
+            GoodScoreBool = true;
+        }
+        else if (inLevelManager.ExpressionScore >=10)
+        {
+            OkayScoreBool = true;
+        }
+
+    }
 }

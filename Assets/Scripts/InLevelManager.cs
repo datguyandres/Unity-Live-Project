@@ -9,6 +9,10 @@ public class InLevelManager : MonoBehaviour
     /// </summary>
     public int checkpointsHit;
 
+    public int checkpointsMissed;
+
+    public int ExpressionScore; //score only for level to determine which expression to use
+
     /// <summary>
     /// the number of checkpoints the player needs to win the level
     /// </summary>
@@ -36,10 +40,11 @@ public class InLevelManager : MonoBehaviour
         {
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;
-        } else
+        }
+        else
         {
             GameManager.Instance.PlayerLost = true;
         }
-            SceneManager.LoadScene("TOPDOWNTEST");
+            SceneManager.LoadScene(GameManager.Instance.playerLastScene);
     }
 }

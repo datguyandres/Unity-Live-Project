@@ -18,6 +18,8 @@ public class CheckPointSetup : MonoBehaviour
 
     [SerializeField] public InLevelManager inLevelManager;
 
+    public GameObject NpcExpressions;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //List<GameObject> CheckPointList;
     void Start()
@@ -81,9 +83,12 @@ public class CheckPointSetup : MonoBehaviour
 
     private void SetNextCheckpoint()
     {
-        CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
-        LiveCheckpoint++;
-        SetCheckPointActive();
+        if (LiveCheckpoint < CheckPointArray.Length)
+        {
+            CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
+            LiveCheckpoint++;
+            SetCheckPointActive();
+        }
     }
 
     /// <summary>

@@ -629,6 +629,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2950370674973572110, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Classroom_Science
+      objectReference: {fileID: 0}
     - target: {fileID: 3196820810765843505, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
       propertyPath: m_Type
       value: 1

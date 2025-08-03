@@ -24,10 +24,14 @@ public class GameManager : MonoBehaviour
     public bool Paused { get; private set; }
     private KeyCode pauseKey = KeyCode.Escape;
 
+    public GameObject FriendCounterUI;
+
 
     //below variables aren't actually used in this script, im guessing they're here for convenience?
 
     public Vector3 PlayerLastLocation;
+
+    public string playerLastScene;
 
     public List<int> NpcsBeaten = new List<int>();
 
@@ -85,7 +89,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKeyDown(pauseKey))
+        if (Input.GetKeyDown(pauseKey))
         {
             //TODO: Make the pausing work for more than just the timer. have it show pause screen, have it stop player movement.
             Paused = !Paused;
@@ -98,14 +102,15 @@ public class GameManager : MonoBehaviour
             TimeLeft = startTime - Mathf.FloorToInt(Timer);
 
 
-        TimerText.text = TimeLeft.ToString();
+            TimerText.text = TimeLeft.ToString();
 
             if (TimeLeft <= 0)
             {
                 EndGame();
             }
             //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
-        } else
+        }
+        else
         {
 
         }
@@ -119,6 +124,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(endScreen);
         Destroy(this.gameObject);
+    }
+
+    public void AddToFriendCounter(int NpcNumber)
+    {
+        FriendCounterUI.transform.GetChild(NpcNumber).gameObject.SetActive(true);
     }
 
 }

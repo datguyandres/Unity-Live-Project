@@ -33,10 +33,20 @@ public class NpcTrigger : MonoBehaviour
 
     public string CurrentText;
 
+    /// <summary>
+    /// the array to draw the current dialogue from
+    /// </summary>
+    private string[,] currentDialogue;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         mat = GetComponent<Renderer>().material;
+
+        //if we dont have the dialogue box, go find it
+        if(textComponent == null)
+            textComponent = GameObject.FindWithTag("DialogueBox").GetComponent<TextMeshProUGUI>();
+
         textComponent.text = string.Empty;
     }
 
@@ -77,6 +87,7 @@ public class NpcTrigger : MonoBehaviour
             if (GameManager.Instance.PlayerWon)
             {
                 GameManager.Instance.NpcsBeaten.Add(NpcNumber);
+                GameManager.Instance.AddToFriendCounter(NpcNumber);
             }
 
             if (GameManager.Instance.InLevel)
@@ -112,7 +123,19 @@ public class NpcTrigger : MonoBehaviour
         GameManager.Instance.PlayerCanMove = false;
         IsHighlighted = false;
         index = 0;
-        textComponent.gameObject.SetActive(true);
+        
+        if(GameManager.Instance.PlayerWon)
+        {
+            currentDialogue = GameManager.Instance.NpcWinLines;
+        } else if (!GameManager.Instance.InLevel)
+        {
+            currentDialogue = GameManager.Instance.NpcLines;
+        } else
+        {
+            currentDialogue = GameManager.Instance.NpcLoseLines;
+        }
+
+            textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
@@ -143,9 +166,9 @@ public class NpcTrigger : MonoBehaviour
         }
 
 
-        else if (GameManager.Instance.PlayerWon)
+        else 
         {
-            CurrentText = GameManager.Instance.NpcWinLines[NpcNumber, index];
+            CurrentText = currentDialogue[NpcNumber, index];
             foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
@@ -154,30 +177,6 @@ public class NpcTrigger : MonoBehaviour
             }
             Debug.Log("testing dialogue after getting out of level");
             
-        }
-        else if (GameManager.Instance.PlayerLost)
-        {
-            CurrentText = GameManager.Instance.NpcLoseLines[NpcNumber, index];
-            foreach (char c in CurrentText.ToCharArray())
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(textSpeed);
-
-            }
-
-        }
-
-        else if (GameManager.Instance.InLevel != true)
-        {
-
-            CurrentText = GameManager.Instance.NpcLines[NpcNumber, index];
-
-            foreach (char c in CurrentText.ToCharArray())
-            {
-                textComponent.text += c;
-                yield return new WaitForSeconds(textSpeed);
-
-            }
         }
     }
 
@@ -193,8 +192,9 @@ public class NpcTrigger : MonoBehaviour
         {
             InDialogue = false;
             textComponent.text = string.Empty;
-            textComponent.gameObject.SetActive(false);
+            //textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
+            GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
             GameManager.Instance.PlayerCanMove = true;
             if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
             {
