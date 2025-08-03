@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public bool Paused { get; set; } //set to public because if we are using this to stop the timer then i need to be able to access it when dialogue starts so timer stops
     private KeyCode pauseKey = KeyCode.Escape;
 
-    //public GameObject FriendCounterUI;
+    public GameObject FriendCounterUI;
 
 
     //below variables aren't actually used in this script, im guessing they're here for convenience?
@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
 
     public void AddToFriendCounter(int NpcNumber)
     {
-       // FriendCounterUI.transform.GetChild(NpcNumber).gameObject.SetActive(true);
+        FriendCounterUI.transform.GetChild(NpcNumber).gameObject.SetActive(true);
     }
 
 }
