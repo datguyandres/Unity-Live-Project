@@ -138,6 +138,7 @@ public class NpcTrigger : MonoBehaviour
             textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
+        GameManager.Instance.Paused = true;
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -191,6 +192,7 @@ public class NpcTrigger : MonoBehaviour
         else
         {
             InDialogue = false;
+            GameManager.Instance.Paused = false;
             textComponent.text = string.Empty;
             //textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
