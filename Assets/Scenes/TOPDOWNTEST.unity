@@ -7893,9 +7893,7 @@ MonoBehaviour:
   TimeLeft: 0
   TimerText: {fileID: 1185498394}
   ScoreText: {fileID: 243346856}
-  FriendCounterUI: {fileID: 0}
   PlayerLastLocation: {x: 0, y: 0, z: 0}
-  playerLastScene: 
   NpcsBeaten: 
   InLevel: 0
   PlayerCanMove: 1
