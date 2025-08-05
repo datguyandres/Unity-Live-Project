@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI ScoreText;
 
-    public bool Paused { get; private set; }
+    public bool Paused { get; set; } //set to public because if we are using this to stop the timer then i need to be able to access it when dialogue starts so timer stops
     private KeyCode pauseKey = KeyCode.Escape;
 
     public GameObject FriendCounterUI;
