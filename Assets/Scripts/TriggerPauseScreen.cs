@@ -9,7 +9,7 @@ public class TriggerPauseScreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
         pauseScreen.SetActive(false);
     }
 
@@ -26,5 +26,10 @@ public class TriggerPauseScreen : MonoBehaviour
     {
         Debug.Log("Should be disappearing");
         pauseScreen.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

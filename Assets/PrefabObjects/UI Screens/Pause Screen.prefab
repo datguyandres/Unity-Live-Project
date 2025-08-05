@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6474657073457270810}
   - component: {fileID: 6242346444844131842}
   - component: {fileID: 2620683245515385303}
-  - component: {fileID: 78494199322727256}
+  - component: {fileID: 3378608136786847848}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 78494199322727256}
-        m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
-        m_MethodName: LoadTheScene
-        m_Mode: 5
+      - m_Target: {fileID: 3378608136786847848}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: QuitTheGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: StartScreen
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &78494199322727256
+--- !u!114 &3378608136786847848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,11 +142,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 690096827999233875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72d7cd9eb79853242a004e3a01a7db4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 11688bb1fc0dcf9499032a5b713dea7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 0}
-  scene: 
 --- !u!1 &2543942350573731385
 GameObject:
   m_ObjectHideFlags: 0
