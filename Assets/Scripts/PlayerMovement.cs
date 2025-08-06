@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed = 1f;
 
-    public Vector3 StartingPoint = new Vector3(-10.673912f, -12.402813f, -8.44999981f);
+    public Vector3 StartingPoint;
 
     public GameObject WalkingPopUp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
