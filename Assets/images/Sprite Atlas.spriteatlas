@@ -405,6 +405,7 @@ SpriteAtlas:
     - 32505bf819793724997bc29b0a423437: 484486944
     - b1043b698701250418478a663fff3da6: 21300000
     - a2003f69072c3134ea71c1d32c1da4e7: 21300000
+    - 4fcf3ca92a1edbf43bdb7f7dc82a321e: 21300000
     - b981e61a09f57c64fbb3632896b875c6: 21300000
     - 416ac23a95b22f742b569230a4c86e83: 1580833051
     - 416ac23a95b22f742b569230a4c86e83: 427213850
@@ -1015,6 +1016,7 @@ SpriteAtlas:
   - {fileID: 484486944, guid: 32505bf819793724997bc29b0a423437, type: 3}
   - {fileID: 21300000, guid: b1043b698701250418478a663fff3da6, type: 3}
   - {fileID: 21300000, guid: a2003f69072c3134ea71c1d32c1da4e7, type: 3}
+  - {fileID: 21300000, guid: 4fcf3ca92a1edbf43bdb7f7dc82a321e, type: 3}
   - {fileID: 21300000, guid: b981e61a09f57c64fbb3632896b875c6, type: 3}
   - {fileID: 1580833051, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 427213850, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
@@ -1624,6 +1626,7 @@ SpriteAtlas:
   - Yellow_Hallway_6
   - end screen menu
   - maelle_full_negative
+  - Noah level background
   - quit button
   - Green_Hallway_21
   - Green_Hallway_6
