@@ -552,6 +552,7 @@ SpriteAtlas:
     - c27e02ec063a6284bb8226a0450b36e0: 21300000
     - 1acd3cec502b71041a275b193ed86657: 21300000
     - 65657a4d6db047546868fa6faa203d38: 21300000
+    - 40be6d4d672aee740a56a48e2d02e7b3: 21300000
     - 5765ef9d2281c354285683de7500d31a: 21300000
     - c5bd8ffd2e960ab49b6d014f1282c878: -1516023389
     - c5bd8ffd2e960ab49b6d014f1282c878: 2110267983
@@ -1160,6 +1161,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c27e02ec063a6284bb8226a0450b36e0, type: 3}
   - {fileID: 21300000, guid: 1acd3cec502b71041a275b193ed86657, type: 3}
   - {fileID: 21300000, guid: 65657a4d6db047546868fa6faa203d38, type: 3}
+  - {fileID: 21300000, guid: 40be6d4d672aee740a56a48e2d02e7b3, type: 3}
   - {fileID: 21300000, guid: 5765ef9d2281c354285683de7500d31a, type: 3}
   - {fileID: -1516023389, guid: c5bd8ffd2e960ab49b6d014f1282c878, type: 3}
   - {fileID: 2110267983, guid: c5bd8ffd2e960ab49b6d014f1282c878, type: 3}
@@ -1767,6 +1769,7 @@ SpriteAtlas:
   - maelle dialogue
   - end screen bg
   - timer no text
+  - wall color
   - Hallway_Yay
   - yellowhallway_6
   - yellowhallway_7
