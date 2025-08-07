@@ -36,6 +36,8 @@ public class NpcTrigger : MonoBehaviour
 
     public string CurrentText;
 
+    public GameObject InteractPopUP;
+
     /// <summary>
     /// the array to draw the current dialogue from
     /// </summary>
@@ -84,6 +86,7 @@ public class NpcTrigger : MonoBehaviour
             if (mat != null)
             {
                 mat.EnableKeyword("_EMISSION");
+                InteractPopUP.SetActive(true);
                 IsHighlighted = true;
             }
 
@@ -109,6 +112,7 @@ public class NpcTrigger : MonoBehaviour
             if (mat != null)
             {
                 mat.DisableKeyword("_EMISSION");
+                InteractPopUP.SetActive(false);
                 IsHighlighted = false;
             }
 

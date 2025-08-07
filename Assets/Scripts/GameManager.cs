@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject FriendCounterUI;
 
+    public GameObject StartingPoint;
+
 
     //below variables aren't actually used in this script, im guessing they're here for convenience?
 
@@ -72,21 +74,20 @@ public class GameManager : MonoBehaviour
 
 
 
+
     private void Awake()
     {
 
-        //NpcLines = new string[2, 2] {
 
+        //getting rid of this for now so i can try a way to make everything game-related persist at once.
 
-        // getting rid of this for now so i can try a way to make everything game-related persist at once.
-
-        //if (Instance != null) // makes sure we have only one instance of our main game manager
-        //{
-        //    Destroy(gameObject);
-        //    return;
-        //}
-        //Instance = this; // makes it so that our class can be called anywhere without a reference
-        //DontDestroyOnLoad(gameObject); // prevents it from being destroyed on scene change
+        if (Instance != null) // makes sure we have only one instance of our main game manager
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this; // makes it so that our class can be called anywhere without a reference
+        DontDestroyOnLoad(gameObject); // prevents it from being destroyed on scene change
 
     }
 

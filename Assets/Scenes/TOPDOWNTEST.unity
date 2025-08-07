@@ -617,6 +617,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9186975bc7e0f4b4683c64f610636f52, type: 3}
+--- !u!1 &172421679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 172421680}
+  m_Layer: 0
+  m_Name: StartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &172421680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172421679}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.11, y: -11.88, z: -5.1455564}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &173226212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -765,6 +796,7 @@ MonoBehaviour:
   player: {fileID: 0}
   WasBeaten: 0
   CurrentText: 
+  InteractPopUP: {fileID: 0}
 --- !u!61 &214387927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6095,6 +6127,7 @@ RectTransform:
   - {fileID: 11274482}
   - {fileID: 1868514004}
   - {fileID: 2015829617}
+  - {fileID: 2119713020}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6811,6 +6844,14 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1868514005}
+    - target: {fileID: 2103941379051364658, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2103941379051364658, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 7.5005436
+      objectReference: {fileID: 0}
     - target: {fileID: 2860024122471523165, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -9758,6 +9799,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6908291080311699564, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: startTime
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908291080311699564, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: StartingPoint
+      value: 
+      objectReference: {fileID: 172421679}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14900,6 +14949,78 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2119713017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119713020}
+  - component: {fileID: 2119713019}
+  - component: {fileID: 2119713018}
+  m_Layer: 5
+  m_Name: WalkingPopUP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2119713018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119713017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: fea1958f41954a74fa1d0462fba9a5a4, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &2119713019
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119713017}
+  m_CullTransparentMesh: 1
+--- !u!224 &2119713020
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119713017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 751785204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000022888, y: -45.342}
+  m_SizeDelta: {x: 665.7767, y: 190.6846}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2129090553
 GameObject:
   m_ObjectHideFlags: 0
@@ -15000,7 +15121,7 @@ MonoBehaviour:
   HorizontalSpeed: 1
   speed: 2
   StartingPoint: {x: 0, y: 0, z: 0}
-  WalkingPopUp: {fileID: 0}
+  WalkingPopUp: {fileID: 2119713017}
 --- !u!212 &2129090557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15379,3 +15500,4 @@ SceneRoots:
   - {fileID: 1204965779}
   - {fileID: 261924473}
   - {fileID: 1340281523}
+  - {fileID: 172421680}
