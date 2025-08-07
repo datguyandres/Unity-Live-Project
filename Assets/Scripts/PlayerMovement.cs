@@ -26,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        this.transform.position = GameManager.Instance.PlayerLastLocation;
+        StartingPoint = GameManager.Instance.StartingPoint.transform.position;
+        this.transform.position = StartingPoint; //(doesnt work with game manager right now) 
     }
 
     // Update is called once per frame
