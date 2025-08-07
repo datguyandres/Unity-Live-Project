@@ -16,9 +16,11 @@ public class UngraySprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.NpcsBeaten[NPCNum] == NPCNum)
-        {
-            image.color = new Color(255,255,255,255);
+       
+            if (GameManager.Instance.NpcsBeaten.Contains(NPCNum) == true)
+            {
+                image.color = new Color(255, 255, 255, 255);
+            }
         }
-    }
+    
 }
