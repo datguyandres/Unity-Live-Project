@@ -19,7 +19,8 @@ public class TriggerPauseScreen : MonoBehaviour
         if (Input.GetKeyDown(pauseKey))
         {
             pauseScreen.SetActive(true);
-            GameManager.Instance.PlayerCanMove = false; 
+            GameManager.Instance.PlayerCanMove = false;
+            GameManager.Instance.Paused = true;
         }
     }
 
@@ -27,7 +28,8 @@ public class TriggerPauseScreen : MonoBehaviour
     {
         Debug.Log("Should be disappearing");
         pauseScreen.SetActive(false);
-        GameManager.Instance.PlayerCanMove = true; 
+        GameManager.Instance.PlayerCanMove = true;
+        GameManager.Instance.Paused = false;
     }
 
     public void QuitGame()

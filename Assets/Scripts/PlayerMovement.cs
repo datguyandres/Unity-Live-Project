@@ -12,6 +12,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb2D;
 
     public float speed = 1f;
+
+    public Vector3 StartingPoint;
+
+    public GameObject WalkingPopUp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     /*void Awake()
     {
@@ -28,7 +32,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        float DistanceFromStart = Vector3.Distance(this.transform.position, StartingPoint);
+        if (DistanceFromStart > 10f)
+        {
+            WalkingPopUp.SetActive(false);
+            Debug.Log("true");
+            
+        }
         if (GameManager.Instance.PlayerCanMove)
         {
             float moveHorizontal = Input.GetAxis("Horizontal");
