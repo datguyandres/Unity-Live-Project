@@ -1615,7 +1615,7 @@ MonoBehaviour:
   checkpointsHit: 0
   checkpointsMissed: 0
   ExpressionScore: 0
-  checkpointsRequired: 5
+  checkpointsRequired: 12
 --- !u!114 &668285520
 MonoBehaviour:
   m_ObjectHideFlags: 0
