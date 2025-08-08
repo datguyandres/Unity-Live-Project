@@ -33,24 +33,22 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetAxis("Vertical") > 0)
+        if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.up * VerticalSpeed * Time.deltaTime);
         }
 
 
-        else if  (Input.GetAxis("Vertical") < 0)
+        if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.down * VerticalSpeed * Time.deltaTime);
         }
 
-# if DEBUG
         if (Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene("TOPDOWNTEST");
 
         }
-#endif
 
 
     }
