@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class NpcTrigger : MonoBehaviour
 {
-
-    private KeyCode interactKey = KeyCode.Space;
+    public InputSystem_Actions controls;
 
     [SerializeField] private string name;
 
@@ -36,6 +36,8 @@ public class NpcTrigger : MonoBehaviour
 
     public string CurrentText;
 
+    public GameObject InteractPopUP;
+
     /// <summary>
     /// the array to draw the current dialogue from
     /// </summary>
@@ -44,6 +46,8 @@ public class NpcTrigger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        controls = new InputSystem_Actions();
+
         mat = GetComponent<Renderer>().material;
 
         //if we dont have the dialogue box, go find it
@@ -56,18 +60,44 @@ public class NpcTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(interactKey) || Input.GetMouseButtonDown(0)) && IsHighlighted && !GameManager.Instance.InLevel)
+        //moved to an event in the PlayerInput component
+
+        //if ( && IsHighlighted && !GameManager.Instance.InLevel)
+        //{
+        //    NpcInteraction();
+        //}
+
+        //if (controls.Player.Interact.WasPerformedThisFrame() && InDialogue)
+        //{
+        //    if (textComponent.text == CurrentText)
+        //    {
+        //        NextLine();
+        //    }
+        //    else
+        //    {
+        //        StopAllCoroutines();
+        //        textComponent.text = CurrentText;
+        //    }
+        //}
+    }
+
+
+    /// <summary>
+    /// called when space is pressed. do everything that happens when an NPC is interacted with
+    /// </summary>
+    public void Interact()
+    {
+        if (IsHighlighted && !GameManager.Instance.InLevel)
         {
             NpcInteraction();
         }
 
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(interactKey) ) && InDialogue)
+        if(InDialogue)
         {
-            if (textComponent.text == CurrentText)
+            if(textComponent.text == CurrentText)
             {
                 NextLine();
-            }
-            else
+            } else
             {
                 StopAllCoroutines();
                 textComponent.text = CurrentText;
@@ -84,6 +114,7 @@ public class NpcTrigger : MonoBehaviour
             if (mat != null)
             {
                 mat.EnableKeyword("_EMISSION");
+                InteractPopUP.SetActive(true);
                 IsHighlighted = true;
             }
 
@@ -109,6 +140,7 @@ public class NpcTrigger : MonoBehaviour
             if (mat != null)
             {
                 mat.DisableKeyword("_EMISSION");
+                InteractPopUP.SetActive(false);
                 IsHighlighted = false;
             }
 
@@ -117,28 +149,29 @@ public class NpcTrigger : MonoBehaviour
     }
 
 
-    void NpcInteraction()
+    private void NpcInteraction()
     {
-
         //if (HasCompletedMyLevel  false) // some sort of trigger that prevents the player from replaying on the same npc
         // {
         Debug.Log("Activated event trigger");
         GameManager.Instance.PlayerCanMove = false;
         IsHighlighted = false;
         index = 0;
-        
-        if(GameManager.Instance.PlayerWon)
+
+        if (GameManager.Instance.PlayerWon)
         {
             currentDialogue = GameManager.Instance.NpcWinLines;
-        } else if (!GameManager.Instance.InLevel)
+        }
+        else if (!GameManager.Instance.InLevel)
         {
             currentDialogue = GameManager.Instance.NpcLines;
-        } else
+        }
+        else
         {
             currentDialogue = GameManager.Instance.NpcLoseLines;
         }
 
-            textComponent.gameObject.SetActive(true);
+        textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
         GameManager.Instance.Paused = true;

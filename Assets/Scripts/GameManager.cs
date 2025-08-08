@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    public GameObject parent;
+
     /// <summary>
     /// The current level
     /// </summary>
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour
     private KeyCode pauseKey = KeyCode.Escape;
 
     public GameObject FriendCounterUI;
+
+    public GameObject StartingPoint;
 
 
     //below variables aren't actually used in this script, im guessing they're here for convenience?
@@ -70,11 +74,12 @@ public class GameManager : MonoBehaviour
 
 
 
+
     private void Awake()
     {
 
-        //NpcLines = new string[2, 2] {
 
+        //getting rid of this for now so i can try a way to make everything game-related persist at once.
 
         if (Instance != null) // makes sure we have only one instance of our main game manager
         {
@@ -123,8 +128,18 @@ public class GameManager : MonoBehaviour
     private void EndGame()
     {
         SceneManager.LoadScene(endScreen);
-        Destroy(this.gameObject);
+        DestroyPersistentObjects();
     }
+
+
+    /// <summary>
+    /// destroys gameManager, pause screen, and in-game UI
+    /// </summary>
+    public void DestroyPersistentObjects()
+    {
+        Destroy(parent);
+    }
+
 
     public void AddToFriendCounter(int NpcNumber)
     {
