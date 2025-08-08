@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         if (DistanceFromStart > 10f)
         {
             WalkingPopUp.SetActive(false);
-            Debug.Log("true");
+            //Debug.Log("true");
             
         }
         if (GameManager.Instance.PlayerCanMove)
