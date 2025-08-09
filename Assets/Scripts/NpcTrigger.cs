@@ -38,7 +38,9 @@ public class NpcTrigger : MonoBehaviour
 
     public GameObject InteractPopUP;
 
-    public GameObject BackupGoalPopup; 
+    public GameObject BackupGoalPopup;
+
+    public GameObject NpcImage;
 
     /// <summary>
     /// the array to draw the current dialogue from
@@ -144,12 +146,13 @@ public class NpcTrigger : MonoBehaviour
             currentDialogue = GameManager.Instance.NpcLoseLines;
         }
 
-            textComponent.gameObject.SetActive(true);
+        textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
         GameManager.Instance.Paused = true;
         BackupGoalPopup.SetActive(false);
         DialogueBox.SetActive(true);
+        NpcImage.SetActive(true);
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -205,6 +208,7 @@ public class NpcTrigger : MonoBehaviour
             InDialogue = false;
             GameManager.Instance.Paused = false;
             DialogueBox.SetActive(false);
+            NpcImage.SetActive(false);
             textComponent.text = string.Empty;
             //textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
