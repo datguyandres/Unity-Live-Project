@@ -28,7 +28,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
+        if(!GameManager.Instance.Paused)
+        {
+            transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
+        }
     }
 
     void Update()
