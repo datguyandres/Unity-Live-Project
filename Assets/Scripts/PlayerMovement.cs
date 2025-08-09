@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 StartingPoint;
 
     public GameObject WalkingPopUp;
+    public GameObject ObjectivePopup; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     /*void Awake()
     {
@@ -34,11 +35,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float DistanceFromStart = Vector3.Distance(this.transform.position, StartingPoint);
-        if (DistanceFromStart > 10f)
+        if (DistanceFromStart > 8f)
         {
             WalkingPopUp.SetActive(false);
+            ObjectivePopup.SetActive(false);
             //Debug.Log("true");
-            
+
         }
         if (GameManager.Instance.PlayerCanMove)
         {
