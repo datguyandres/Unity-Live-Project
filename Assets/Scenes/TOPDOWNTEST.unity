@@ -7544,7 +7544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: textSpeed
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: DialogueBox
@@ -17860,7 +17860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VerticalSpeed: 1
   HorizontalSpeed: 1
-  speed: 2
+  speed: 3
   StartingPoint: {x: 0, y: 0, z: 0}
   WalkingPopUp: {fileID: 2119713017}
   ObjectivePopup: {fileID: 949564228}
@@ -18372,7 +18372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: textSpeed
-      value: 0.5
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: DialogueBox
