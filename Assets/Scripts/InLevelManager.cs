@@ -41,10 +41,6 @@ public class InLevelManager : MonoBehaviour
             GameManager.Instance.PlayerWon = true;
             GameManager.Instance.DifficultyLevel++;
         }
-        else
-        {
-            GameManager.Instance.PlayerLost = true;
-        }
-            SceneManager.LoadScene(GameManager.Instance.playerLastScene);
+        SceneManager.LoadScene(GameManager.Instance.playerLastScene);
     }
 }

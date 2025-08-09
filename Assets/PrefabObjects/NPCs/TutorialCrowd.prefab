@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7581315414158670444}
+  - component: {fileID: 1001469014099927993}
   m_Layer: 0
   m_Name: TutorialCrowd
   m_TagString: Untagged
@@ -34,6 +35,19 @@ Transform:
   - {fileID: 6081664805368373166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001469014099927993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234411708021115711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f9d57ebeab9444f85da41ce41c8f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToDestroy: 1
 --- !u!1001 &126517482808817128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,11 +266,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8175659217346219207, guid: 9186975bc7e0f4b4683c64f610636f52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.989151
+      value: 18.63
       objectReference: {fileID: 0}
     - target: {fileID: 8175659217346219207, guid: 9186975bc7e0f4b4683c64f610636f52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.325717
+      value: 12.79
       objectReference: {fileID: 0}
     - target: {fileID: 8175659217346219207, guid: 9186975bc7e0f4b4683c64f610636f52, type: 3}
       propertyPath: m_LocalPosition.z
