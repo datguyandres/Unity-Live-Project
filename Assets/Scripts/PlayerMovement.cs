@@ -17,18 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject WalkingPopUp;
     public GameObject ObjectivePopup; 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    /*void Awake()
-    {
-        this.transform.position = GameManager.Instance.PlayerLastLocation;
-        
-    }*/
 
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        StartingPoint = GameManager.Instance.StartingPoint.transform.position;
-        this.transform.position = StartingPoint; //(doesnt work with game manager right now) 
+        this.transform.position = GameManager.Instance.PlayerLastLocation;
+        //this was breaking stuff - rafa
+        //StartingPoint = GameManager.Instance.StartingPoint.transform.position;
+        //this.transform.position = StartingPoint; //(doesnt work with game manager right now) 
     }
 
     // Update is called once per frame

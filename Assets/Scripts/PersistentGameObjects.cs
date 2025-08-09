@@ -7,12 +7,11 @@ public class PersistentGameObjects : MonoBehaviour
     public GameManager gameManager;
 
     
-    void Awake()
+    void Start()
     {
         //if there's another gamemanager OR if this scene shouldn't have one, destroy all the persistent objects
         if (!GameManager.Instance == this.gameManager) 
         {
-            GameManager.Instance = null;
             Destroy(this.gameObject);
         } else
         {

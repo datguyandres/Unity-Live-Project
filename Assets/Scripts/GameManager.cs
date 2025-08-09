@@ -73,25 +73,23 @@ public class GameManager : MonoBehaviour
         };
 
 
-
-
     private void Awake()
     {
-
-
-        //getting rid of this for now so i can try a way to make everything game-related persist at once.
-
-        if (Instance != null) // makes sure we have only one instance of our main game manager
+        if(GameManager.Instance == null)
         {
-            Destroy(gameObject);
-            return;
+            GameManager.Instance = this;
+        } else
+        {
+            Destroy(parent);
         }
-        Instance = this; // makes it so that our class can be called anywhere without a reference
-        DontDestroyOnLoad(gameObject); // prevents it from being destroyed on scene change
-        PlayerLastLocation = StartingPoint.transform.position;
 
+        if (StartingPoint != null)
+        {
+            PlayerLastLocation = StartingPoint.transform.position;
+            StartingPoint = null;
+            Destroy(StartingPoint);
+        }
     }
-
 
     private void FixedUpdate()
     {
