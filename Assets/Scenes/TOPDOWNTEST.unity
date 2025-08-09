@@ -1072,6 +1072,7 @@ MonoBehaviour:
   WasBeaten: 0
   CurrentText: 
   InteractPopUP: {fileID: 0}
+  BackupGoalPopup: {fileID: 0}
 --- !u!61 &214387927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2486,6 +2487,78 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &412245566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412245567}
+  - component: {fileID: 412245569}
+  - component: {fileID: 412245568}
+  m_Layer: 5
+  m_Name: BackupGoalPopup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &412245567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412245566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.38, y: 2.0772202, z: 2.0772202}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 751785204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -173}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &412245568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412245566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 19d98c4f4db5ab34981f06add2e5d49b, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &412245569
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412245566}
+  m_CullTransparentMesh: 1
 --- !u!1001 &413920215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6755,6 +6828,7 @@ RectTransform:
   - {fileID: 2015829617}
   - {fileID: 2119713020}
   - {fileID: 949564231}
+  - {fileID: 412245567}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7484,6 +7558,10 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1868514005}
+    - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
+      propertyPath: BackupGoalPopup
+      value: 
+      objectReference: {fileID: 412245566}
     - target: {fileID: 2103941379051364658, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: m_Size.x
       value: 6.848594
@@ -10834,6 +10912,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 169
+      objectReference: {fileID: 0}
+    - target: {fileID: 564929354214259522, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2493891781314971580, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: m_Name
       value: PersistentObjects
@@ -10877,6 +10979,14 @@ PrefabInstance:
     - target: {fileID: 4702283749004386991, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376594783289208140, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376594783289208140, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 166
       objectReference: {fileID: 0}
     - target: {fileID: 6908291080311699564, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: startTime
@@ -17636,14 +17746,14 @@ RectTransform:
   m_GameObject: {fileID: 2119713017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.69, y: 0.8625, z: 0.69}
+  m_LocalScale: {x: 0.53, y: 0.66249996, z: 0.53}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 751785204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888, y: 156}
+  m_AnchoredPosition: {x: -205, y: 30}
   m_SizeDelta: {x: 665.7767, y: 190.6846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2129090553
@@ -18266,6 +18376,10 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1868514005}
+    - target: {fileID: 688647245584344866, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
+      propertyPath: BackupGoalPopup
+      value: 
+      objectReference: {fileID: 412245566}
     - target: {fileID: 2103941379051364658, guid: f59e5fc612ef5ae4d8e961afd26cbbaa, type: 3}
       propertyPath: m_Size.x
       value: 9.0036545

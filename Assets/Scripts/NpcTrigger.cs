@@ -38,6 +38,8 @@ public class NpcTrigger : MonoBehaviour
 
     public GameObject InteractPopUP;
 
+    public GameObject BackupGoalPopup; 
+
     /// <summary>
     /// the array to draw the current dialogue from
     /// </summary>
@@ -146,6 +148,7 @@ public class NpcTrigger : MonoBehaviour
         StartCoroutine(TypeLine());
         InDialogue = true;
         GameManager.Instance.Paused = true;
+        BackupGoalPopup.SetActive(false);
         DialogueBox.SetActive(true);
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
