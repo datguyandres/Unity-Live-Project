@@ -45,8 +45,6 @@ public class GameManager : MonoBehaviour
 
     public bool PlayerWon = false;
 
-    public bool PlayerLost = false;
-
     [SerializeField] private string endScreen = "EndScreen";
 
     // public string[] Npc1;
