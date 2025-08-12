@@ -1,6 +1,7 @@
-using UnityEngine;
-using TMPro;
 using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -70,6 +71,10 @@ public class GameManager : MonoBehaviour
             {"player + npc2 Lose line" }
         };
 
+    public NpcTrigger CurrentNPC { get; set; }
+
+    
+
 
     private void Awake()
     {
@@ -117,6 +122,17 @@ public class GameManager : MonoBehaviour
 
         }
 
+    }
+
+    /// <summary>
+    /// runs the current NPC's dialogue
+    /// </summary>
+    public void OnInteract(InputAction.CallbackContext context)    
+    {
+        if (CurrentNPC != null && context.started)
+            CurrentNPC.StartOrAdvanceDialogue();
+        //else
+        //this is where the amica cringing/notification would be
     }
 
     /// <summary>

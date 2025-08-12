@@ -12,19 +12,22 @@ public class AmicaAnimator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.A))
+        //going left
+        if (Input.GetAxis("Horizontal") < 0)
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
         }
 
-        else {
+        else
+        {
             AmicaController.SetBool("goingLeft", false);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        //going right
+        if (Input.GetAxis("Horizontal") > 0)
         {
             Debug.Log("should be playing right animation");
             AmicaController.SetBool("goingRight", true);
@@ -35,7 +38,8 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingRight", false);
         }
 
-        if (Input.GetKey(KeyCode.W))
+        //going up
+        if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0)
         {
             Debug.Log("should be playing back animation");
             AmicaController.SetBool("goingBack", true);
@@ -46,7 +50,7 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingBack", false);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
         {
             Debug.Log("should be playing forward animation");
             AmicaController.SetBool("goingForward", true);
