@@ -14,10 +14,17 @@ public class InternalDialogueTrigger : MonoBehaviour
     public string CurrentText;
     public bool InDialogue;
     public GameObject AmicaImage;
+
+    public int DialogueID;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         textComponent.text = string.Empty;
+        if (GameManager.Instance.SelfDialougeDone.IndexOf(DialogueID) > -1)
+        {
+            Destroy(gameObject);
+        }
 
     }
 
@@ -84,6 +91,7 @@ public class InternalDialogueTrigger : MonoBehaviour
             textComponent.text = string.Empty;
             GameManager.Instance.PlayerCanMove = true;
             AmicaImage.SetActive(false);
+            GameManager.Instance.SelfDialougeDone.Add(DialogueID);
             Destroy(gameObject);
         }
     }

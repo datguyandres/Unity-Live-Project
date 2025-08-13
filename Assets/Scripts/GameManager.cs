@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     public bool PlayerWon = false;
 
+    public List<int> SelfDialougeDone = new List<int>();
+
     [SerializeField] private string endScreen = "EndScreen";
 
     // public string[] Npc1;
