@@ -36,16 +36,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.Translate(Vector3.up * VerticalSpeed * Time.deltaTime);
-        }
-
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Translate(Vector3.down * VerticalSpeed * Time.deltaTime);
-        }
+        transform.Translate(new Vector3(0,Input.GetAxis("Vertical"),0) * VerticalSpeed * Time.deltaTime);
 
         if (Input.GetKey(KeyCode.E))
         {

@@ -116,6 +116,7 @@ MonoBehaviour:
   CurrentText: 
   InteractPopUP: {fileID: 5487979611878404171}
   BackupGoalPopup: {fileID: 0}
+  NpcImage: {fileID: 0}
 --- !u!61 &2103941379051364658
 BoxCollider2D:
   m_ObjectHideFlags: 0
