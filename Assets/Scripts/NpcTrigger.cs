@@ -4,8 +4,9 @@ using TMPro;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System.Linq;
 
-public class NpcTrigger : MonoBehaviour
+public class NpcTrigger : DialogueTriggeringObject
 {
 
     public bool IsHighlighted;
@@ -15,43 +16,19 @@ public class NpcTrigger : MonoBehaviour
 
     public int LevelNum; //each npc will have a designated scene/level that they will lead to 
 
-    public TextMeshProUGUI textComponent;
-
-    public GameObject DialogueBox;
-
-    public float textSpeed;
-
-    private int index;
-
-    public bool InDialogue;
 
     public GameObject player;
 
     public bool WasBeaten;
 
-    public string CurrentText;
-
     public GameObject InteractPopUP;
 
     public GameObject BackupGoalPopup;
 
-    public GameObject NpcImage;
-
-    /// <summary>
-    /// the array to draw the current dialogue from
-    /// </summary>
-    private string[,] currentDialogue;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
         mat = GetComponent<Renderer>().material;
-
-        //if we dont have the dialogue box, go find it
-        if(textComponent == null)
-            textComponent = GameObject.FindWithTag("DialogueBox").GetComponent<TextMeshProUGUI>();
-
-        textComponent.text = string.Empty;
+        base.Start();
     }
 
 
@@ -61,23 +38,15 @@ public class NpcTrigger : MonoBehaviour
     /// 
     /// run when the interact button is pressed
     /// </summary>
-    public void StartOrAdvanceDialogue()
+    public override void StartOrAdvanceDialogue()
     {
         if (IsHighlighted && !GameManager.Instance.InLevel)
         {
-            NpcInteraction();
+            StartDialogue();
         }
-        else if (InDialogue)
+        else 
         {
-            if (textComponent.text == CurrentText)
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = CurrentText;
-            }
+            base.StartOrAdvanceDialogue();
         }
     }
 
@@ -87,8 +56,7 @@ public class NpcTrigger : MonoBehaviour
         if (other.gameObject.tag == "npcChecker")
         {
             player = other.gameObject;
-            Debug.Log("Interacted with the npcChecker");
-            GameManager.Instance.CurrentNPC = this;
+            GameManager.Instance.CurrentDialogueObject = this;
             if (mat != null)
             {
                 mat.EnableKeyword("_EMISSION");
@@ -104,7 +72,7 @@ public class NpcTrigger : MonoBehaviour
 
             if (GameManager.Instance.InLevel)
             {
-                NpcInteraction();
+                StartDialogue();
             }
 
         }
@@ -117,7 +85,7 @@ public class NpcTrigger : MonoBehaviour
         {
             if (mat != null)
             {
-                GameManager.Instance.CurrentNPC = null;
+                
                 mat.DisableKeyword("_EMISSION");
                 InteractPopUP.SetActive(false);
                 IsHighlighted = false;
@@ -131,7 +99,7 @@ public class NpcTrigger : MonoBehaviour
     /// <summary>
     /// Sets up dialogue with this NPC
     /// </summary>
-    void NpcInteraction()
+    protected override void StartDialogue()
     {
 
         //if (HasCompletedMyLevel  false) // some sort of trigger that prevents the player from replaying on the same npc
@@ -142,22 +110,22 @@ public class NpcTrigger : MonoBehaviour
         
         if(GameManager.Instance.PlayerWon)
         {
-            currentDialogue = GameManager.Instance.NpcWinLines;
+            currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcWinLines, NpcNumber);
         } else if (GameManager.Instance.InLevel)
         {
-            currentDialogue = GameManager.Instance.NpcLoseLines;
+            currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcLoseLines, NpcNumber);
         } else
         {
-            currentDialogue = GameManager.Instance.NpcLines;
+            currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcLines, NpcNumber);
         }
 
         textComponent.gameObject.SetActive(true);
-        StartCoroutine(TypeLine());
+        NextLine();
         InDialogue = true;
-        GameManager.Instance.Paused = true;
+        
         BackupGoalPopup.SetActive(false);
         DialogueBox.SetActive(true);
-        NpcImage.SetActive(true);
+        TalkingCharacterImage.SetActive(true);
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -171,7 +139,7 @@ public class NpcTrigger : MonoBehaviour
         //scene switching code/function call would go here?
     }
 
-    IEnumerator TypeLine()
+    protected override IEnumerator TypeLine()
     {
         
         if (GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) > -1 && GameManager.Instance.InLevel != true)
@@ -188,7 +156,6 @@ public class NpcTrigger : MonoBehaviour
 
         else 
         {
-            CurrentText = currentDialogue[NpcNumber, index];
             foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
@@ -199,45 +166,44 @@ public class NpcTrigger : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// loads the next line of dialogue, if any. ends dialogue and starts the associated level if none
-    /// </summary>
-    void NextLine()
+    protected override void EndDialogue()
     {
-        if (index < GameManager.Instance.NpcLines.GetLength(1)-1)
+
+        base.EndDialogue();
+
+        //start level or end 
+        GameManager.Instance.PlayerLastLocation = player.transform.position;
+        GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
+
+        if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
         {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
+            GameManager.Instance.InLevel = true;
+            //SceneManager.LoadScene(4);
+            SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
         }
         else
         {
-            InDialogue = false;
-            GameManager.Instance.Paused = false;
-            DialogueBox.SetActive(false);
-            NpcImage.SetActive(false);
-            textComponent.text = string.Empty;
-            //textComponent.gameObject.SetActive(false);
-            GameManager.Instance.PlayerLastLocation = player.transform.position;
-            GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
-            GameManager.Instance.PlayerCanMove = true;
-            if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
-            {
-                GameManager.Instance.InLevel = true;
-                //SceneManager.LoadScene(4);
-                SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
-            }
-            else
-            {
-                GameManager.Instance.InLevel = false;
-                GameManager.Instance.PlayerWon = false;
-            }
-
+            GameManager.Instance.InLevel = false;
+            GameManager.Instance.PlayerWon = false;
         }
+
     }
-
     
-
+    /// <summary>
+    /// helper method that gets a row of a 2d array
+    /// </summary>
+    /// <param name="TwoDArray">the array referenced</param>
+    /// <param name="row">the row of the array</param>
+    /// <returns>a 1d array of strings with a row of the 2d array</returns>
+    private string[] Get1dArrayFrom2D(string[,] TwoDArray, int row)
+    {
+        string[] returned = new string[TwoDArray.GetLength(1)];
+        for (int i = 0; i < TwoDArray.GetLength(1); i++)
+        {
+            returned[i] = TwoDArray[row, i];
+        }
+        return returned;
+    }
 
 
 }

@@ -72,13 +72,14 @@ public class GameManager : MonoBehaviour
             {"player + npc2 Lose line" }
         };
 
-    public NpcTrigger CurrentNPC { get; set; }
+    public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 
     
 
 
     private void Awake()
     {
+        Paused = false;
         if(GameManager.Instance == null)
         {
             GameManager.Instance = this;
@@ -97,7 +98,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!Paused)
+        if (PlayerCanMove)
         {
             Timer += Time.deltaTime;
 
@@ -124,8 +125,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void OnInteract(InputAction.CallbackContext context)    
     {
-        if (CurrentNPC != null && context.started)
-            CurrentNPC.StartOrAdvanceDialogue();
+        if (CurrentDialogueObject != null && context.started)
+            CurrentDialogueObject.StartOrAdvanceDialogue();
         //else
         //this is where the amica cringing/notification would be
     }
