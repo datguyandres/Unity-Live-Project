@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Pause/Resume",
+                    "type": "Button",
+                    "id": "49971d17-5404-435d-988b-9228179bcbc6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -176,6 +185,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a778da7-c93d-452e-9b3d-2962e18ba6f7",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause/Resume",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95880223-dab9-457b-997b-a2ffab0eaf07",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause/Resume",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

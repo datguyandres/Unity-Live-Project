@@ -25,7 +25,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI ScoreText;
 
     public bool Paused { get; set; } //set to public because if we are using this to stop the timer then i need to be able to access it when dialogue starts so timer stops
-    private KeyCode pauseKey = KeyCode.Escape;
 
     public GameObject FriendCounterUI;
 
@@ -73,13 +72,14 @@ public class GameManager : MonoBehaviour
             {"player + npc2 Lose line" }
         };
 
-    public NpcTrigger CurrentNPC { get; set; }
+    public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 
     
 
 
     private void Awake()
     {
+        Paused = false;
         if(GameManager.Instance == null)
         {
             GameManager.Instance = this;
@@ -98,13 +98,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(pauseKey))
-        {
-            //TODO: Make the pausing work for more than just the timer. have it show pause screen, have it stop player movement.
-            Paused = !Paused;
-        }
-
-        if (!Paused)
+        if (PlayerCanMove)
         {
             Timer += Time.deltaTime;
 
@@ -131,8 +125,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void OnInteract(InputAction.CallbackContext context)    
     {
-        if (CurrentNPC != null && context.started)
-            CurrentNPC.StartOrAdvanceDialogue();
+        if (CurrentDialogueObject != null && context.started)
+            CurrentDialogueObject.StartOrAdvanceDialogue();
         //else
         //this is where the amica cringing/notification would be
     }

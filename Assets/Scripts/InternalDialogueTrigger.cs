@@ -2,97 +2,56 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using Unity.VisualScripting;
 
-public class InternalDialogueTrigger : MonoBehaviour
+public class InternalDialogueTrigger : DialogueTriggeringObject
 {
-    private KeyCode interactKey = KeyCode.Space;
-    public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public float textSpeed;
-    public GameObject DialogueBox;
-    private int index;
-    public string CurrentText;
-    public bool InDialogue;
-    public GameObject AmicaImage;
-
     public int DialogueID;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
-        textComponent.text = string.Empty;
+        
         if (GameManager.Instance.SelfDialougeDone.IndexOf(DialogueID) > -1)
         {
             Destroy(gameObject);
         }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(interactKey) ) && InDialogue)
-        {
-            if (textComponent.text == CurrentText)
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = CurrentText;
-            }
-        }
-
+        base.Start();
 
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "npcChecker")
         {
             Debug.Log("Interacted with the npcChecker");
-            InternalDialogue();
+            GameManager.Instance.CurrentDialogueObject = this;
+            StartDialogue();
         }
     }
 
-    void InternalDialogue()
+    protected override void StartDialogue()
     {
         index = 0;
-        StartCoroutine(TypeLine());
+        
         DialogueBox.SetActive(true);
         GameManager.Instance.PlayerCanMove = false;
         InDialogue = true;
-        AmicaImage.SetActive(true);
+        TalkingCharacterImage.SetActive(true);
+
+        NextLine();
 
     }
 
-    IEnumerator TypeLine()
-    {
-        foreach (char c in lines[index].ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }
-    }
+    
 
-    void NextLine()
+    protected override void EndDialogue()
     {
-        if (index < lines.Length - 1)
-        {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-        }
-        else
-        {
-            DialogueBox.SetActive(false);
-            InDialogue = false;
-            textComponent.text = string.Empty;
-            GameManager.Instance.PlayerCanMove = true;
-            AmicaImage.SetActive(false);
-            GameManager.Instance.SelfDialougeDone.Add(DialogueID);
-            Destroy(gameObject);
-        }
+        base.EndDialogue();
+
+        GameManager.Instance.SelfDialougeDone.Add(DialogueID);
+        Destroy(gameObject);
     }
 }
