@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Destroy_Event : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [Header("Destroys attached obj")]
+    [SerializeField] private int levelToDestroy;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (GameManager.Instance.DifficultyLevel > 1)
+        {
+            Destroy(gameObject);
+        }
     }
 }

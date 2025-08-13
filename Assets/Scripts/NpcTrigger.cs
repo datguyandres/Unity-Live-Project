@@ -3,15 +3,10 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class NpcTrigger : MonoBehaviour
 {
-
-    private KeyCode interactKey = KeyCode.Space;
-
-    [SerializeField] private string name;
-
-    public string Name {get => name; private set => name = value;}
 
     public bool IsHighlighted;
 
@@ -38,7 +33,9 @@ public class NpcTrigger : MonoBehaviour
 
     public GameObject InteractPopUP;
 
-    public GameObject BackupGoalPopup; 
+    public GameObject BackupGoalPopup;
+
+    public GameObject NpcImage;
 
     /// <summary>
     /// the array to draw the current dialogue from
@@ -57,15 +54,20 @@ public class NpcTrigger : MonoBehaviour
         textComponent.text = string.Empty;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    /// <summary>
+    /// if dialogue hasn't started and player is in range of an NPC, start some dialogue
+    /// else continue existing dialogue
+    /// 
+    /// run when the interact button is pressed
+    /// </summary>
+    public void StartOrAdvanceDialogue()
     {
-        if ((Input.GetKeyDown(interactKey) || Input.GetMouseButtonDown(0)) && IsHighlighted && !GameManager.Instance.InLevel)
+        if (IsHighlighted && !GameManager.Instance.InLevel)
         {
             NpcInteraction();
         }
-
-        if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(interactKey) ) && InDialogue)
+        else if (InDialogue)
         {
             if (textComponent.text == CurrentText)
             {
@@ -79,12 +81,14 @@ public class NpcTrigger : MonoBehaviour
         }
     }
 
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "npcChecker")
         {
             player = other.gameObject;
             Debug.Log("Interacted with the npcChecker");
+            GameManager.Instance.CurrentNPC = this;
             if (mat != null)
             {
                 mat.EnableKeyword("_EMISSION");
@@ -113,22 +117,25 @@ public class NpcTrigger : MonoBehaviour
         {
             if (mat != null)
             {
+                GameManager.Instance.CurrentNPC = null;
                 mat.DisableKeyword("_EMISSION");
                 InteractPopUP.SetActive(false);
                 IsHighlighted = false;
             }
 
-            GameManager.Instance.PlayerWon = false;
+            
         }
     }
 
 
+    /// <summary>
+    /// Sets up dialogue with this NPC
+    /// </summary>
     void NpcInteraction()
     {
 
         //if (HasCompletedMyLevel  false) // some sort of trigger that prevents the player from replaying on the same npc
         // {
-        Debug.Log("Activated event trigger");
         GameManager.Instance.PlayerCanMove = false;
         IsHighlighted = false;
         index = 0;
@@ -136,20 +143,21 @@ public class NpcTrigger : MonoBehaviour
         if(GameManager.Instance.PlayerWon)
         {
             currentDialogue = GameManager.Instance.NpcWinLines;
-        } else if (!GameManager.Instance.InLevel)
-        {
-            currentDialogue = GameManager.Instance.NpcLines;
-        } else
+        } else if (GameManager.Instance.InLevel)
         {
             currentDialogue = GameManager.Instance.NpcLoseLines;
+        } else
+        {
+            currentDialogue = GameManager.Instance.NpcLines;
         }
 
-            textComponent.gameObject.SetActive(true);
+        textComponent.gameObject.SetActive(true);
         StartCoroutine(TypeLine());
         InDialogue = true;
         GameManager.Instance.Paused = true;
         BackupGoalPopup.SetActive(false);
         DialogueBox.SetActive(true);
+        NpcImage.SetActive(true);
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -187,11 +195,13 @@ public class NpcTrigger : MonoBehaviour
                 yield return new WaitForSeconds(textSpeed);
 
             }
-            Debug.Log("testing dialogue after getting out of level");
             
         }
     }
 
+    /// <summary>
+    /// loads the next line of dialogue, if any. ends dialogue and starts the associated level if none
+    /// </summary>
     void NextLine()
     {
         if (index < GameManager.Instance.NpcLines.GetLength(1)-1)
@@ -205,6 +215,7 @@ public class NpcTrigger : MonoBehaviour
             InDialogue = false;
             GameManager.Instance.Paused = false;
             DialogueBox.SetActive(false);
+            NpcImage.SetActive(false);
             textComponent.text = string.Empty;
             //textComponent.gameObject.SetActive(false);
             GameManager.Instance.PlayerLastLocation = player.transform.position;
@@ -219,6 +230,7 @@ public class NpcTrigger : MonoBehaviour
             else
             {
                 GameManager.Instance.InLevel = false;
+                GameManager.Instance.PlayerWon = false;
             }
 
         }

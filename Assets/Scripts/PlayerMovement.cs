@@ -31,11 +31,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float DistanceFromStart = Vector3.Distance(this.transform.position, StartingPoint);
-        if (DistanceFromStart > 8f)
+        Debug.Log("Distance from start"  + DistanceFromStart);
+        if (DistanceFromStart < 9f)
         {
             WalkingPopUp.SetActive(false);
             ObjectivePopup.SetActive(false);
-            //Debug.Log("true");
+            //Debug.Log("Distance from start" + DistanceFromStart);
 
         }
         if (GameManager.Instance.PlayerCanMove)
