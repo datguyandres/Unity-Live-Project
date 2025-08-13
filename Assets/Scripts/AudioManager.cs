@@ -4,6 +4,8 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    public int MusicID; //will use this varible to determine which song should be used
+
     [SerializeField] private AudioSource SoundFXObject;
 
     private void Awake()
