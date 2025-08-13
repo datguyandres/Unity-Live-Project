@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     public GameObject Amica;
 
     public GameObject Level;
+
+    [SerializeField] private AudioClip HitPhoneSoundClip;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -70,7 +74,7 @@ public class PlayerController : MonoBehaviour
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
              LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
-            this.GetComponent<AudioSource>().Play();
+            AudioManager.instance.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
             Destroy(other.gameObject);
         }
 

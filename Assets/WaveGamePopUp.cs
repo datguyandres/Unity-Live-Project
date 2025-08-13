@@ -15,7 +15,7 @@ public class WaveGamePopUp : MonoBehaviour
     void Update()
     {
         float DistanceFromStart = Vector3.Distance(this.transform.position, Player.transform.position);
-        Debug.Log("distance from starting point" + DistanceFromStart);
+        //Debug.Log("distance from starting point" + DistanceFromStart);
         if(DistanceFromStart > 10 )
         {
             GamePopUp.SetActive(false);
