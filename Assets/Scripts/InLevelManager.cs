@@ -5,10 +5,13 @@ public class InLevelManager : MonoBehaviour
 {
 
     /// <summary>
-    /// the current number of checkpoints the player has hit
+    /// the current number of checkpoints the player has hit [deprecated]
     /// </summary>
     public int checkpointsHit;
 
+    /// <summary>
+    /// the number of checkpoints the player has missed
+    /// </summary>
     public int checkpointsMissed;
 
     public int ExpressionScore; //score only for level to determine which expression to use
@@ -18,24 +21,21 @@ public class InLevelManager : MonoBehaviour
     /// </summary>
     public int checkpointsRequired;
 
+    /// <summary>
+    /// the number of checkpoints in this level
+    /// </summary>
+    public int totalCheckpoints;
+
     private void Start()
     {
         // make sure theres only one of these guys
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     /// <summary>
     /// end level and check score
     /// </summary>
     public void EndLevel()
     {
-        Debug.Log("checkpoints hit" + checkpointsHit);
         if (checkpointsHit >= checkpointsRequired)
         {
             GameManager.Instance.PlayerWon = true;

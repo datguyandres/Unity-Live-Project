@@ -3,6 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
+
+
 public class CheckPointSetup : MonoBehaviour
 {
 
@@ -20,12 +22,26 @@ public class CheckPointSetup : MonoBehaviour
 
     public GameObject NpcExpressions;
 
+    /// <summary>
+    /// run when a checkpoint is missed
+    /// </summary>
+    /// <param name="checkpoint">the checkpoint missed</param>
+    public delegate void CheckpointMissed(GameObject checkpoint);
+
+    /// <summary>
+    /// run when a checkpoint is missed
+    /// </summary>
+    public event CheckpointMissed OnCheckpointMissed;
+
+        
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     //List<GameObject> CheckPointList;
     void Start()
     {
         //get the in level manager
-        inLevelManager = GameObject.FindGameObjectWithTag("InLevelManager").GetComponent<InLevelManager>();
+        if(inLevelManager == null)
+            inLevelManager = GameObject.FindGameObjectWithTag("InLevelManager").GetComponent<InLevelManager>();
 
         TotalChildren = transform.childCount;
         CheckPointArray = new GameObject[transform.childCount];// create empty array size of childrens
@@ -38,6 +54,7 @@ public class CheckPointSetup : MonoBehaviour
         System.Array.Sort(CheckPointArray,
                    (a, b) => { return a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()); });
         System.Array.Reverse(CheckPointArray); //sorting our array of checkpoints
+        inLevelManager.totalCheckpoints = CheckPointArray.Length;
 
 
         LiveCheckpoint = 0;
@@ -53,17 +70,13 @@ public class CheckPointSetup : MonoBehaviour
         if (Player != null && CurrentCP != null)
         {
             float distance = DistanceBetweenPlayerAndCheckpoint(); //distance of point from player
-           // Debug.Log("Distance between " + CheckPointArray[LiveCheckpoint + 1].name + " and " + Player.name + ": " + distance);
 
             //if player half the distance to the next point delete the current one and spawn the next one without awarding points
             float DistBtwnPnts = DistanceBetweenCheckPoints();
-            //Debug.Log("Distance between " + CurrentCP.name + " and " + CheckPointArray[LiveCheckpoint + 1].name + ": " + DistBtwnPnts);
 
-            if (distance < DistBtwnPnts/2)
+            if (distance != -1 && distance < DistBtwnPnts/2)
             {
-                //inLevelManager.LevelScore -= 1;
-                SetNextCheckpoint();
-                //Debug.Log("works here");
+                OnCheckpointMiss();
             }
         }
 
@@ -88,6 +101,9 @@ public class CheckPointSetup : MonoBehaviour
             CheckPointArray[LiveCheckpoint].gameObject.SetActive(false);//deactivate hit checkpoint
             LiveCheckpoint++;
             SetCheckPointActive();
+        } else
+        {
+
         }
     }
 
@@ -96,8 +112,17 @@ public class CheckPointSetup : MonoBehaviour
     /// </summary>
     public void OnCheckpointHit() 
     {
-        inLevelManager.checkpointsHit += 1;
-        Debug.Log("checkpoints hit: " + inLevelManager.checkpointsHit);
+        inLevelManager.checkpointsHit += 1; // deprecated
+        SetNextCheckpoint();
+    }
+
+    /// <summary>
+    /// lowers HP & sets up next checkpoint
+    /// </summary>
+    public void OnCheckpointMiss()
+    {
+        inLevelManager.checkpointsMissed += 1;
+        OnCheckpointMissed(CurrentCP);
         SetNextCheckpoint();
     }
 
@@ -131,8 +156,6 @@ public class CheckPointSetup : MonoBehaviour
         {
             float dist = CheckPointArray[LiveCheckpoint + 1].transform.position.x -  Player.transform.position.x;
 
-
-            //Debug.Log("Distance between player and next checkpoint: "+ dist);
             return dist;
         }
         else
