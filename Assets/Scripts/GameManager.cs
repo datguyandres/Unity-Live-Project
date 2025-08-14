@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private string endScreen = "EndScreen";
 
+    public bool InHallway = true;
+
+    // used to determine when player is going into a classroom and when they are leaving a classroom
+
     // public string[] Npc1;
     //public string[] Npc2;
 
@@ -74,16 +78,17 @@ public class GameManager : MonoBehaviour
 
     public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 
-    
+
 
 
     private void Awake()
     {
         Paused = false;
-        if(GameManager.Instance == null)
+        if (GameManager.Instance == null)
         {
             GameManager.Instance = this;
-        } else
+        }
+        else
         {
             Destroy(parent);
         }
@@ -94,6 +99,7 @@ public class GameManager : MonoBehaviour
             StartingPoint = null;
             Destroy(StartingPoint);
         }
+        InHallway = true;
     }
 
     private void FixedUpdate()

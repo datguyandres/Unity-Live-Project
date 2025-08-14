@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MusicTransition : MonoBehaviour
 {
+    public GameObject MusicManager;
 
     public int SongID; // use this to determine which song this tile will trigger for the room the player is entering too from the hallway
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,8 +22,20 @@ public class MusicTransition : MonoBehaviour
     {
         if (other.gameObject.tag == "npcChecker")
         {
-            Debug.Log("Interacted with the npcChecker");
-            AudioManager.instance.MusicID = SongID;
+            Debug.Log("MusicTransitionShuoldTriggerr");
+            if (GameManager.Instance.InHallway)//walkoing INTO a classroom
+            {
+                Debug.Log("VERY IMPORTANT CHECK");
+                AudioManager.instance.MusicID = SongID;
+                MusicManager.GetComponent<MusicManager>().SwitchMusic(SongID);
+                GameManager.Instance.InHallway = false;
+            }
+            else //walking out of a classroom
+            {
+                AudioManager.instance.MusicID = 0;
+                MusicManager.GetComponent<MusicManager>().SwitchMusic(0);
+                GameManager.Instance.InHallway = true;
+            }
         }
     }
 }
