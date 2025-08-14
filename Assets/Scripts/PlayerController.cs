@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
              LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
-            AudioManager.instance.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
+            AudioManager.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
             Destroy(other.gameObject);
         }
 
