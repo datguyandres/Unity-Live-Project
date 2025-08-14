@@ -12,6 +12,7 @@ TagManager:
   - GameManager
   - InLevelManager
   - DialogueBox
+  - CheckpointHolder
   layers:
   - Default
   - TransparentFX
