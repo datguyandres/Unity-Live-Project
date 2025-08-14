@@ -43,11 +43,14 @@ public class PlayerController : MonoBehaviour
         if(GameManager.Instance.PlayerCanMove)
             transform.Translate(new Vector3(0,Input.GetAxis("Vertical"),0) * VerticalSpeed * Time.deltaTime);
 
+#if DEBUG
+        //this SHOULD not work in build
         if (Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene("TOPDOWNTEST");
 
         }
+#endif
 
 
     }
