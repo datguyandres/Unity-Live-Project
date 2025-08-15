@@ -172,21 +172,8 @@ public class NpcTrigger : DialogueTriggeringObject
         base.EndDialogue();
 
         //start level or end 
-        GameManager.Instance.PlayerLastLocation = player.transform.position;
-        GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
 
-        if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
-        {
-            GameManager.Instance.InLevel = true;
-            //SceneManager.LoadScene(4);
-            SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
-        }
-        else
-        {
-            GameManager.Instance.InLevel = false;
-            GameManager.Instance.PlayerWon = false;
-        }
-
+        GameManager.Instance.StartOrEndLevel(NpcNumber, player);
     }
     
     /// <summary>
