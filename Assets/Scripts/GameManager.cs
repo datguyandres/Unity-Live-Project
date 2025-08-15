@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
 
     public bool InHallway = true;
 
+
+    public GameObject npcCounter;
+    private int npcCount;
+
     // used to determine when player is going into a classroom and when they are leaving a classroom
 
     // public string[] Npc1;
@@ -100,6 +104,17 @@ public class GameManager : MonoBehaviour
             Destroy(StartingPoint);
         }
         InHallway = true;
+
+        //get the NPC count
+        if(npcCounter != null)
+        {
+            npcCount = npcCounter.transform.childCount;
+        } else
+        {
+            Debug.LogError("GameManager needs an NPC Counter but none was found!");
+        }
+
+        
     }
 
     private void FixedUpdate()
@@ -159,6 +174,34 @@ public class GameManager : MonoBehaviour
     public void AddToFriendCounter(int NpcNumber)
     {
         FriendCounterUI.transform.GetChild(NpcNumber).gameObject.SetActive(true);
+    }
+
+    /// <summary>
+    /// starts or ends the current level
+    /// </summary>
+    public void StartOrEndLevel(int currentNPCNumber, GameObject player)
+    {
+        PlayerLastLocation = player.transform.position;
+        playerLastScene = SceneManager.GetActiveScene().name;
+
+        if (InLevel == false && NpcsBeaten.IndexOf(currentNPCNumber) == -1)
+        {
+            InLevel = true;
+            //SceneManager.LoadScene(4);
+            SceneManager.LoadScene(DifficultyLevel);
+        }
+        else
+        {
+            InLevel = false;
+            PlayerWon = false;
+
+            //if this is the last level, end the game
+
+            if(npcCount <= NpcsBeaten.Count)
+            {
+                EndGame();
+            } 
+        }
     }
 
 }
