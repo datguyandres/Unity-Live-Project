@@ -6,9 +6,12 @@ public class MusicManager : MonoBehaviour
     public AudioSource Classroom1Theme;
     public AudioSource Classroom2Theme;
     public AudioSource HallwayAmbience;
+    public AudioSource ScienceRoomAmbience;
+    public AudioSource EnglishRoomAmbience;
 
 
     public AudioSource CurrentMusic;
+    public AudioSource CurrentAmbience;
 
     public float fadeDuration = 2f;
 
@@ -17,23 +20,6 @@ public class MusicManager : MonoBehaviour
     void Start()
     {
         CurrentSongID = AudioManager.instance.MusicID;
-        /*switch (CurrentSongID) //would prefer to do an array of sounds
-        {
-            case 0:
-                HallwayTheme.Play();
-                HallwayAmbience.Play();
-                CurrentMusic = HallwayTheme;
-                break;
-            case 1:
-                Classroom1Theme.Play();
-                CurrentMusic = Classroom1Theme;
-                break;
-            case 2:
-                Classroom2Theme.Play();
-                CurrentMusic = Classroom2Theme;
-                break;
-
-        }*/
         SwitchMusic(CurrentSongID);
 
     }
@@ -45,6 +31,7 @@ public class MusicManager : MonoBehaviour
         if (CurrentMusic != null)
         {
             CurrentMusic.Stop();
+            CurrentAmbience.Stop();
         }
         switch (NewSongID) //would prefer to do an array of sounds
         {
@@ -52,14 +39,19 @@ public class MusicManager : MonoBehaviour
                 HallwayTheme.Play();
                 HallwayAmbience.Play();
                 CurrentMusic = HallwayTheme;
+                CurrentAmbience = HallwayAmbience;
                 break;
             case 1:
                 Classroom1Theme.Play();
+                ScienceRoomAmbience.Play();
                 CurrentMusic = Classroom1Theme;
+                CurrentAmbience = ScienceRoomAmbience;
                 break;
             case 2:
                 Classroom2Theme.Play();
+                EnglishRoomAmbience.Play();
                 CurrentMusic = Classroom2Theme;
+                CurrentAmbience = EnglishRoomAmbience;
                 break;
 
         }

@@ -16,19 +16,21 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
+    public static void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
         Debug.Log("Should be playing sound here ");
 
-        AudioSource audioSource = Instantiate(SoundFXObject, spawnTransform.position, Quaternion.identity);
+        /* AudioSource audioSource = Instantiate(SoundFXObject, spawnTransform.position, Quaternion.identity);
 
-        audioSource.clip = audioClip;
+         audioSource.clip = audioClip;
 
-        audioSource.Play();
+         audioSource.Play();
 
-        float clipLength = audioSource.clip.length;
+         float clipLength = audioSource.clip.length;
 
-        Destroy(audioSource.gameObject, clipLength);
+         Destroy(audioSource.gameObject, clipLength);*/
+
+        AudioSource.PlayClipAtPoint(audioClip, spawnTransform.position);
 
     }
 }
