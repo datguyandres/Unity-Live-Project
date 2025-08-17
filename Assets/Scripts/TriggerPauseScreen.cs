@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class TriggerPauseScreen : MonoBehaviour
 {
-    private KeyCode pauseKey = KeyCode.Escape;
     public GameObject pauseScreen;
     public bool pauseState;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -14,13 +15,20 @@ public class TriggerPauseScreen : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void OnPause(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown(pauseKey))
+        if (context.started)
         {
-            pauseScreen.SetActive(true);
-            GameManager.Instance.PlayerCanMove = false;
-            GameManager.Instance.Paused = true;
+            if (!pauseScreen.activeInHierarchy)
+            {
+                pauseScreen.SetActive(true);
+                GameManager.Instance.PlayerCanMove = false;
+                GameManager.Instance.Paused = true;
+            }
+            else
+            {
+                Resume();
+            }
         }
     }
 

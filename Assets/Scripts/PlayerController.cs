@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     public GameObject Amica;
 
     public GameObject Level;
+
+    [SerializeField] private AudioClip HitPhoneSoundClip;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!GameManager.Instance.Paused)
+        if(GameManager.Instance.PlayerCanMove)
         {
             transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
         }
@@ -36,13 +40,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(new Vector3(0,Input.GetAxis("Vertical"),0) * VerticalSpeed * Time.deltaTime);
+        if(GameManager.Instance.PlayerCanMove)
+            transform.Translate(new Vector3(0,Input.GetAxis("Vertical"),0) * VerticalSpeed * Time.deltaTime);
 
+#if DEBUG
+        //this SHOULD not work in build
         if (Input.GetKey(KeyCode.E))
         {
             SceneManager.LoadScene("TOPDOWNTEST");
 
         }
+#endif
 
 
     }
@@ -70,7 +78,7 @@ public class PlayerController : MonoBehaviour
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
              LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
-            this.GetComponent<AudioSource>().Play();
+            AudioManager.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
             Destroy(other.gameObject);
         }
 

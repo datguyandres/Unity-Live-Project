@@ -188,9 +188,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3579418410680515974, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579418410680515974, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: c11099015a278244185723802a48a662, type: 2}
+    - target: {fileID: 3579418410680515974, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579418410680515974, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579418410680515974, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4532494877635424264, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
       propertyPath: m_LocalPosition.z
       value: -20
@@ -235,6 +251,10 @@ PrefabInstance:
       propertyPath: CheckpointHandler
       value: 
       objectReference: {fileID: 784240135}
+    - target: {fileID: 4916548425147295644, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: HitPhoneSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 657b6e30a8e2c3944bdab81a8634117b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1631,7 +1651,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668285517}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 652804bd3b1581f47a09e625fdc0d18a, type: 3}
   m_Name: 
