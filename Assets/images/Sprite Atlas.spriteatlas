@@ -108,6 +108,7 @@ SpriteAtlas:
     - 13d42e113af11f849a7bbd154a879150: 21300000
     - 506a9c21564aa584ab6936b210051dfa: 21300000
     - 554a5b41bd89da94e9396051b45c356c: 21300000
+    - ac7f638117e2d9c4aa1e52b4924d4dbe: 21300000
     - 83709102ed0da744483e786f96127705: 2078820366
     - 83709102ed0da744483e786f96127705: 913165823
     - 30a3570204927c64791bd6eda9bd7181: 21300000
@@ -559,6 +560,7 @@ SpriteAtlas:
     - 551630eb31b28f9418e3b1f6e6e8bc09: 337965854
     - 2facaffbca95ae444aa7f014e4d8c7bf: 21300000
     - ad9da10c0d0923c469179868b4e3b5e1: 21300000
+    - a9c909ac45244e442b61e5f76030a497: 21300000
     - 99c76cbc9d9881748b3e531e6bc9eaef: -1656166693
     - 99c76cbc9d9881748b3e531e6bc9eaef: -813417944
     - 99c76cbc9d9881748b3e531e6bc9eaef: 103164904
@@ -736,6 +738,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 13d42e113af11f849a7bbd154a879150, type: 3}
   - {fileID: 21300000, guid: 506a9c21564aa584ab6936b210051dfa, type: 2}
   - {fileID: 21300000, guid: 554a5b41bd89da94e9396051b45c356c, type: 3}
+  - {fileID: 21300000, guid: ac7f638117e2d9c4aa1e52b4924d4dbe, type: 3}
   - {fileID: 2078820366, guid: 83709102ed0da744483e786f96127705, type: 3}
   - {fileID: 913165823, guid: 83709102ed0da744483e786f96127705, type: 3}
   - {fileID: 21300000, guid: 30a3570204927c64791bd6eda9bd7181, type: 3}
@@ -1187,6 +1190,7 @@ SpriteAtlas:
   - {fileID: 337965854, guid: 551630eb31b28f9418e3b1f6e6e8bc09, type: 3}
   - {fileID: 21300000, guid: 2facaffbca95ae444aa7f014e4d8c7bf, type: 3}
   - {fileID: 21300000, guid: ad9da10c0d0923c469179868b4e3b5e1, type: 3}
+  - {fileID: 21300000, guid: a9c909ac45244e442b61e5f76030a497, type: 3}
   - {fileID: -1656166693, guid: 99c76cbc9d9881748b3e531e6bc9eaef, type: 3}
   - {fileID: -813417944, guid: 99c76cbc9d9881748b3e531e6bc9eaef, type: 3}
   - {fileID: 103164904, guid: 99c76cbc9d9881748b3e531e6bc9eaef, type: 3}
@@ -1363,6 +1367,7 @@ SpriteAtlas:
   - Generic NPC
   - amica_spritesheet_9
   - maelle_full_neutral
+  - wave down updated
   - maelle_sprite_sheet_0
   - maelle_sprite_sheet_1
   - end screen play again
@@ -1814,6 +1819,7 @@ SpriteAtlas:
   - Hallway(Green)_5
   - noah dialogue
   - Maelle_levelBG
+  - wave up updated
   - maelle_end_grey_0
   - maelle_end_grey_1
   - maelle_end_grey_2
