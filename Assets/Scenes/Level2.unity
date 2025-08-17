@@ -472,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4593c4d5f95fc9749996afb860dedb66, type: 3}
+  m_Texture: {fileID: 2800000, guid: 20cab579b7156f74398ac1bd13e53979, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1644,6 +1644,7 @@ MonoBehaviour:
   checkpointsMissed: 0
   ExpressionScore: 0
   checkpointsRequired: 12
+  totalCheckpoints: 0
 --- !u!114 &668285520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,7 +2730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ac3c889006f278446b3b5ee72c3fb6e7, type: 3}
+  m_Texture: {fileID: 2800000, guid: d55d7c95fd0a66c44a62428dc14c95ad, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
