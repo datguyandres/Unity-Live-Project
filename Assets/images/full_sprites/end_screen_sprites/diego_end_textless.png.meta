@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20cab579b7156f74398ac1bd13e53979
+guid: 704b865e606bdaf488d377e57e0cd3ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,12 +108,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: diego_end_textless_0
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 56
+        width: 868
+        height: 1851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86862252a47dcd49acbc39fcf6847fa
+      internalID: -1702885880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93f057d975cd28842aa93a7501204fdc
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +144,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      diego_end_textless_0: -1702885880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
