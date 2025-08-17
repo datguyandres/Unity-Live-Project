@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20cab579b7156f74398ac1bd13e53979
+guid: a4ac1888761597441ae38556df38b2d4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,12 +108,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: amica_end_color_0
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 61
+        width: 860
+        height: 1555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af8188648348e4b86d1ff8e2a668f4
+      internalID: 278557825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 12913b5953117974394efb0e8e555ba1
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +144,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      amica_end_color_0: 278557825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

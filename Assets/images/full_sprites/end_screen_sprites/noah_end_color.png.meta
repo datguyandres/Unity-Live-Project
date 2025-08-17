@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20cab579b7156f74398ac1bd13e53979
+guid: edacc930f9130034a859224316d6b187
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,12 +108,34 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: noah_end_color_0
+      rect:
+        serializedVersion: 2
+        x: 3044
+        y: 61
+        width: 938
+        height: 2044
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa15d182bce17b042a973ada3ef62ed1
+      internalID: 1750377409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f393aadbad7b18a4381431337c6b588d
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +144,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      noah_end_color_0: 1750377409
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
