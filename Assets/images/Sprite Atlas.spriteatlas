@@ -85,6 +85,7 @@ SpriteAtlas:
     - d7411790b9471c64084e801e8b7b1eb5: 455793890
     - d7411790b9471c64084e801e8b7b1eb5: 1649732210
     - d7411790b9471c64084e801e8b7b1eb5: -59807516
+    - 8db3a1b0953200a4892b6e79b9b582d9: 21300000
     - 9f91f9c0d6bc9594883226de7997aa13: 21300000
     - 67aa0dd08365a9e439fd04a918fcfcc5: -236706358
     - 67aa0dd08365a9e439fd04a918fcfcc5: 1720929125
@@ -492,6 +493,7 @@ SpriteAtlas:
     - 8bd90c2b3501e8a41873b9aa3a389a64: 21300000
     - 25b6184b6b46d554283f038cb02d2dcd: 21300000
     - 058e615b009a52b4abb6f853a6ce8dc2: 21300000
+    - 97abc86b573ab9d49b9fccfbd7a5a521: 21300000
     - 7394379b634b9cc44b3f055c888a5da8: -843422468
     - 7394379b634b9cc44b3f055c888a5da8: 232438437
     - 73e665ab53d4cd04790992ab5367c96d: 1197827680
@@ -715,6 +717,7 @@ SpriteAtlas:
   - {fileID: 455793890, guid: d7411790b9471c64084e801e8b7b1eb5, type: 3}
   - {fileID: 1649732210, guid: d7411790b9471c64084e801e8b7b1eb5, type: 3}
   - {fileID: -59807516, guid: d7411790b9471c64084e801e8b7b1eb5, type: 3}
+  - {fileID: 21300000, guid: 8db3a1b0953200a4892b6e79b9b582d9, type: 3}
   - {fileID: 21300000, guid: 9f91f9c0d6bc9594883226de7997aa13, type: 3}
   - {fileID: -236706358, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
   - {fileID: 1720929125, guid: 67aa0dd08365a9e439fd04a918fcfcc5, type: 3}
@@ -1122,6 +1125,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 8bd90c2b3501e8a41873b9aa3a389a64, type: 2}
   - {fileID: 21300000, guid: 25b6184b6b46d554283f038cb02d2dcd, type: 3}
   - {fileID: 21300000, guid: 058e615b009a52b4abb6f853a6ce8dc2, type: 3}
+  - {fileID: 21300000, guid: 97abc86b573ab9d49b9fccfbd7a5a521, type: 3}
   - {fileID: -843422468, guid: 7394379b634b9cc44b3f055c888a5da8, type: 3}
   - {fileID: 232438437, guid: 7394379b634b9cc44b3f055c888a5da8, type: 3}
   - {fileID: 1197827680, guid: 73e665ab53d4cd04790992ab5367c96d, type: 3}
@@ -1344,6 +1348,7 @@ SpriteAtlas:
   - Classroom(Green)_42
   - Classroom(Green)_29
   - Classroom(Green)_28
+  - generic popup
   - noah checkpoint
   - Lineless_Tilechopped_9
   - Lineless_Tilechopped_8
@@ -1751,6 +1756,7 @@ SpriteAtlas:
   - amica_spritesheet_1
   - Maelle_full_pos
   - pause screen backing
+  - gen NPC popup
   - Wave Down Spritesheet_1
   - Wave Down Spritesheet_0
   - Classroom_Tilemap_8
