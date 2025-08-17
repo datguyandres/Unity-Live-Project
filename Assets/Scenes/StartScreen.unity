@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &321607033 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4351759848168007354, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-  m_PrefabInstance: {fileID: 2163231422169164305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1352961414
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,28 +271,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1758099160 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4613213064580153855, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-  m_PrefabInstance: {fileID: 2163231422169164305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1758099163 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1318644697545099699, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-  m_PrefabInstance: {fileID: 2163231422169164305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1977677600
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,17 +506,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2070717393 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2214016495952033613, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-  m_PrefabInstance: {fileID: 2163231422169164305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2163231422169164305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,38 +514,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1213990708133096979, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1213990708133096979, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 2214016495952033613, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_Navigation.m_SelectOnUp
-      value: 
-      objectReference: {fileID: 1758099160}
     - target: {fileID: 2799021798050576561, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
       propertyPath: m_Name
       value: StartScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 4351759848168007354, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_Navigation.m_SelectOnDown
-      value: 
-      objectReference: {fileID: 1758099160}
-    - target: {fileID: 4613213064580153855, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_TargetGraphic
-      value: 
-      objectReference: {fileID: 1758099163}
-    - target: {fileID: 4613213064580153855, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_Navigation.m_SelectOnUp
-      value: 
-      objectReference: {fileID: 321607033}
-    - target: {fileID: 4613213064580153855, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
-      propertyPath: m_Navigation.m_SelectOnDown
-      value: 
-      objectReference: {fileID: 2070717393}
     - target: {fileID: 7164361343063771504, guid: 51bed9a6e4125fd469b9e8e4dd243b6e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
