@@ -23,7 +23,7 @@ public class NpcTrigger : DialogueTriggeringObject
 
     public GameObject InteractPopUP;
 
-    public GameObject BackupGoalPopup;
+    //public GameObject BackupGoalPopup;
 
     protected override void Start()
     {
@@ -119,13 +119,14 @@ public class NpcTrigger : DialogueTriggeringObject
             currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcLines, NpcNumber);
         }
 
+        //BackupGoalPopup.SetActive(false);
+        DialogueBox.SetActive(true);
+        TalkingCharacterImage.SetActive(true);
         textComponent.gameObject.SetActive(true);
         NextLine();
         InDialogue = true;
         
-        BackupGoalPopup.SetActive(false);
-        DialogueBox.SetActive(true);
-        TalkingCharacterImage.SetActive(true);
+        
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 

@@ -147,15 +147,18 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void OnInteract(InputAction.CallbackContext context)
     {
-        if (CurrentDialogueObject != null && context.started)
+        if (context.started)
         {
-            CurrentDialogueObject.StartOrAdvanceDialogue();
-        }
+            if (CurrentDialogueObject != null)
+            {
+                CurrentDialogueObject.StartOrAdvanceDialogue();
+            }
 
-        else if (CurrentDialogueObject == null)
-        {
-            genericNPCnotif.SetActive(true);
-            Debug.Log("genericNPCnotif appeared");
+            else
+            {
+                genericNPCnotif.SetActive(true);
+                Debug.Log("genericNPCnotif appeared");
+            }
         }
         //else
         //this is where the amica cringing/notification would be
@@ -206,7 +209,7 @@ public class GameManager : MonoBehaviour
 
             //if this is the last level, end the game
 
-            if(NpcsBeaten.Contains(1))
+            if(NpcsBeaten.Count >= npcCount)
             {
                 EndGame();
             } 
