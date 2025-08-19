@@ -23,7 +23,7 @@ public class NpcTrigger : DialogueTriggeringObject
 
     public GameObject InteractPopUP;
 
-    public GameObject BackupGoalPopup;
+    //public GameObject BackupGoalPopup;
 
     protected override void Start()
     {
@@ -119,13 +119,14 @@ public class NpcTrigger : DialogueTriggeringObject
             currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcLines, NpcNumber);
         }
 
+        //BackupGoalPopup.SetActive(false);
+        DialogueBox.SetActive(true);
+        TalkingCharacterImage.SetActive(true);
         textComponent.gameObject.SetActive(true);
         NextLine();
         InDialogue = true;
         
-        BackupGoalPopup.SetActive(false);
-        DialogueBox.SetActive(true);
-        TalkingCharacterImage.SetActive(true);
+        
         //Debug.Log(GameManager.Instance.NpcLines[NpcNumber, 0]); //showing how to access the lines
 
 
@@ -172,21 +173,8 @@ public class NpcTrigger : DialogueTriggeringObject
         base.EndDialogue();
 
         //start level or end 
-        GameManager.Instance.PlayerLastLocation = player.transform.position;
-        GameManager.Instance.playerLastScene = SceneManager.GetActiveScene().name;
 
-        if (GameManager.Instance.InLevel == false && GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) == -1)
-        {
-            GameManager.Instance.InLevel = true;
-            //SceneManager.LoadScene(4);
-            SceneManager.LoadScene(GameManager.Instance.DifficultyLevel);
-        }
-        else
-        {
-            GameManager.Instance.InLevel = false;
-            GameManager.Instance.PlayerWon = false;
-        }
-
+        GameManager.Instance.StartOrEndLevel(NpcNumber, player);
     }
     
     /// <summary>
