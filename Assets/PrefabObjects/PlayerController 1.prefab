@@ -410,7 +410,8 @@ MonoBehaviour:
   NpcOnScreen: {fileID: 0}
   Amica: {fileID: 0}
   Level: {fileID: 0}
-  HitPhoneSoundClip: {fileID: 0}
+  HitPhoneSoundClip: {fileID: 8300000, guid: 56361cbda08f5bd45b43178acb29b51c, type: 3}
+  HitCheckPointSoundClip: {fileID: 8300000, guid: c8b7c874f7bf14e458dc84240649db23, type: 3}
 --- !u!54 &3550477038206030859
 Rigidbody:
   m_ObjectHideFlags: 0
