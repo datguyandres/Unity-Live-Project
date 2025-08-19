@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string endScreen = "EndScreen";
 
     public bool InHallway = true;
+    public GameObject genericNPCnotif; 
 
 
     public GameObject npcCounter;
@@ -144,10 +145,21 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// runs the current NPC's dialogue
     /// </summary>
-    public void OnInteract(InputAction.CallbackContext context)    
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        if (CurrentDialogueObject != null && context.started)
-            CurrentDialogueObject.StartOrAdvanceDialogue();
+        if (context.started)
+        {
+            if (CurrentDialogueObject != null)
+            {
+                CurrentDialogueObject.StartOrAdvanceDialogue();
+            }
+
+            else
+            {
+                genericNPCnotif.SetActive(true);
+                Debug.Log("genericNPCnotif appeared");
+            }
+        }
         //else
         //this is where the amica cringing/notification would be
     }
@@ -197,7 +209,7 @@ public class GameManager : MonoBehaviour
 
             //if this is the last level, end the game
 
-            if(npcCount <= NpcsBeaten.Count)
+            if(NpcsBeaten.Count >= npcCount)
             {
                 EndGame();
             } 
