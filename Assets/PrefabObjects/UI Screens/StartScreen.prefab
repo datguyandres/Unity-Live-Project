@@ -452,6 +452,7 @@ GameObject:
   - component: {fileID: 4078176417249163808}
   - component: {fileID: 4351759848168007354}
   - component: {fileID: 362214377835422068}
+  - component: {fileID: 5085927033675089852}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -529,7 +530,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 362214377835422068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5085927033675089852}
+        m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
+        m_MethodName: LoadTheScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Credits
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &362214377835422068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +570,20 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &5085927033675089852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362010575207608714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d7cd9eb79853242a004e3a01a7db4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider2D: {fileID: 0}
+  scene: 
 --- !u!1 &7166381462415142000
 GameObject:
   m_ObjectHideFlags: 0
