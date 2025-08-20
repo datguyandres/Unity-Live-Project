@@ -27,8 +27,10 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        NpcOnScreen = Level.transform.GetChild(2).gameObject;
-        Amica = Level.transform.GetChild(1).gameObject;
+        if (NpcOnScreen == null)
+           NpcOnScreen = Level.transform.GetChild(2).gameObject;
+        if(Amica == null)
+            Amica = Level.transform.GetChild(1).gameObject;
     }
     // Update is called once per frame
     void FixedUpdate()
