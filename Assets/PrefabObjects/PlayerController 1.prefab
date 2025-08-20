@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
+  player: {fileID: 4916548425147295644}
   checkpointHolder: {fileID: 0}
   healthBar: {fileID: 8967189380502264887}
 --- !u!1 &1168920949501948624
