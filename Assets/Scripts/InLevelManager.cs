@@ -28,7 +28,12 @@ public class InLevelManager : MonoBehaviour
 
     private void Start()
     {
-        // make sure theres only one of these guys
+        GameManager.Instance.PlayerCanMove = false;
+    }
+
+    public void StartTheLevel()
+    {
+        GameManager.Instance.PlayerCanMove = true;
     }
 
     /// <summary>

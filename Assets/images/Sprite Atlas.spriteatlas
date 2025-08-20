@@ -419,6 +419,7 @@ SpriteAtlas:
     - b1043b698701250418478a663fff3da6: 21300000
     - a2003f69072c3134ea71c1d32c1da4e7: 21300000
     - 4fcf3ca92a1edbf43bdb7f7dc82a321e: 21300000
+    - 75cd8df9b17be6e46bfa0d922f8bc7b8: 1309404184
     - b981e61a09f57c64fbb3632896b875c6: 21300000
     - 416ac23a95b22f742b569230a4c86e83: 1580833051
     - 416ac23a95b22f742b569230a4c86e83: 427213850
@@ -490,6 +491,7 @@ SpriteAtlas:
     - dbb6fe9a0d22e7547b77499c8651cdbf: -1761389707
     - dbb6fe9a0d22e7547b77499c8651cdbf: -1381276386
     - dbb6fe9a0d22e7547b77499c8651cdbf: -1746962549
+    - d22d03faa18a27b4ab908232e1955b17: -884382640
     - f0efcdfa990e72f4d8475d8e6708741d: 21300000
     - 8bd90c2b3501e8a41873b9aa3a389a64: 21300000
     - 25b6184b6b46d554283f038cb02d2dcd: 21300000
@@ -563,6 +565,7 @@ SpriteAtlas:
     - 551630eb31b28f9418e3b1f6e6e8bc09: 337965854
     - 2facaffbca95ae444aa7f014e4d8c7bf: 21300000
     - ad9da10c0d0923c469179868b4e3b5e1: 21300000
+    - 1a9f096ca32065049854cf425b701c52: -1924729304
     - a9c909ac45244e442b61e5f76030a497: 21300000
     - 99c76cbc9d9881748b3e531e6bc9eaef: -1656166693
     - 99c76cbc9d9881748b3e531e6bc9eaef: -813417944
@@ -1053,6 +1056,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b1043b698701250418478a663fff3da6, type: 3}
   - {fileID: 21300000, guid: a2003f69072c3134ea71c1d32c1da4e7, type: 3}
   - {fileID: 21300000, guid: 4fcf3ca92a1edbf43bdb7f7dc82a321e, type: 3}
+  - {fileID: 1309404184, guid: 75cd8df9b17be6e46bfa0d922f8bc7b8, type: 3}
   - {fileID: 21300000, guid: b981e61a09f57c64fbb3632896b875c6, type: 3}
   - {fileID: 1580833051, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
   - {fileID: 427213850, guid: 416ac23a95b22f742b569230a4c86e83, type: 3}
@@ -1124,6 +1128,7 @@ SpriteAtlas:
   - {fileID: -1761389707, guid: dbb6fe9a0d22e7547b77499c8651cdbf, type: 3}
   - {fileID: -1381276386, guid: dbb6fe9a0d22e7547b77499c8651cdbf, type: 3}
   - {fileID: -1746962549, guid: dbb6fe9a0d22e7547b77499c8651cdbf, type: 3}
+  - {fileID: -884382640, guid: d22d03faa18a27b4ab908232e1955b17, type: 3}
   - {fileID: 21300000, guid: f0efcdfa990e72f4d8475d8e6708741d, type: 3}
   - {fileID: 21300000, guid: 8bd90c2b3501e8a41873b9aa3a389a64, type: 2}
   - {fileID: 21300000, guid: 25b6184b6b46d554283f038cb02d2dcd, type: 3}
@@ -1197,6 +1202,7 @@ SpriteAtlas:
   - {fileID: 337965854, guid: 551630eb31b28f9418e3b1f6e6e8bc09, type: 3}
   - {fileID: 21300000, guid: 2facaffbca95ae444aa7f014e4d8c7bf, type: 3}
   - {fileID: 21300000, guid: ad9da10c0d0923c469179868b4e3b5e1, type: 3}
+  - {fileID: -1924729304, guid: 1a9f096ca32065049854cf425b701c52, type: 3}
   - {fileID: 21300000, guid: a9c909ac45244e442b61e5f76030a497, type: 3}
   - {fileID: -1656166693, guid: 99c76cbc9d9881748b3e531e6bc9eaef, type: 3}
   - {fileID: -813417944, guid: 99c76cbc9d9881748b3e531e6bc9eaef, type: 3}
@@ -1686,6 +1692,7 @@ SpriteAtlas:
   - end screen menu
   - maelle_full_negative
   - Noah level background
+  - blank_header_0
   - quit button
   - Green_Hallway_21
   - Green_Hallway_6
@@ -1757,6 +1764,7 @@ SpriteAtlas:
   - maelle_sprite_sheet 1_1
   - maelle_sprite_sheet 1_0
   - maelle_sprite_sheet 1_2
+  - amica_eyeclose_spritesheet_0
   - pause screen quit
   - amica_spritesheet_1
   - Maelle_full_pos
@@ -1830,6 +1838,7 @@ SpriteAtlas:
   - Hallway(Green)_5
   - noah dialogue
   - Maelle_levelBG
+  - amica_sad_spritesheet_0
   - wave up updated
   - maelle_end_grey_0
   - maelle_end_grey_1
