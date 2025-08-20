@@ -255,6 +255,14 @@ PrefabInstance:
       propertyPath: HitPhoneSoundClip
       value: 
       objectReference: {fileID: 8300000, guid: 657b6e30a8e2c3944bdab81a8634117b, type: 3}
+    - target: {fileID: 6928558844655474689, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928558844655474689, guid: 644c1dee34b139041a1c59aa01d34186, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1166,7 +1174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 956207911f61a8247866c2411984bb06, type: 3}
+  m_Texture: {fileID: 2800000, guid: 96cdc62d62a1ec549ac166588ad136b4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1348,7 +1356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 956207911f61a8247866c2411984bb06, type: 3}
+  m_Texture: {fileID: 2800000, guid: c9e2ab301d17e4a41b040e266897a6da, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
