@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip HitCheckPointSoundClip;
 
 
+    public event HealthEvent HitObstacle; 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

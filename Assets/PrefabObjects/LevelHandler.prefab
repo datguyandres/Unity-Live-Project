@@ -718,7 +718,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   CurrentCP: {fileID: 0}
   TotalChildren: 0
-  inLevelManager: {fileID: 0}
+  inLevelManager: {fileID: 3465105715133330134}
   NpcExpressions: {fileID: 0}
 --- !u!1 &7452878262414403705
 GameObject:
