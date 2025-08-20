@@ -1067,7 +1067,6 @@ MonoBehaviour:
   player: {fileID: 0}
   WasBeaten: 0
   InteractPopUP: {fileID: 0}
-  BackupGoalPopup: {fileID: 0}
 --- !u!61 &214387927
 BoxCollider2D:
   m_ObjectHideFlags: 0
