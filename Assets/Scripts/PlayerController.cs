@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Level;
 
+    public ParticleSystem ConfettiLauncher;
+
     [SerializeField] private AudioClip HitPhoneSoundClip;
     [SerializeField] private AudioClip HitCheckPointSoundClip;
 
@@ -66,6 +68,7 @@ public class PlayerController : MonoBehaviour
             LevelHandler.GetComponent<InLevelManager>().ExpressionScore += 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             AudioManager.PlaySoundFXClip(HitCheckPointSoundClip, transform, 1f);
+            ConfettiLauncher.Play();
             //GameManager.Instance.PlayerScore += 10;
         }
 
