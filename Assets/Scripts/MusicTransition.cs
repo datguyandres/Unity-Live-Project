@@ -33,7 +33,7 @@ public class MusicTransition : MonoBehaviour
             else //walking out of a classroom
             {
                 AudioManager.instance.MusicID = 0;
-                MusicManager.GetComponent<MusicManager>().SwitchMusic(0);
+                //MusicManager.GetComponent<MusicManager>().SwitchMusic(0);
                 GameManager.Instance.InHallway = true;
             }
         }
