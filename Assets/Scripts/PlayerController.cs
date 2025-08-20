@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject Level;
 
     [SerializeField] private AudioClip HitPhoneSoundClip;
+    [SerializeField] private AudioClip HitCheckPointSoundClip;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
             CheckpointHandler.GetComponent<CheckPointSetup>().OnCheckpointHit();
             LevelHandler.GetComponent<InLevelManager>().ExpressionScore += 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
+            AudioManager.PlaySoundFXClip(HitCheckPointSoundClip, transform, 1f);
             //GameManager.Instance.PlayerScore += 10;
         }
 
@@ -76,7 +78,7 @@ public class PlayerController : MonoBehaviour
             //NpcOnScreen.GetComponent<CameraShake>().shake = 1;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().ObstacleHit();
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
-             LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
+            LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             AudioManager.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
             Destroy(other.gameObject);

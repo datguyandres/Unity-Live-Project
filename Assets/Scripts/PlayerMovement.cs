@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 StartingPoint;
 
     public GameObject WalkingPopUp;
-    public GameObject ObjectivePopup; 
 
     void Start()
     {
@@ -35,7 +34,6 @@ public class PlayerMovement : MonoBehaviour
         if (DistanceFromStart < 9f)
         {
             WalkingPopUp.SetActive(false);
-            ObjectivePopup.SetActive(false);
             //Debug.Log("Distance from start" + DistanceFromStart);
 
         }

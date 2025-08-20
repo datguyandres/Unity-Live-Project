@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,13 +17,6 @@ public class GameManager : MonoBehaviour
     /// The current level
     /// </summary>
     public int DifficultyLevel = 1;
-
-    [SerializeField] private float startTime = 100f;
-    public float Timer = 0.0f;
-    public float TimeLeft;
-
-    public TextMeshProUGUI TimerText;
-    public TextMeshProUGUI ScoreText;
 
     public bool Paused { get; set; } //set to public because if we are using this to stop the timer then i need to be able to access it when dialogue starts so timer stops
 
@@ -50,7 +44,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private string endScreen = "EndScreen";
 
     public bool InHallway = true;
-    public GameObject genericNPCnotif; 
+    public GameObject genericNPCNotif; 
 
 
     public GameObject npcCounter;
@@ -118,30 +112,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
-    {
-        if (PlayerCanMove)
-        {
-            Timer += Time.deltaTime;
-
-            TimeLeft = startTime - Mathf.FloorToInt(Timer);
-
-
-            TimerText.text = TimeLeft.ToString();
-
-            if (TimeLeft <= 0)
-            {
-                EndGame();
-            }
-            //Debug.Log("Time left: " + TimeLeft + "seconds"); if you want to see it real time but also viewable in editor
-        }
-        else
-        {
-
-        }
-
-    }
-
     /// <summary>
     /// runs the current NPC's dialogue
     /// </summary>
@@ -156,12 +126,10 @@ public class GameManager : MonoBehaviour
 
             else
             {
-                genericNPCnotif.SetActive(true);
-                Debug.Log("genericNPCnotif appeared");
+                genericNPCNotif.SetActive(true);
+                StartCoroutine(HideGenericNPCNotif());
             }
         }
-        //else
-        //this is where the amica cringing/notification would be
     }
 
     /// <summary>
@@ -214,6 +182,15 @@ public class GameManager : MonoBehaviour
                 EndGame();
             } 
         }
+    }
+
+    /// <summary>
+    /// shows the genericNPCNotif for a few seconds
+    /// </summary>
+    private IEnumerator HideGenericNPCNotif()
+    {
+        yield return new WaitForSeconds(5f);
+        genericNPCNotif.SetActive(false);
     }
 
 }

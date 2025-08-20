@@ -1238,8 +1238,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3307d454c611b60478adeb575b3b3348, type: 2}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.numCapVertices
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.textureScale.x
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.numCornerVertices
@@ -1258,6 +1266,10 @@ PrefabInstance:
       value: 0.9559748
       objectReference: {fileID: 0}
     - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
+      propertyPath: m_Parameters.generateLightingData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946982343370281249, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: m_Parameters.colorGradient.m_ColorSpace
       value: 0
       objectReference: {fileID: 0}
@@ -1267,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7427095660803280280, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: width
-      value: 0.24
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 7427095660803280280, guid: 7e8b3268f56591e488c2b94e1e44b20f, type: 3}
       propertyPath: Player
@@ -3367,7 +3379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1491279947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3401,7 +3413,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.12578613, g: 0.12376977, b: 0.1182706, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30

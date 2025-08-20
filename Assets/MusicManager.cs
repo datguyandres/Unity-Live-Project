@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic; 
+using System.Collections.Generic;
 public class MusicManager : MonoBehaviour
 {
     public AudioSource HallwayTheme;
@@ -56,4 +56,6 @@ public class MusicManager : MonoBehaviour
 
         }
     }
+    
+
 }
