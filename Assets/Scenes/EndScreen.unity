@@ -395,10 +395,7 @@ PrefabInstance:
     - {fileID: 1124311887660701251, guid: 54e0bde5dd2c6294584482bb7c8dd609, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2799590330975655709, guid: 54e0bde5dd2c6294584482bb7c8dd609, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1873049676}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e0bde5dd2c6294584482bb7c8dd609, type: 3}
 --- !u!1 &954950517
 GameObject:
@@ -658,38 +655,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &1873049672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2799590330975655709, guid: 54e0bde5dd2c6294584482bb7c8dd609, type: 3}
-  m_PrefabInstance: {fileID: 590503676}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1873049676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873049672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3063447899006154eb7e96a4f637ade8, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

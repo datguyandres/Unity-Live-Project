@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+/// <summary>
+/// run when the player's health is updated
+/// </summary>
+public delegate void HealthEvent();
+
 
 public class CheckPointSetup : MonoBehaviour
 {
@@ -22,16 +27,12 @@ public class CheckPointSetup : MonoBehaviour
 
     public GameObject NpcExpressions;
 
-    /// <summary>
-    /// run when a checkpoint is missed
-    /// </summary>
-    /// <param name="checkpoint">the checkpoint missed</param>
-    public delegate void CheckpointMissed(GameObject checkpoint);
+    
 
     /// <summary>
     /// run when a checkpoint is missed
     /// </summary>
-    public event CheckpointMissed OnCheckpointMissed;
+    public event HealthEvent OnCheckpointMissed;
 
         
 
@@ -122,7 +123,7 @@ public class CheckPointSetup : MonoBehaviour
     public void OnCheckpointMiss()
     {
         inLevelManager.checkpointsMissed += 1;
-        OnCheckpointMissed(CurrentCP);
+        OnCheckpointMissed();
         SetNextCheckpoint();
     }
 

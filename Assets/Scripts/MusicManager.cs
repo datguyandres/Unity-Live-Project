@@ -13,6 +13,11 @@ public class MusicManager : MonoBehaviour
     public AudioSource CurrentMusic;
     public AudioSource CurrentAmbience;
 
+    public AudioSource Bgm;
+    public AudioSource Ambience;
+
+    public AudioClip myClip;
+
     public float fadeDuration = 2f;
 
     private int CurrentSongID;

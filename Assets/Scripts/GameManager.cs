@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
         if(npcCounter != null)
         {
             npcCount = npcCounter.transform.childCount;
-        } else
+        } else if (SceneManager.GetActiveScene().name == "TOPDOWNTEST")
         {
             Debug.LogError("GameManager needs an NPC Counter but none was found!");
         }
