@@ -61,6 +61,17 @@ public class MusicManager : MonoBehaviour
 
         }
     }
-    
+
+    public void PauseMusic()
+    {
+        CurrentAmbience.Pause();
+        CurrentMusic.Pause();
+    }
+
+    public void ResumeMusic()
+    {
+        CurrentAmbience.UnPause();
+        CurrentMusic.UnPause();
+    }
 
 }
