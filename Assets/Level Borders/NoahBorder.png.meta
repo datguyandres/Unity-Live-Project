@@ -113,13 +113,13 @@ TextureImporter:
       name: NoahBorder_0
       rect:
         serializedVersion: 2
-        x: 86
-        y: 84
-        width: 1870
-        height: 1870
+        x: 0
+        y: 1366
+        width: 682
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 651, y: 654, z: 645, w: 647}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -127,6 +127,160 @@ TextureImporter:
       bones: []
       spriteID: 78eda47c86baf5d4f8416eee2798c621
       internalID: -1072535606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_1
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1366
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e10805c1e7c34c4f96eab8fe58cb891
+      internalID: 2079601933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_2
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1366
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1bd98132001c64fa2d94cb3deba13c
+      internalID: 1387077012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4c7eca59b4ee849b2d00fbf8300f5e
+      internalID: 1670966906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_4
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 684
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673605ec2e81c00438a92e80bc402568
+      internalID: -1804168088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7100b88b49a3eec47a25219de993b049
+      internalID: 1351170714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_6
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00714b3f5d431dc4598cc452bb8a2473
+      internalID: -1444648881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NoahBorder_7
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 2
+        width: 682
+        height: 682
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95e5d38e56f8164d94c76de6bd9a0e1
+      internalID: -931613928
       vertices: []
       indices: 
       edges: []
@@ -146,6 +300,13 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       NoahBorder_0: -1072535606
+      NoahBorder_1: 2079601933
+      NoahBorder_2: 1387077012
+      NoahBorder_3: 1670966906
+      NoahBorder_4: -1804168088
+      NoahBorder_5: 1351170714
+      NoahBorder_6: -1444648881
+      NoahBorder_7: -931613928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
