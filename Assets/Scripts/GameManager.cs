@@ -55,24 +55,25 @@ public class GameManager : MonoBehaviour
     // public string[] Npc1;
     //public string[] Npc2;
 
-    public string[,] NpcLines = new string[2, 5] {  //multi-dimensional array containing all npc lines
-            {"Amica, aren’t you excited for this lab?", "Uh, I actually didn’t hear all of the instructions ’cause I was late.", "Oh, don’t worry, I'll help you through it!", "Follow my lead, and I'm sure you'll have fun!", "ur momma"},
-            {"npc2 line1", "npc2 line2", "npc2 line3", "npc2 line4", "npc2 line 5"}
+    public string[,] NpcLines = new string[2, 4] {  //multi-dimensional array containing all npc lines
+            {"Hey! I’m Maelle, what’s your name?", "Amica, that’s a nice name. Well, let’s get started on the poster then!", "Oh you didn’t get the instructions because you were late?", "Don’t worry, I can help you through it, it’ll be fun!"},
+            {"My name? I’m Noah, just swapped into this class.", "Ideas about the group assignment? Well, it says to write about something you and your partner share in common.", "I do like watching basketball, how could you tell? Was it the logo on my hat?", "Yeah, it is kind of a giveaway. Well, let’s get started then."}
         };
-    public string[,] PlayerLines = new string[2, 2] { //multi-dimensional array containing all player dialogue
-            {"*sigh*, A week into school and I still haven’t gotten used to how loud it is.", "Well, just gotta get to bio, should just be the near door to the right."},
-            {"Looks like there's only one open seat, in the back of the class.", "I do wonder who that is sitting there though, didn’t see him here last week."}
+    public string[,] PlayerLines = new string[3, 3] { //multi-dimensional array containing all player dialogue
+            {"*sigh*, A week into school and I still haven’t gotten used to how loud it is.", "Though maybe it’d feel quieter if I had someone to walk with, a friend.", "Anyways, just gotta get to bio, should just be the green door to the right."},
+            {"Gonna probably sit in the back and chill on my phone again aaaand the seats are taken.", "I guess I really shouldn’t have been late.", "Looks like the only open seat is up in the front too, unlucky."},
+            {"Looks like there's only one open seat, in the back of the class.", "I do wonder who that blue guy is, sitting over there next to it.", "I didn’t see him in this class last week at all."}
         };
 
-    public string[,] NpcWinLines = new string[2, 5] { //multi-dimensional array containing all player dialogue
-            {"Hmmm, it looks like plants A and D have spikier leaves compared to B and C’s rounder ones.", "Plants C and D are the same oliveish color though, maybe that makes them a pair?", "Oh, I think those two were just left in the sun too long,they were probably originally green like the others.", "Ok, so we’re sticking with A&D as a pair and B&C as a pair, right?", "Yeah, I’ll go turn in the submission paper then, we’ll get our results tomorrow!" },
-            {"z", "YOU WON YIPPEE", "a", "b", "c"}
+    public string[,] NpcWinLines = new string[2, 3] { //multi-dimensional array containing all player dialogue
+            {"Ok, that’s correct, you can draw the last image for the poster.", "Wow, that looks great, you’re pretty good at drawing!", "I’ll go turn in the poster then, friend!"},
+            {"We sure did have a lot to write about.", "I just wish my favorite team made it to playoffs last year.", "Anyways, I’ll go turn in the paper, buddy."}
         };
 
 
     public string[,] NpcLoseLines = new string[2, 1] { //multi-dimensional array containing all player dialogue
-            {"Oh, that one didn't work, maybe give it another try." },
-            {"player + npc2 Lose line" }
+            {"Oh, that one didn't work, maybe give it another try."},
+            {"Uh, probably not that, let's try something else."}
         };
 
     public DialogueTriggeringObject CurrentDialogueObject { get; set; }
@@ -104,7 +105,7 @@ public class GameManager : MonoBehaviour
         if(npcCounter != null)
         {
             npcCount = npcCounter.transform.childCount;
-        } else
+        } else if (SceneManager.GetActiveScene().name == "TOPDOWNTEST")
         {
             Debug.LogError("GameManager needs an NPC Counter but none was found!");
         }

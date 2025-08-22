@@ -15,13 +15,20 @@ public class PlayerController : MonoBehaviour
 
     public GameObject LevelHandler;
 
+    private bool playerKnowsControls = false;
+
     public GameObject NpcOnScreen;
     public GameObject Amica;
 
     public GameObject Level;
 
+    public ParticleSystem ConfettiLauncher;
+
     [SerializeField] private AudioClip HitPhoneSoundClip;
     [SerializeField] private AudioClip HitCheckPointSoundClip;
+
+
+    public event HealthEvent HitObstacle; 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,7 +42,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(GameManager.Instance.PlayerCanMove)
+        if(GameManager.Instance.PlayerCanMove && playerKnowsControls)
         {
             transform.Translate(Vector3.right * HorizontalSpeed * Time.deltaTime);
         }
@@ -43,8 +50,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.PlayerCanMove)
-            transform.Translate(new Vector3(0,Input.GetAxis("Vertical"),0) * VerticalSpeed * Time.deltaTime);
+        if (GameManager.Instance.PlayerCanMove)
+        {
+            transform.Translate(new Vector3(0, Input.GetAxis("Vertical"), 0) * VerticalSpeed * Time.deltaTime);
+            //start the player moving fwd
+            if(Input.GetAxis("Vertical") != 0)
+            {
+                playerKnowsControls = true;
+            }
+        }
 
 #if DEBUG
         //this SHOULD not work in build
@@ -68,6 +82,7 @@ public class PlayerController : MonoBehaviour
             LevelHandler.GetComponent<InLevelManager>().ExpressionScore += 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             AudioManager.PlaySoundFXClip(HitCheckPointSoundClip, transform, 1f);
+            ConfettiLauncher.Play();
             //GameManager.Instance.PlayerScore += 10;
         }
 
@@ -78,9 +93,14 @@ public class PlayerController : MonoBehaviour
             //LevelHandler.GetComponent<InLevelManager>().checkpointsHit -= 1;
             Debug.Log("collided with phone");
             //NpcOnScreen.GetComponent<CameraShake>().shake = 1;
+            InLevelManager inLevelManager = LevelHandler.GetComponent<InLevelManager>();
+
+            //testing these making you "miss a checkpoint" when hit.
+            inLevelManager.checkpointsMissed++;
+
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().ObstacleHit();
             Amica.GetComponent<Amica_Facial_Expressions>().ObstacleHit();
-            LevelHandler.GetComponent<InLevelManager>().ExpressionScore -= 10;
+            inLevelManager.ExpressionScore -= 10;
             NpcOnScreen.GetComponent<MaelleFacialExpressions>().CheckScoreUpdate();
             AudioManager.PlaySoundFXClip(HitPhoneSoundClip, transform, 1f);
             Destroy(other.gameObject);

@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class TriggerPauseScreen : MonoBehaviour
 {
     public GameObject pauseScreen;
+
+    public GameObject MusicManager;
     public bool pauseState;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +25,7 @@ public class TriggerPauseScreen : MonoBehaviour
             if (!pauseScreen.activeInHierarchy)
             {
                 pauseScreen.SetActive(true);
+                MusicManager.GetComponent<MusicManager>().PauseMusic();
                 GameManager.Instance.PlayerCanMove = false;
                 GameManager.Instance.Paused = true;
             }
@@ -38,6 +42,7 @@ public class TriggerPauseScreen : MonoBehaviour
         pauseScreen.SetActive(false);
         GameManager.Instance.PlayerCanMove = true;
         GameManager.Instance.Paused = false;
+        MusicManager.GetComponent<MusicManager>().ResumeMusic();
     }
 
     public void QuitGame()
