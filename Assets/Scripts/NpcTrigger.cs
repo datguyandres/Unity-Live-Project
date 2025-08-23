@@ -145,7 +145,7 @@ public class NpcTrigger : DialogueTriggeringObject
         
         if (GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) > -1 && GameManager.Instance.InLevel != true)
         {
-            CurrentText = "U ALREADY BEAT ME MANEEE";
+            CurrentText = "I'd love to chat, but you're going to be late for your next class! Get going!";
             foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
