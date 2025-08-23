@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 8345188079772839809}
+  MusicManager: {fileID: 0}
   pauseState: 0
 --- !u!1 &2761997285477035714
 GameObject:
