@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 7e78d249952a6d34b843fb686a6009c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestingStuffHereDoNotModifyPLS.unity
     guid: 61f8d9b018f4dbd4c920e3ea13108ab5
   - enabled: 1
