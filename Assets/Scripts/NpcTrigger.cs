@@ -21,6 +21,8 @@ public class NpcTrigger : DialogueTriggeringObject
 
     public bool WasBeaten;
 
+    public bool repeat;
+
     public GameObject InteractPopUP;
 
     //public GameObject BackupGoalPopup;
@@ -118,9 +120,13 @@ public class NpcTrigger : DialogueTriggeringObject
         {
             currentDialogue = Get1dArrayFrom2D(GameManager.Instance.NpcLines, NpcNumber);
         }
+        if (GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) > -1 && GameManager.Instance.InLevel != true)
+        {
+            currentDialogue = Get1dArrayFrom2D(GameManager.Instance.PostwinLines, NpcNumber);
+        }
 
         //BackupGoalPopup.SetActive(false);
-        DialogueBox.SetActive(true);
+            DialogueBox.SetActive(true);
         TalkingCharacterImage.SetActive(true);
         textComponent.gameObject.SetActive(true);
         NextLine();
@@ -142,20 +148,19 @@ public class NpcTrigger : DialogueTriggeringObject
 
     protected override IEnumerator TypeLine()
     {
-        
+
         if (GameManager.Instance.NpcsBeaten.IndexOf(NpcNumber) > -1 && GameManager.Instance.InLevel != true)
         {
-            CurrentText = "I'd love to chat, but you're going to be late for your next class! Get going!";
             foreach (char c in CurrentText.ToCharArray())
             {
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
-
             }
+            
         }
 
 
-        else 
+        else
         {
             foreach (char c in CurrentText.ToCharArray())
             {
@@ -163,7 +168,7 @@ public class NpcTrigger : DialogueTriggeringObject
                 yield return new WaitForSeconds(textSpeed);
 
             }
-            
+
         }
     }
 

@@ -76,6 +76,11 @@ public class GameManager : MonoBehaviour
             {"Uh, probably not that, let's try something else."}
         };
 
+    public string[,] PostwinLines = new string[1, 1] { //multi-dimensional array containing all player dialogue
+            {"I'd love to chat, but you're going to be late for your next class! Get going!"}
+        };
+
+
     public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 
 
