@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public string[,] NpcWinLines = new string[2, 3] { //multi-dimensional array containing all player dialogue
             {"Ok, that’s correct, you can draw the last image for the poster.", "Wow, that looks great, you’re pretty good at drawing!", "I’ll go turn in the poster then, friend! \n[Befriended Maelle!]",},
-            {"We sure did have a lot to write about.", "I just wish my favorite team made it to playoffs last year.", "Anyways, I’ll go turn in the paper, buddy. \n[Befriended Noah]"}
+            {"We sure did have a lot to write about.", "I just wish my favorite team made it to playoffs last year.", "Anyways, I’ll go turn in the paper, buddy. \n[Befriended Noah!]"}
         };
 
 

@@ -13127,7 +13127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532893110786167462, guid: 615b554cd78c7a94f84d8a3524287c38, type: 3}
       propertyPath: 'currentDialogue.Array.data[0]'
-      value: (Wow, that was pretty fun, maybe I should try talking to more people.
+      value: (Wow, that was pretty fun, maybe I should try talking to more people.)
       objectReference: {fileID: 0}
     - target: {fileID: 8532893110786167462, guid: 615b554cd78c7a94f84d8a3524287c38, type: 3}
       propertyPath: 'currentDialogue.Array.data[1]'
@@ -17720,11 +17720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6376594783289208140, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 339.9
       objectReference: {fileID: 0}
     - target: {fileID: 6376594783289208140, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 166
+      value: 172.4
       objectReference: {fileID: 0}
     - target: {fileID: 6653196601212736675, guid: 13f30e8c9a15a9e45a35458a4c8e97f8, type: 3}
       propertyPath: m_Texture
