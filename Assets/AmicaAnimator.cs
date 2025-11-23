@@ -15,7 +15,7 @@ public class AmicaAnimator : MonoBehaviour
     void FixedUpdate()
     {
         //going left
-        if (Input.GetAxis("Horizontal") < 0)
+        if (Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
@@ -27,7 +27,7 @@ public class AmicaAnimator : MonoBehaviour
         }
 
         //going right
-        if (Input.GetAxis("Horizontal") > 0)
+        if (Input.GetAxis("Horizontal") > 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing right animation");
             AmicaController.SetBool("goingRight", true);
@@ -39,7 +39,7 @@ public class AmicaAnimator : MonoBehaviour
         }
 
         //going up
-        if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0)
+        if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing back animation");
             AmicaController.SetBool("goingBack", true);
@@ -50,7 +50,7 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingBack", false);
         }
 
-        if (Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0)
+        if (Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing forward animation");
             AmicaController.SetBool("goingForward", true);
