@@ -20,6 +20,12 @@ public class OpeningCutscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GameManager.Instance.OpeningCutscenePlayed)
+        {
+            GameManager.Instance.OpeningCutscenePlayed = true;
+            CutsceneAnimation.enabled = true;
+        }
+
         if(GameManager.Instance.CurrentDialogueObject == StartDialogue)
         {
             startDialoguePlayed = true;
