@@ -1066,6 +1066,7 @@ MonoBehaviour:
   LevelNum: 0
   player: {fileID: 0}
   WasBeaten: 0
+  repeat: 0
   InteractPopUP: {fileID: 0}
 --- !u!61 &214387927
 BoxCollider2D:
@@ -13146,6 +13147,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3590458462782669546, guid: 615b554cd78c7a94f84d8a3524287c38, type: 3}
   m_PrefabInstance: {fileID: 665340421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &672015461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4533344027523269916, guid: 4d79fb78156e3c54aade54a3e5f661ae, type: 3}
+  m_PrefabInstance: {fileID: 6597561730756938941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &672015466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672015461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9ed662c6e635048be1e14195889717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
 --- !u!1 &672066496
 GameObject:
   m_ObjectHideFlags: 0
@@ -34906,7 +34925,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4533344027523269916, guid: 4d79fb78156e3c54aade54a3e5f661ae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 672015466}
   m_SourcePrefab: {fileID: 100100000, guid: 4d79fb78156e3c54aade54a3e5f661ae, type: 3}
 --- !u!1001 &6657360734178219411
 PrefabInstance:
