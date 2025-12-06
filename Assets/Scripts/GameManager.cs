@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject parent;
 
+    public bool OpeningCutscenePlayed;
+
     /// <summary>
     /// The current level
     /// </summary>
