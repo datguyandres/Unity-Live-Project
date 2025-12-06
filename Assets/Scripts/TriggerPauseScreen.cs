@@ -24,10 +24,14 @@ public class TriggerPauseScreen : MonoBehaviour
         {
             if (!pauseScreen.activeInHierarchy)
             {
-                pauseScreen.SetActive(true);
-                MusicManager.GetComponent<MusicManager>().PauseMusic();
+                pauseScreen.SetActive(true);                
                 GameManager.Instance.PlayerCanMove = false;
                 GameManager.Instance.Paused = true;
+                /*if(MusicManager != null)
+                {
+                   MusicManager.GetComponent<MusicManager>().PauseMusic();
+                }*/
+                AudioListener.pause = true; 
             }
             else
             {
@@ -42,7 +46,8 @@ public class TriggerPauseScreen : MonoBehaviour
         pauseScreen.SetActive(false);
         GameManager.Instance.PlayerCanMove = true;
         GameManager.Instance.Paused = false;
-        MusicManager.GetComponent<MusicManager>().ResumeMusic();
+        AudioListener.pause = false;
+        //MusicManager.GetComponent<MusicManager>().ResumeMusic();
     }
 
     public void QuitGame()

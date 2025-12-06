@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject parent;
 
+    public bool OpeningCutscenePlayed;
+
     /// <summary>
     /// The current level
     /// </summary>
@@ -66,8 +68,8 @@ public class GameManager : MonoBehaviour
         };
 
     public string[,] NpcWinLines = new string[2, 3] { //multi-dimensional array containing all player dialogue
-            {"Ok, that’s correct, you can draw the last image for the poster.", "Wow, that looks great, you’re pretty good at drawing!", "I’ll go turn in the poster then, friend!"},
-            {"We sure did have a lot to write about.", "I just wish my favorite team made it to playoffs last year.", "Anyways, I’ll go turn in the paper, buddy."}
+            {"Ok, that’s correct, you can draw the last image for the poster.", "Wow, that looks great, you’re pretty good at drawing!", "I’ll go turn in the poster then, friend! \n[Befriended Maelle!]",},
+            {"We sure did have a lot to write about.", "I just wish my favorite team made it to playoffs last year.", "Anyways, I’ll go turn in the paper, buddy. \n[Befriended Noah!]"}
         };
 
 
@@ -75,6 +77,11 @@ public class GameManager : MonoBehaviour
             {"Oh, that one didn't work, maybe give it another try."},
             {"Uh, probably not that, let's try something else."}
         };
+
+    public string[,] PostwinLines = new string[1, 1] { //multi-dimensional array containing all player dialogue
+            {"I'd love to chat, but you're going to be late for your next class! Get going!"}
+        };
+
 
     public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 

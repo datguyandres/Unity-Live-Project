@@ -59,6 +59,10 @@ public class PlayerController : MonoBehaviour
                 playerKnowsControls = true;
             }
         }
+        else
+        {
+            Debug.Log("UR MOM!!!");
+        }
 
 #if DEBUG
         //this SHOULD not work in build
