@@ -10898,7 +10898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532893110786167462, guid: 615b554cd78c7a94f84d8a3524287c38, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8532893110786167462, guid: 615b554cd78c7a94f84d8a3524287c38, type: 3}
       propertyPath: AmicaImage
@@ -13169,6 +13169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 0}
+  speed: 1
+  TargetPos: {x: 0, y: 0, z: 0}
+  StartingPos: {x: 0, y: 0, z: 0}
 --- !u!1 &672066496
 GameObject:
   m_ObjectHideFlags: 0
