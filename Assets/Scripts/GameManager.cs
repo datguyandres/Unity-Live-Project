@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject parent;
 
+    public bool OpeningCutscenePlayed;
+
     /// <summary>
     /// The current level
     /// </summary>
@@ -75,6 +77,11 @@ public class GameManager : MonoBehaviour
             {"Oh, that one didn't work, maybe give it another try."},
             {"Uh, probably not that, let's try something else."}
         };
+
+    public string[,] PostwinLines = new string[1, 1] { //multi-dimensional array containing all player dialogue
+            {"I'd love to chat, but you're going to be late for your next class! Get going!"}
+        };
+
 
     public DialogueTriggeringObject CurrentDialogueObject { get; set; }
 
