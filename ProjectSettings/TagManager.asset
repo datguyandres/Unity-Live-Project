@@ -13,6 +13,7 @@ TagManager:
   - InLevelManager
   - DialogueBox
   - CheckpointHolder
+  - interactable
   layers:
   - Default
   - TransparentFX
