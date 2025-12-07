@@ -3,6 +3,7 @@ using System.Collections.Generic;
 public class MusicManager : MonoBehaviour
 {
     public AudioSource HallwayTheme;
+    public AudioSource HallwayThemeTWO;
     public AudioSource Classroom1Theme;
     public AudioSource Classroom2Theme;
     public AudioSource HallwayAmbience;
@@ -41,9 +42,18 @@ public class MusicManager : MonoBehaviour
         switch (NewSongID) //would prefer to do an array of sounds
         {
             case 0:
-                HallwayTheme.Play();
+                if (GameManager.Instance.NpcsBeaten.Count > 0)
+                {
+                    HallwayThemeTWO.Play();
+                    CurrentMusic = HallwayThemeTWO;
+                }
+                else
+                {
+                    HallwayTheme.Play();
+                    CurrentMusic = HallwayTheme;
+                    
+                }
                 HallwayAmbience.Play();
-                CurrentMusic = HallwayTheme;
                 CurrentAmbience = HallwayAmbience;
                 break;
             case 1:
