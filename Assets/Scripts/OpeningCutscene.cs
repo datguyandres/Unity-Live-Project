@@ -26,6 +26,7 @@ public class OpeningCutscene : MonoBehaviour
         {
             GameManager.Instance.OpeningCutscenePlayed = true;
             CutsceneAnimation.enabled = true;
+            AmicaAnimator.cutsceneMoveLeft = true;
         }
 
         if(GameManager.Instance.CurrentDialogueObject == StartDialogue)

@@ -5,16 +5,20 @@ public class AmicaAnimator : MonoBehaviour
     public Animator AmicaController;
     //public Animator CutsceneAnimator; 
 
-    public bool cutsceneMoveLeft = true;
+    public bool cutsceneMoveLeft;
 
-    public bool cutsceneMoveUp = false;
+    public bool cutsceneMoveUp;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        AmicaController = GetComponent<Animator>();  
+        AmicaController = GetComponent<Animator>();
         //CutsceneAnimator = GetComponent<Animator>();  
+        cutsceneMoveLeft = false;
+        cutsceneMoveUp = false;
+
+
     }
 
     // Update is called once per frame
