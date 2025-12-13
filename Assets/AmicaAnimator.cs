@@ -3,22 +3,31 @@ using UnityEngine;
 public class AmicaAnimator : MonoBehaviour
 {
     public Animator AmicaController; 
+    //public Animator CutsceneAnimator; 
+
+    
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         AmicaController = GetComponent<Animator>();  
+        //CutsceneAnimator = GetComponent<Animator>();  
     }
 
     // Update is called once per frame
     void FixedUpdate()
+       
     {
+
+        // var CutsceneState = CutsceneAnimator.GetCurrentAnimatorStateInfo(0);
+        // Debug.Log(CutsceneState);
         //going left
         if (Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
+            
         }
 
         else
@@ -60,6 +69,15 @@ public class AmicaAnimator : MonoBehaviour
         {
             AmicaController.SetBool("goingForward", false);
         }
+
+        //cutscene animations I hope
+        while (GameManager.Instance.openCutscene1 == true)
+        {
+            AmicaController.SetBool("goingLeft", true);
+        }
+
+        
+        
 
     }
 }

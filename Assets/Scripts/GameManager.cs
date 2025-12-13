@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject npcCounter;
     private int npcCount;
+    public bool openCutscene1 = false; 
 
     // used to determine when player is going into a classroom and when they are leaving a classroom
 
