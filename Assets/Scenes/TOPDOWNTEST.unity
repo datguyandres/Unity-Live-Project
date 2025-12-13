@@ -13265,7 +13265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9ed662c6e635048be1e14195889717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCamera: {fileID: 0}
+  MainCamera: {fileID: 2119600894}
   speed: 1
   TargetPos: {x: 0, y: 0, z: 0}
   StartingPos: {x: 0, y: 0, z: 0}
@@ -17536,6 +17536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmicaController: {fileID: 1332236925}
+  cutsceneMoveLeft: 1
+  cutsceneMoveUp: 0
 --- !u!95 &1332236925
 Animator:
   serializedVersion: 7
@@ -34953,6 +34955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CutsceneAnimation: {fileID: 2129090559}
+  AmicaAnimator: {fileID: 1332236924}
   StartDialogue: {fileID: 1815807455}
 --- !u!1001 &5041918094137291350
 PrefabInstance:
