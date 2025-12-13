@@ -21,11 +21,9 @@ public class AmicaAnimator : MonoBehaviour
     void FixedUpdate()
        
     {
-
-        // var CutsceneState = CutsceneAnimator.GetCurrentAnimatorStateInfo(0);
-        // Debug.Log(CutsceneState);
         //going left
-        if (Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove)
+        // !!! SHOULD BE CHANGED WHEN BELLA'S THING IS IN !!!
+        if ((Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove) || (cutsceneMoveLeft == true))
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
@@ -50,7 +48,7 @@ public class AmicaAnimator : MonoBehaviour
         }
 
         //going up
-        if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove)
+        if ((Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove) || (cutsceneMoveUp == true))
         {
             Debug.Log("should be playing back animation");
             AmicaController.SetBool("goingBack", true);
@@ -72,25 +70,12 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingForward", false);
         }
 
-        //cutscene animations I hope
-        if (cutsceneMoveLeft == true)
-        {
-            AmicaController.SetBool("goingLeft", true);
-        } else
-        {
-            AmicaController.SetBool("goingLeft", false);
-
-        }
-
-        if (cutsceneMoveUp == true)
-        {
-            AmicaController.SetBool("goingBack", true);
-        } else
-        {
-            AmicaController.SetBool("goingBack", false);
-
-        }
-
-
+        /* CODE FOR NEW ANIMATION
+         * if (cutsceneMoveLeft == true) {
+         *      AmicaController.SetBool("NewState", true);
+         * } else {
+         *      AmicaController.SetBool("NewState", false);
+         * }
+        */
     }
 }
