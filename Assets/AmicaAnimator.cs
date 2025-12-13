@@ -27,7 +27,7 @@ public class AmicaAnimator : MonoBehaviour
     {
         //going left
         // !!! SHOULD BE CHANGED WHEN BELLA'S THING IS IN !!!
-        if ((Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove) || (cutsceneMoveLeft == true))
+        if (Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
@@ -74,12 +74,12 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingForward", false);
         }
 
-        /* CODE FOR NEW ANIMATION
-         * if (cutsceneMoveLeft == true) {
-         *      AmicaController.SetBool("NewState", true);
-         * } else {
-         *      AmicaController.SetBool("NewState", false);
-         * }
-        */
+        //CODE FOR NEW ANIMATION
+         if (cutsceneMoveLeft == true) {
+             AmicaController.SetBool("hasPhone", true);
+         } else {
+              AmicaController.SetBool("hasPhone", false);
+         }
+        
     }
 }
