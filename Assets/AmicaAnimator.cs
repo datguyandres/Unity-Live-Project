@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class AmicaAnimator : MonoBehaviour
 {
-    public Animator AmicaController; 
+    public Animator AmicaController;
     //public Animator CutsceneAnimator; 
 
-    
+    public bool cutsceneMoveLeft = true;
+
+    public bool cutsceneMoveUp = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -71,13 +73,24 @@ public class AmicaAnimator : MonoBehaviour
         }
 
         //cutscene animations I hope
-        while (GameManager.Instance.openCutscene1 == true)
+        if (cutsceneMoveLeft == true)
         {
             AmicaController.SetBool("goingLeft", true);
+        } else
+        {
+            AmicaController.SetBool("goingLeft", false);
+
         }
 
-        
-        
+        if (cutsceneMoveUp == true)
+        {
+            AmicaController.SetBool("goingBack", true);
+        } else
+        {
+            AmicaController.SetBool("goingBack", false);
+
+        }
+
 
     }
 }
