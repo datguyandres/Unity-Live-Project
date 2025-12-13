@@ -2,23 +2,36 @@ using UnityEngine;
 
 public class AmicaAnimator : MonoBehaviour
 {
-    public Animator AmicaController; 
+    public Animator AmicaController;
+    //public Animator CutsceneAnimator; 
+
+    public bool cutsceneMoveLeft;
+
+    public bool cutsceneMoveUp;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        AmicaController = GetComponent<Animator>();  
+        AmicaController = GetComponent<Animator>();
+        //CutsceneAnimator = GetComponent<Animator>();  
+        cutsceneMoveLeft = false;
+        cutsceneMoveUp = false;
+
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
+       
     {
         //going left
+        // !!! SHOULD BE CHANGED WHEN BELLA'S THING IS IN !!!
         if (Input.GetAxis("Horizontal") < 0 && GameManager.Instance.PlayerCanMove)
         {
             Debug.Log("should be playing left animation");
             AmicaController.SetBool("goingLeft", true);
+            
         }
 
         else
@@ -39,7 +52,7 @@ public class AmicaAnimator : MonoBehaviour
         }
 
         //going up
-        if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove)
+        if ((Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0 && GameManager.Instance.PlayerCanMove) || (cutsceneMoveUp == true))
         {
             Debug.Log("should be playing back animation");
             AmicaController.SetBool("goingBack", true);
@@ -61,5 +74,12 @@ public class AmicaAnimator : MonoBehaviour
             AmicaController.SetBool("goingForward", false);
         }
 
+        //CODE FOR NEW ANIMATION
+         if (cutsceneMoveLeft == true) {
+             AmicaController.SetBool("hasPhone", true);
+         } else {
+              AmicaController.SetBool("hasPhone", false);
+         }
+        
     }
 }
